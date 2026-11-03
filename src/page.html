@@ -218,6 +218,29 @@ a.cf{text-decoration:none; color:var(--ink)} a.cf:hover{border-color:var(--blue)
 :root[data-theme="dark"] .contact p{color:color-mix(in srgb, var(--bg) 80%, transparent)}
 @media (max-width:760px){.contact .wrap{grid-template-columns:1fr}}
 footer .wrap{padding-block:24px; display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; color:var(--muted); font:400 13px/1.5 var(--f-mono)}
+
+/* smartphones (iOS Safari e Android Chrome) */
+html{-webkit-text-size-adjust:100%; text-size-adjust:100%}
+.nav{background:var(--bg); -webkit-backdrop-filter:blur(10px)}
+@supports (background:color-mix(in srgb, red 50%, blue)){.nav{background:color-mix(in srgb, var(--bg) 88%, transparent)}}
+.mnav{display:none}
+@media (max-width:860px){
+  html{scroll-padding-top:112px}
+  .mnav{display:block; border-top:1px solid var(--line)}
+  .mnav ul{display:flex!important; gap:6px; list-style:none; margin:0; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none; padding-block:8px; padding-left:max(16px, env(safe-area-inset-left,0px)); padding-right:max(16px, env(safe-area-inset-right,0px))}
+  .mnav ul::-webkit-scrollbar{display:none}
+  .mnav a{display:block; white-space:nowrap; padding:8px 12px; border-radius:999px; border:1px solid var(--line); background:var(--paper); color:var(--ink); text-decoration:none; font-size:14px; font-weight:500}
+  .lang button{padding:10px 14px; font-size:13px}
+  .term{font-size:12.5px}
+  .term pre{padding:14px 14px 18px}
+  .portrait{width:112px}
+  section.blk{padding-block:56px}
+  .btn{padding:14px 18px}
+  .labs a{padding:12px 0}
+  .lb img{width:max(100%, 900px)}
+}
+@media (hover:none){.card button.shot:hover img{transform:none}}
+.lb .sc{-webkit-overflow-scrolling:touch; touch-action:pan-x pan-y pinch-zoom}
 </style>
 
 <nav class="nav" aria-label="Seções">
@@ -236,6 +259,14 @@ footer .wrap{padding-block:24px; display:flex; justify-content:space-between; ga
       <button type="button" id="lang-en" data-l="en" aria-pressed="false">EN</button>
     </div>
   </div>
+  <div class="mnav"><ul aria-label="Seções">
+      <li><a href="#sobre"><span class="pt">Sobre</span><span class="en">About</span></a></li>
+      <li><a href="#trajetoria"><span class="pt">Trajetória</span><span class="en">Career</span></a></li>
+      <li><a href="#projetos"><span class="pt">Projetos</span><span class="en">Projects</span></a></li>
+      <li><a href="#arquiteturas"><span class="pt">Arquiteturas</span><span class="en">Architectures</span></a></li>
+      <li><a href="#certificacoes"><span class="pt">Certificações</span><span class="en">Certifications</span></a></li>
+      <li><a href="#contato"><span class="pt">Contato</span><span class="en">Contact</span></a></li>
+    </ul></div>
 </nav>
 
 <header class="hero" id="top">
