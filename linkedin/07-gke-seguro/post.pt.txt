@@ -1,0 +1,8 @@
+GKE "seguro" é uma lista de decisões, não uma opção no console.
+
+Laboratório para mostrar GKE privado de ponta a ponta, da borda ao banco.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/gke-seguro.html
+
+#GoogleCloud #GCP #Terraform #IaC #DevOps #FinOps

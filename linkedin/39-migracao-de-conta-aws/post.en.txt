@@ -1,0 +1,8 @@
+Moving a workload between AWS accounts: topology, costs and findings.
+
+Workload running outside the company organization.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/migracao-de-conta-aws.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

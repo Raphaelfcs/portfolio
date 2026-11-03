@@ -1,0 +1,8 @@
+Portal do desenvolvedor com templates de IaC: do MVP à arquitetura completa.
+
+Times pedindo infraestrutura por ticket e esperando dias.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/templates-de-iac.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

@@ -1,0 +1,8 @@
+File downloads should not go through your server.
+
+API that served large files and choked at peak hours.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/api-de-download.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

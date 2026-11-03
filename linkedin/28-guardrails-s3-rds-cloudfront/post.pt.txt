@@ -1,0 +1,8 @@
+Guardrail bom é o que impede o erro antes do deploy.
+
+Buckets públicos por engano, bancos sem criptografia e distribuições sem TLS mínimo.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/guardrails-s3-rds-cloudfront.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

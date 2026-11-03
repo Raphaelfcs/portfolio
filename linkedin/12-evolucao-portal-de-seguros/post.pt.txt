@@ -1,0 +1,8 @@
+Evoluir portal legado sem parar o negócio.
+
+Portais de cliente, administração e cadastro rodando em servidores tradicionais.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/evolucao-portal-de-seguros.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

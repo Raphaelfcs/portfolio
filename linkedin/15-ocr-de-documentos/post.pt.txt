@@ -1,0 +1,8 @@
+OCR em escala: DEV, HML e PRD com o mesmo código e custos bem diferentes.
+
+Extração de dados de contratos em volume, com picos e necessidade de auditoria.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/ocr-de-documentos.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

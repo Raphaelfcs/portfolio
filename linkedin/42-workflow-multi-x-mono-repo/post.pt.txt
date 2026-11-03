@@ -1,0 +1,8 @@
+Templates de IaC: multi-repo ou monorepo?
+
+Plataforma de templates precisando decidir a organização dos repositórios.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/workflow-multi-x-mono-repo.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

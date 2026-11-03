@@ -1,0 +1,8 @@
+Kong na DMZ do GKE: AS-IS x TO-BE.
+
+Gateway externo exposto sem separação clara entre ambientes.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/api-gateway-externo-kong.html
+
+#GoogleCloud #GCP #Terraform #IaC #DevOps #FinOps

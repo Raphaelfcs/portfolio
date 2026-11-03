@@ -1,0 +1,8 @@
+Onde colocar o gateway de API no Google Cloud?
+
+Várias opções de gateway e nenhuma decisão registrada.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/gateways-de-api.html
+
+#GoogleCloud #GCP #Terraform #IaC #DevOps #FinOps

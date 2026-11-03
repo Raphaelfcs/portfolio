@@ -1,0 +1,8 @@
+Serviço compartilhado entre AWS e OCI: a rede é metade do projeto.
+
+Bloqueio e reset de credenciais usado por vários sistemas, alguns fora da AWS.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/bloqueio-e-reset-de-acesso.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

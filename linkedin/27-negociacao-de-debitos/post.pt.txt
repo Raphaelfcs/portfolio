@@ -1,0 +1,8 @@
+Desenhei a mesma aplicação em EKS e em ECS para decidir com números.
+
+Portal de negociação de débitos com dúvida entre EKS e ECS.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/negociacao-de-debitos.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

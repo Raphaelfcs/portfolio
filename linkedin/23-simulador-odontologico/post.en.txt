@@ -1,0 +1,8 @@
+A simple simulator still deserves proper architecture.
+
+Cost preview simulator used by customers on the portal.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/simulador-odontologico.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

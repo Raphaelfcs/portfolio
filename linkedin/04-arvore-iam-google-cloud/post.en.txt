@@ -1,0 +1,8 @@
+A permission at the wrong level of the hierarchy becomes security debt.
+
+Teams needing project access without anyone becoming Owner of the organization.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/arvore-iam-google-cloud.html
+
+#GoogleCloud #GCP #Terraform #IaC #DevOps #FinOps #CloudComputing

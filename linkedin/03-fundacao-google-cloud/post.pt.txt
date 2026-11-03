@@ -1,0 +1,8 @@
+Mesmo roteiro, outra nuvem: como os três horizontes ficam no Google Cloud.
+
+O mesmo case de modernização, agora com o Google Cloud como plataforma principal.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/fundacao-google-cloud.html
+
+#GoogleCloud #GCP #Terraform #IaC #DevOps #FinOps

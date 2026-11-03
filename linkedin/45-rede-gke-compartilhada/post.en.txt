@@ -1,0 +1,8 @@
+Shared VPC with GKE and managed databases: watch the peerings.
+
+Service projects with GKE needing to reach databases in other projects.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/rede-gke-compartilhada.html
+
+#GoogleCloud #GCP #Terraform #IaC #DevOps #FinOps #CloudComputing

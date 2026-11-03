@@ -1,0 +1,8 @@
+Azure landing zone with private AKS: nothing public behind Front Door.
+
+Azure joining a company that already had AWS governance.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/landing-zone-azure.html
+
+#Azure #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

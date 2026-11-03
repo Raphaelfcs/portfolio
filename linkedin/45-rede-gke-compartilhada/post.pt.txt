@@ -1,0 +1,8 @@
+Shared VPC com GKE e bancos gerenciados: atenção aos peerings.
+
+Projetos de serviço com GKE precisando falar com bancos em outros projetos.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/rede-gke-compartilhada.html
+
+#GoogleCloud #GCP #Terraform #IaC #DevOps #FinOps

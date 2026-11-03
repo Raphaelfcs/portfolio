@@ -1,0 +1,8 @@
+Landing zone Azure dentro de uma governança multicloud.
+
+Azure entrando em uma empresa que já tinha governança na AWS.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/landing-zone-azure.html
+
+#Azure #CloudArchitecture #Terraform #IaC #DevOps #FinOps

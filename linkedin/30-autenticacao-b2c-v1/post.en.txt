@@ -1,0 +1,8 @@
+The first version of a service says a lot about the second.
+
+First version of the B2C authentication service.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/autenticacao-b2c-v1.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

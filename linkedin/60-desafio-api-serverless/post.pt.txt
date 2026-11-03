@@ -1,0 +1,8 @@
+Desafio técnico: uma API serverless com IaC do zero.
+
+Desafio de entrevista pedindo API funcional, segura e reproduzível.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/desafio-api-serverless.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

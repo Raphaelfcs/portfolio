@@ -1,0 +1,8 @@
+Rotina operacional manual é candidata natural a uma Lambda agendada.
+
+Rotina diária feita à mão, com planilhas e conferência visual.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/automacao-rgs.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

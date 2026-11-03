@@ -1,0 +1,8 @@
+C4 Model para infraestrutura: funciona, e muito bem.
+
+Ambiente de staging com várias stacks e fronteiras de state pouco claras.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/infra-staging-c4.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

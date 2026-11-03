@@ -1,0 +1,8 @@
+Relatório regulatório tem prazo. Arquitetura serverless ajuda a não perder.
+
+Relatórios exigidos pelo órgão regulador, gerados manualmente e com risco de atraso.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/relatorios-regulatorios.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

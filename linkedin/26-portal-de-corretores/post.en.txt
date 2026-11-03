@@ -1,0 +1,8 @@
+Broker portal: static front-end, containerized API and a tested backup.
+
+Web portal for brokers with peaks during sales campaigns.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/portal-de-corretores.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

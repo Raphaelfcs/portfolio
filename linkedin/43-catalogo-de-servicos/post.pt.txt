@@ -1,0 +1,8 @@
+Self-service de infraestrutura começa no catálogo.
+
+Desenvolvedores sem caminho padrão para pedir recursos.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/catalogo-de-servicos.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

@@ -1,0 +1,8 @@
+Permissão no lugar errado da hierarquia vira dívida de segurança.
+
+Times precisando de acesso a projetos sem que ninguém virasse Owner da organização.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/arvore-iam-google-cloud.html
+
+#GoogleCloud #GCP #Terraform #IaC #DevOps #FinOps

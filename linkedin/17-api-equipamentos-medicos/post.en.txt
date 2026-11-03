@@ -1,0 +1,8 @@
+A BFF on ECS with a pipeline: simple, cheap and easy to operate.
+
+Medical equipment reimbursement API consumed by a portal and partners.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/api-equipamentos-medicos.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

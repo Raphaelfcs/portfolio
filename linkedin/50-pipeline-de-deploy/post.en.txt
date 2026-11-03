@@ -1,0 +1,8 @@
+A per-environment pipeline starts with the image template.
+
+Manual deploys and different images in each environment.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/pipeline-de-deploy.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

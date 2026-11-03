@@ -1,0 +1,8 @@
+A landing zone is not just creating projects: it is ten decisions that must talk to each other.
+
+A complete Google Cloud landing zone: hierarchy, connectivity, GKE and Cloud Run, data, DevOps, migration, APIs, web and storage.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/landing-zone-gcp.html
+
+#GoogleCloud #GCP #Terraform #IaC #DevOps #FinOps #CloudComputing

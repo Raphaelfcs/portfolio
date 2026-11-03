@@ -1,0 +1,8 @@
+Desafio técnico: aplicação web escalável na AWS.
+
+Desafio pedindo alta disponibilidade com o menor custo possível.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/desafio-aplicacao-web.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

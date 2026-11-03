@@ -1,0 +1,8 @@
+Integrating with a regulator is about reliability, not technology.
+
+Periodic submission to the insurance regulator, with retries and proof of delivery.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/envio-ao-regulador.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

@@ -1,0 +1,8 @@
+Migrating to AlloyDB with a way back.
+
+Transactional database needing more performance without rewriting the app.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/migracao-alloydb.html
+
+#GoogleCloud #GCP #Terraform #IaC #DevOps #FinOps #CloudComputing

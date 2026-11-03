@@ -1,0 +1,8 @@
+POC de Terraform com CI/CD no Google Cloud.
+
+Prova de conceito para validar pipeline de IaC antes de adotar em produção.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/poc-terraform-ci-cd.html
+
+#GoogleCloud #GCP #Terraform #IaC #DevOps #FinOps

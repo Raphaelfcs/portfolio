@@ -1,0 +1,8 @@
+Assessment de FinOps: o processo atual cabe em um desenho?
+
+Cliente com processo de custos baseado em planilhas e e-mails.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/finops-atual-x-alvo.html
+
+#Azure #CloudArchitecture #Terraform #IaC #DevOps #FinOps

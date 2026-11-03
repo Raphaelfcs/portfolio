@@ -1,0 +1,8 @@
+Modernizar balanceador começa por entender o AS-IS.
+
+Balanceadores antigos com regras acumuladas ao longo dos anos.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/modernizacao-de-load-balancers.html
+
+#Azure #CloudArchitecture #Terraform #IaC #DevOps #FinOps

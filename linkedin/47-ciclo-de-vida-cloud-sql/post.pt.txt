@@ -1,0 +1,8 @@
+Banco transacional não é lugar para dado de 10 anos atrás.
+
+Cloud SQL crescendo sem parar com dados históricos raramente consultados.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/ciclo-de-vida-cloud-sql.html
+
+#GoogleCloud #GCP #Terraform #IaC #DevOps #FinOps

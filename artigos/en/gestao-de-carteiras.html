@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Member portfolio management · Raphael Santos</title>
+<meta name="description" content="Services on EKS, notifications on Lambda and private integration with the data lake.">
+<meta property="og:title" content="Member portfolio management">
+<meta property="og:description" content="Services on EKS, notifications on Lambda and private integration with the data lake.">
+<meta property="og:type" content="article">
+<link rel="alternate" hreflang="pt-BR" href="../pt/gestao-de-carteiras.html">
+<link rel="icon" href="../../assets/foto.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>/* Leitura no estilo Medium/O'Reilly: coluna de ~68ch em serifa, títulos em grotesca, receitas numeradas. */
+:root{--bg:#F4EEE3;--paper:#FBF8F2;--band:#EAE1D1;--ink:#1A2836;--muted:#566475;--line:#D9CCB6;--blue:#1E5A8F;--blue-ink:#14426B;--sky:#D5E4F0;--code:#18293A;--code-fg:#E9E2D4;
+  --f-d:"Bricolage Grotesque","Avenir Next","Segoe UI",system-ui,sans-serif;--f-r:"Source Serif 4",Charter,Georgia,"Times New Roman",serif;--f-u:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;--f-m:"IBM Plex Mono",ui-monospace,Menlo,monospace;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#111A24;--paper:#1A2633;--band:#16212D;--ink:#ECE5D8;--muted:#A3AFBC;--line:#2A3949;--blue:#8DBDE6;--blue-ink:#B5D4EE;--sky:#203547;--code:#0B131B;color-scheme:dark}}
+*{box-sizing:border-box}[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:19px/1.7 var(--f-r);-webkit-font-smoothing:antialiased;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:var(--blue)}a:hover{color:var(--blue-ink)}:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+.w{max-width:740px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+.top{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0;z-index:5}
+.top .w{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px;max-width:1040px;font:500 14px/1.2 var(--f-u)}
+.me{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font:700 16px/1 var(--f-d)}
+.me img{width:30px;height:30px;border-radius:50%;object-fit:cover;background:var(--sky)}
+.top nav{display:flex;gap:16px;flex-wrap:wrap}.top nav a{text-decoration:none;color:var(--muted)}.top nav a:hover{color:var(--ink)}
+main{padding-block:48px 80px}
+.kicker{font:500 12px/1.4 var(--f-m);letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin:0 0 12px}
+h1{font:800 clamp(34px,5.4vw,50px)/1.06 var(--f-d);letter-spacing:-.028em;margin:0 0 14px;text-wrap:balance}
+.sub{font:400 clamp(19px,2.4vw,23px)/1.45 var(--f-r);color:var(--muted);margin:0 0 26px}
+.by{display:flex;align-items:center;gap:12px;font:14px/1.35 var(--f-u);padding-block:14px;border-block:1px solid var(--line);margin-bottom:34px}
+.by img{width:44px;height:44px;border-radius:50%;object-fit:cover;background:var(--sky)}.by b{display:block}.by span{color:var(--muted)}
+h2{font:700 30px/1.2 var(--f-d);letter-spacing:-.015em;margin:56px 0 14px;display:flex;align-items:baseline;gap:14px;text-wrap:balance}
+h2 span{font:500 14px/1 var(--f-m);color:var(--blue);border:1px solid var(--blue);border-radius:6px;padding:5px 7px}
+h3{font:700 22px/1.3 var(--f-d);margin:34px 0 10px}
+p{margin:0 0 20px}
+figure{margin:34px 0;max-width:100%}figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:8px;background:#fff}
+figure.hero{margin-top:0}
+figcaption{font:14px/1.45 var(--f-u);color:var(--muted);margin-top:10px;text-align:center}
+.tldr,.note{border-left:4px solid var(--blue);background:var(--paper);padding:16px 20px;margin:28px 0;border-radius:0 8px 8px 0}
+.tldr b,.note b{font:600 12px/1 var(--f-m);letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
+.tldr p,.note p{margin:8px 0 0}
+.note{border-left-color:var(--muted)}.note b{color:var(--muted)}
+.steps{padding:0;margin:0 0 20px;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding:4px 0 12px 46px}
+.steps li::before{content:counter(s);position:absolute;left:0;top:4px;width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--bg);font:600 14px/30px var(--f-u);text-align:center}
+pre{background:var(--code);color:var(--code-fg);border-radius:10px;padding:18px 20px;overflow-x:auto;font:14px/1.6 var(--f-m);margin:0 0 24px}
+code{font-family:var(--f-m);font-size:.86em}pre code{font-size:inherit}
+.mods{padding-left:22px}.mods li{margin-bottom:6px}
+.tbl{overflow-x:auto;margin:0 0 18px}
+table{border-collapse:collapse;width:100%;font:15px/1.45 var(--f-u);min-width:520px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:600 12px/1.3 var(--f-m);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.see{padding-left:22px}
+.about{display:flex;gap:16px;margin-top:56px;padding-top:24px;border-top:2px solid var(--ink);font:15px/1.55 var(--f-u)}
+.about img{width:64px;height:64px;border-radius:50%;object-fit:cover;background:var(--sky);flex:none}
+.about p{margin:6px 0 0}.about .anon{color:var(--muted);font-size:13px}
+.idx{list-style:none;padding:0;margin:34px 0 0;font-family:var(--f-u)}
+.idx li{display:grid;grid-template-columns:44px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.idx .n{font:500 14px/1.6 var(--f-m);color:var(--blue)}
+.idx a{text-decoration:none}.idx b{font:700 19px/1.3 var(--f-d);color:var(--ink)}.idx a:hover b{color:var(--blue)}
+.idx small{display:block;color:var(--muted);font-size:14px;margin-top:4px}
+@media (max-width:600px){body{font-size:18px}h2{font-size:25px;margin-top:44px}.top nav a:first-child{display:none}.about{flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="top"><div class="w"><a class="me" href="../../"><img src="../../assets/foto.webp" alt="">Raphael Santos</a>
+<nav><a href="../">All articles</a><a href="../pt/gestao-de-carteiras.html" hreflang="pt-BR">Ler em português</a></nav></div></header>
+<main class="w"><article>
+<p class="kicker">AWS · AWS platform of a health insurer (2024)</p>
+<h1>Member portfolio management</h1><p class="sub">Services on EKS, notifications on Lambda and private integration with the data lake.</p>
+<div class="by"><img src="../../assets/foto.webp" alt=""><div><b>Raphael Santos</b><span>3 min read</span></div></div>
+<figure class="hero"><a href="../img/gestao-de-carteiras-en-1.webp"><img src="../img/gestao-de-carteiras-en-1.webp" alt="Member portfolio management"></a><figcaption>Figure 1: Member portfolio management</figcaption></figure>
+<aside class="tldr"><b>TL;DR</b><p>EKS and Lambda in the same product: each where it makes sense.</p></aside>
+<h2><span>01</span>Problem</h2><p>Member portfolio management with continuous parts and event-driven parts.</p>
+<h2><span>02</span>Solution</h2><p>Core API on EKS, notifications on Lambda, database backup with a dedicated plan and private integration with the data lake account.</p>
+<h3>Member portfolio management</h3><ol class="steps"><li>Portal and app through CloudFront.</li><li>APIs on API Gateway.</li><li>Link and classification services on EKS.</li><li>Data in RDS with backup.</li><li>Lambda sends notifications.</li><li>Integration with the data lake over private network.</li></ol>
+<h3>The code</h3><pre><code>module &quot;kms_key&quot; {
+  source = &quot;git::https://github.com/Raphaelfcs/automacao_terraform.git//aws/kms-key&quot;
+
+  name_prefix             = local.name_prefix
+  deletion_window_in_days = 7
+  tags                    = local.tags
+}
+
+module &quot;vpc&quot; {
+  source = &quot;git::https://github.com/Raphaelfcs/automacao_terraform.git//aws/vpc&quot;
+
+  name_prefix        = local.name_prefix
+  cidr_block         = &quot;10.20.0.0/16&quot;
+  azs                = [&quot;sa-east-1a&quot;, &quot;sa-east-1b&quot;]
+  single_nat_gateway = true
+  eks_cluster_name   = &quot;demo-dev&quot;
+  tags               = local.tags
+}</code></pre>
+<h2><span>03</span>Discussion</h2>
+<p>Terraform modules used:</p><ul class="mods"><li><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/kms-key"><code>aws/kms-key</code></a> Platform KMS key (CMK)</li><li><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/vpc"><code>aws/vpc</code></a> Three-tier VPC</li><li><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/eks-cluster"><code>aws/eks-cluster</code></a> Private EKS cluster</li><li><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/rds-instance"><code>aws/rds-instance</code></a> Private RDS MySQL/PostgreSQL</li><li><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/lambda-function"><code>aws/lambda-function</code></a> Packaged Lambda function</li><li><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/backup-plan"><code>aws/backup-plan</code></a> Centralized AWS Backup</li></ul>
+<h3>FinOps: where the cost is</h3><div class="tbl"><table><thead><tr><th>Component</th><th>What drives cost</th><th>Lever</th></tr></thead><tbody><tr><td><code>aws/eks-cluster</code></td><td>EKS nodes (EC2) and the per-cluster control plane</td><td>node autoscaling (Karpenter/Cluster Autoscaler), Spot for tolerant workloads and Savings Plans for the baseline</td></tr><tr><td><code>aws/rds-instance</code></td><td>RDS instance class and Multi-AZ</td><td>right-size from real metrics, reserve PRD and stop HML/DEV after hours</td></tr><tr><td><code>aws/vpc</code></td><td>NAT Gateway per AZ and the traffic it processes</td><td>a single NAT in DEV and VPC endpoints for S3/ECR to keep traffic off the NAT</td></tr><tr><td><code>aws/lambda-function</code></td><td>function duration × memory</td><td>tune memory with Power Tuning and use arm64</td></tr></tbody></table></div><p>In the repository, aws/tag-compliance, aws/finops-cost-report, aws/cur-focus-export and aws/instance-scheduler close the loop: mandatory tags, cost report, CUR/FOCUS export and shutdown schedule.</p>
+<h2><span>04</span>See also</h2><ul class="see"><li><a href="https://github.com/Raphaelfcs/automacao_terraform/blob/main/labs/arquiteturas/saude/gestao-de-carteiras/README.en.md">Full lab on GitHub ↗</a></li><li><a href="https://github.com/Raphaelfcs/automacao_terraform/blob/main/labs/arquiteturas/telecom/processo-finops/README.en.md">FinOps process ↗</a></li><li><a href="../">All articles</a></li></ul>
+<footer class="about"><img src="../../assets/foto.webp" alt=""><div><b>About the author</b><p>Raphael Santos is a Lead Cloud Architect with 9+ years in DevOps and cloud architecture on AWS, Google Cloud and Azure. All the code in this article is on GitHub.</p><p class="anon">Company names, accounts and IDs were removed; values in the code are fictitious.</p><p><a href="../../">Portfolio</a> · <a href="https://www.linkedin.com/in/raphael-ferreira-coelho-santos/">LinkedIn ↗</a> · <a href="https://github.com/Raphaelfcs">GitHub ↗</a></p></div></footer>
+</article></main>
+</body>
+</html>

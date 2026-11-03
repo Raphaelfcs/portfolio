@@ -1,0 +1,8 @@
+DR de file system: o que importa é o tempo de volta.
+
+Compartilhamento de arquivos crítico sem plano de recuperação.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/dr-de-arquivos-azure.html
+
+#Azure #CloudArchitecture #Terraform #IaC #DevOps #FinOps

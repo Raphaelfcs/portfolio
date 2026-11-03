@@ -1,0 +1,8 @@
+ECS Fargate, EKS ou Beanstalk? Desenhei os três para a mesma aplicação.
+
+Plataforma de benefícios saindo de servidores tradicionais.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/opcoes-de-computacao.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

@@ -1,0 +1,8 @@
+A manual operational routine is a natural candidate for event-driven AI.
+
+Daily routine done by hand, with spreadsheets and visual checks.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/automacao-rgs.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

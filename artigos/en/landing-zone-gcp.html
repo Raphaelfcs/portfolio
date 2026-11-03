@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Google Cloud landing zone · Raphael Santos</title>
+<meta name="description" content="Complete landing zone in ten views: hierarchy, connectivity, GKE and Cloud Run, data security, DevOps, migration, APIs, web and storage.">
+<meta property="og:title" content="Google Cloud landing zone">
+<meta property="og:description" content="Complete landing zone in ten views: hierarchy, connectivity, GKE and Cloud Run, data security, DevOps, migration, APIs, web and storage.">
+<meta property="og:type" content="article">
+<link rel="alternate" hreflang="pt-BR" href="../pt/landing-zone-gcp.html">
+<link rel="icon" href="../../assets/foto.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>/* Leitura no estilo Medium/O'Reilly: coluna de ~68ch em serifa, títulos em grotesca, receitas numeradas. */
+:root{--bg:#F4EEE3;--paper:#FBF8F2;--band:#EAE1D1;--ink:#1A2836;--muted:#566475;--line:#D9CCB6;--blue:#1E5A8F;--blue-ink:#14426B;--sky:#D5E4F0;--code:#18293A;--code-fg:#E9E2D4;
+  --f-d:"Bricolage Grotesque","Avenir Next","Segoe UI",system-ui,sans-serif;--f-r:"Source Serif 4",Charter,Georgia,"Times New Roman",serif;--f-u:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;--f-m:"IBM Plex Mono",ui-monospace,Menlo,monospace;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#111A24;--paper:#1A2633;--band:#16212D;--ink:#ECE5D8;--muted:#A3AFBC;--line:#2A3949;--blue:#8DBDE6;--blue-ink:#B5D4EE;--sky:#203547;--code:#0B131B;color-scheme:dark}}
+*{box-sizing:border-box}[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:19px/1.7 var(--f-r);-webkit-font-smoothing:antialiased;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:var(--blue)}a:hover{color:var(--blue-ink)}:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+.w{max-width:740px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+.top{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0;z-index:5}
+.top .w{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px;max-width:1040px;font:500 14px/1.2 var(--f-u)}
+.me{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font:700 16px/1 var(--f-d)}
+.me img{width:30px;height:30px;border-radius:50%;object-fit:cover;background:var(--sky)}
+.top nav{display:flex;gap:16px;flex-wrap:wrap}.top nav a{text-decoration:none;color:var(--muted)}.top nav a:hover{color:var(--ink)}
+main{padding-block:48px 80px}
+.kicker{font:500 12px/1.4 var(--f-m);letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin:0 0 12px}
+h1{font:800 clamp(34px,5.4vw,50px)/1.06 var(--f-d);letter-spacing:-.028em;margin:0 0 14px;text-wrap:balance}
+.sub{font:400 clamp(19px,2.4vw,23px)/1.45 var(--f-r);color:var(--muted);margin:0 0 26px}
+.by{display:flex;align-items:center;gap:12px;font:14px/1.35 var(--f-u);padding-block:14px;border-block:1px solid var(--line);margin-bottom:34px}
+.by img{width:44px;height:44px;border-radius:50%;object-fit:cover;background:var(--sky)}.by b{display:block}.by span{color:var(--muted)}
+h2{font:700 30px/1.2 var(--f-d);letter-spacing:-.015em;margin:56px 0 14px;display:flex;align-items:baseline;gap:14px;text-wrap:balance}
+h2 span{font:500 14px/1 var(--f-m);color:var(--blue);border:1px solid var(--blue);border-radius:6px;padding:5px 7px}
+h3{font:700 22px/1.3 var(--f-d);margin:34px 0 10px}
+p{margin:0 0 20px}
+figure{margin:34px 0;max-width:100%}figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:8px;background:#fff}
+figure.hero{margin-top:0}
+figcaption{font:14px/1.45 var(--f-u);color:var(--muted);margin-top:10px;text-align:center}
+.tldr,.note{border-left:4px solid var(--blue);background:var(--paper);padding:16px 20px;margin:28px 0;border-radius:0 8px 8px 0}
+.tldr b,.note b{font:600 12px/1 var(--f-m);letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
+.tldr p,.note p{margin:8px 0 0}
+.note{border-left-color:var(--muted)}.note b{color:var(--muted)}
+.steps{padding:0;margin:0 0 20px;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding:4px 0 12px 46px}
+.steps li::before{content:counter(s);position:absolute;left:0;top:4px;width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--bg);font:600 14px/30px var(--f-u);text-align:center}
+pre{background:var(--code);color:var(--code-fg);border-radius:10px;padding:18px 20px;overflow-x:auto;font:14px/1.6 var(--f-m);margin:0 0 24px}
+code{font-family:var(--f-m);font-size:.86em}pre code{font-size:inherit}
+.mods{padding-left:22px}.mods li{margin-bottom:6px}
+.tbl{overflow-x:auto;margin:0 0 18px}
+table{border-collapse:collapse;width:100%;font:15px/1.45 var(--f-u);min-width:520px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:600 12px/1.3 var(--f-m);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.see{padding-left:22px}
+.about{display:flex;gap:16px;margin-top:56px;padding-top:24px;border-top:2px solid var(--ink);font:15px/1.55 var(--f-u)}
+.about img{width:64px;height:64px;border-radius:50%;object-fit:cover;background:var(--sky);flex:none}
+.about p{margin:6px 0 0}.about .anon{color:var(--muted);font-size:13px}
+.idx{list-style:none;padding:0;margin:34px 0 0;font-family:var(--f-u)}
+.idx li{display:grid;grid-template-columns:44px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.idx .n{font:500 14px/1.6 var(--f-m);color:var(--blue)}
+.idx a{text-decoration:none}.idx b{font:700 19px/1.3 var(--f-d);color:var(--ink)}.idx a:hover b{color:var(--blue)}
+.idx small{display:block;color:var(--muted);font-size:14px;margin-top:4px}
+@media (max-width:600px){body{font-size:18px}h2{font-size:25px;margin-top:44px}.top nav a:first-child{display:none}.about{flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="top"><div class="w"><a class="me" href="../../"><img src="../../assets/foto.webp" alt="">Raphael Santos</a>
+<nav><a href="../">All articles</a><a href="../pt/landing-zone-gcp.html" hreflang="pt-BR">Ler em português</a></nav></div></header>
+<main class="w"><article>
+<p class="kicker">Google Cloud · Google Cloud reference architectures (2026)</p>
+<h1>Google Cloud landing zone</h1><p class="sub">Complete landing zone in ten views: hierarchy, connectivity, GKE and Cloud Run, data security, DevOps, migration, APIs, web and storage.</p>
+<div class="by"><img src="../../assets/foto.webp" alt=""><div><b>Raphael Santos</b><span>3 min read</span></div></div>
+<figure class="hero"><a href="../img/landing-zone-gcp-en-1.webp"><img src="../img/landing-zone-gcp-en-1.webp" alt="1 · Landing zone (resource tree)"></a><figcaption>Figure 1: 1 · Landing zone (resource tree)</figcaption></figure>
+<aside class="tldr"><b>TL;DR</b><p>A landing zone is not just creating projects: it is ten decisions that must talk to each other.</p></aside>
+<h2><span>01</span>Problem</h2><p>A complete Google Cloud landing zone: hierarchy, connectivity, GKE and Cloud Run, data, DevOps, migration, APIs, web and storage.</p>
+<h2><span>02</span>Solution</h2><p>One page per decision. Each page answers one question from the architecture board and points to the Terraform module that implements it.</p>
+<figure><a href="../img/landing-zone-gcp-en-2.webp"><img loading="lazy" src="../img/landing-zone-gcp-en-2.webp" alt="2 · Connectivity"></a><figcaption>Figure 2: 2 · Connectivity</figcaption></figure>
+<figure><a href="../img/landing-zone-gcp-en-3.webp"><img loading="lazy" src="../img/landing-zone-gcp-en-3.webp" alt="3 · GKE and Cloud Run"></a><figcaption>Figure 3: 3 · GKE and Cloud Run</figcaption></figure>
+<h3>The code</h3><pre><code>module &quot;project_foundation&quot; {
+  source = &quot;git::https://github.com/Raphaelfcs/automacao_terraform.git//gcp/project-foundation&quot;
+
+  project_id       = &quot;demo-plataforma-dev&quot;
+  project_name     = &quot;Demo Plataforma&quot;
+  billing_account  = &quot;000000-000000-000000&quot;
+  apis             = [&quot;compute.googleapis.com&quot;, &quot;container.googleapis.com&quot;, &quot;sqladmin.googleapis.com&quot;]
+  boolean_policies = [&quot;compute.skipDefaultNetworkCreation&quot;, &quot;iam.disableServiceAccountKeyCreation&quot;, &quot;storage.uniformBucketLevelAccess&quot;]
+  labels           = local.labels
+}
+
+module &quot;vpc_network&quot; {
+  source = &quot;git::https://github.com/Raphaelfcs/automacao_terraform.git//gcp/vpc-network&quot;
+
+  project_id = module.project_foundation.project_id
+  region     = local.region
+  subnet     = { name = &quot;sn-gke-sp&quot;, cidr = &quot;10.10.0.0/20&quot;, pods_cidr = &quot;10.20.0.0/16&quot;, services_cidr = &quot;10.30.0.0/20&quot; }
+  psa_range  = { address = &quot;10.40.0.0&quot;, prefix_length = 16 }
+}</code></pre>
+<h2><span>03</span>Discussion</h2>
+<p>Terraform modules used:</p><ul class="mods"><li><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/gcp/project-foundation"><code>gcp/project-foundation</code></a> GCP project with APIs and org policies</li><li><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/gcp/vpc-network"><code>gcp/vpc-network</code></a> GCP VPC with secondary ranges and PSA</li><li><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/gcp/gke-private"><code>gcp/gke-private</code></a> Private GKE with Workload Identity</li><li><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/gcp/cloud-sql"><code>gcp/cloud-sql</code></a> Private Cloud SQL</li><li><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/gcp/pubsub"><code>gcp/pubsub</code></a> Pub/Sub + Cloud Function (notification)</li><li><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/gcp/edge-load-balancer"><code>gcp/edge-load-balancer</code></a> Global Load Balancer + Cloud Armor</li></ul>
+<h3>FinOps: where the cost is</h3><div class="tbl"><table><thead><tr><th>Component</th><th>What drives cost</th><th>Lever</th></tr></thead><tbody><tr><td><code>gcp/gke-private</code></td><td>GKE nodes (or pods on Autopilot)</td><td>Autopilot to pay per pod, Spot VMs and CUDs for the baseline</td></tr><tr><td><code>gcp/cloud-sql</code></td><td>Cloud SQL vCPU/memory and HA</td><td>right-size from metrics, CUDs for PRD and stop non-production</td></tr><tr><td><code>gcp/vpc-network</code></td><td>Cloud NAT and cross-zone/region traffic</td><td>Private Google Access and keep traffic in the same region</td></tr><tr><td><code>gcp/project-foundation</code></td><td>cost starts in projects without an owner</td><td>labels on every project (the module already applies them) and a budget alert in Billing</td></tr></tbody></table></div><p>The FinOps cycle I use (inform, optimize, operate) is drawn in the FinOps process lab in the repository.</p>
+<h2><span>04</span>See also</h2><ul class="see"><li><a href="https://github.com/Raphaelfcs/automacao_terraform/blob/main/labs/arquiteturas/google-cloud/landing-zone-gcp/README.en.md">Full lab on GitHub ↗</a></li><li><a href="https://github.com/Raphaelfcs/automacao_terraform/blob/main/labs/arquiteturas/telecom/processo-finops/README.en.md">FinOps process ↗</a></li><li><a href="../">All articles</a></li></ul>
+<footer class="about"><img src="../../assets/foto.webp" alt=""><div><b>About the author</b><p>Raphael Santos is a Lead Cloud Architect with 9+ years in DevOps and cloud architecture on AWS, Google Cloud and Azure. All the code in this article is on GitHub.</p><p class="anon">Company names, accounts and IDs were removed; values in the code are fictitious.</p><p><a href="../../">Portfolio</a> · <a href="https://www.linkedin.com/in/raphael-ferreira-coelho-santos/">LinkedIn ↗</a> · <a href="https://github.com/Raphaelfcs">GitHub ↗</a></p></div></footer>
+</article></main>
+</body>
+</html>

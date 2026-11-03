@@ -1,0 +1,8 @@
+Antes de migrar, desenhe como tudo conversa hoje.
+
+Seguradora com ambientes espalhados e pouca documentação de conectividade.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/conectividade.html
+
+#Azure #CloudArchitecture #Terraform #IaC #DevOps #FinOps

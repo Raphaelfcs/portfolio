@@ -1,0 +1,8 @@
+An AI MVP does not need a GPU cluster. It needs traceability.
+
+Manual document-reading process, with rework and no trail of who did what.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/automacao-com-ia-mvp.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

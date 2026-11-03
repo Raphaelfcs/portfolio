@@ -1,0 +1,8 @@
+Technical challenge: a scalable web application on AWS.
+
+Challenge asking for high availability at the lowest possible cost.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/desafio-aplicacao-web.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

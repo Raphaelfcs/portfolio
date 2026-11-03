@@ -1,0 +1,8 @@
+Doze visões de uma mesma plataforma: foi assim que consegui explicar a AWS de uma operadora de saúde.
+
+Ambiente grande, com backup, orquestradores em duas regiões, OCI, ECS, EKS e IaC, e cada time conhecendo só um pedaço.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/visao-geral-plataforma.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

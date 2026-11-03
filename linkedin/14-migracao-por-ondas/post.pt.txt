@@ -1,0 +1,8 @@
+Migrar para Kubernetes em uma onda só é aposta. Em ondas é engenharia.
+
+Sistema corporativo com dezenas de componentes indo para o EKS.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/migracao-por-ondas.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

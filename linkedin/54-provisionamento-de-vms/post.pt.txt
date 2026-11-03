@@ -1,0 +1,8 @@
+Pedido de VM que leva semanas é processo, não tecnologia.
+
+Criação de VMs Linux e bancos (PaaS ou IaaS) com várias aprovações manuais.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/provisionamento-de-vms.html
+
+#Azure #CloudArchitecture #Terraform #IaC #DevOps #FinOps

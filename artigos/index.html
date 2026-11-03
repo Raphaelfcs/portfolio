@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Artigos · Articles · Raphael Santos</title>
+<meta name="description" content="Arquiteturas reais com desenho, Terraform e FinOps.">
+<meta property="og:title" content="Artigos · Articles">
+<meta property="og:description" content="Arquiteturas reais com desenho, Terraform e FinOps.">
+<meta property="og:type" content="article">
+
+<link rel="icon" href="../assets/foto.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>/* Leitura no estilo Medium/O'Reilly: coluna de ~68ch em serifa, títulos em grotesca, receitas numeradas. */
+:root{--bg:#F4EEE3;--paper:#FBF8F2;--band:#EAE1D1;--ink:#1A2836;--muted:#566475;--line:#D9CCB6;--blue:#1E5A8F;--blue-ink:#14426B;--sky:#D5E4F0;--code:#18293A;--code-fg:#E9E2D4;
+  --f-d:"Bricolage Grotesque","Avenir Next","Segoe UI",system-ui,sans-serif;--f-r:"Source Serif 4",Charter,Georgia,"Times New Roman",serif;--f-u:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;--f-m:"IBM Plex Mono",ui-monospace,Menlo,monospace;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#111A24;--paper:#1A2633;--band:#16212D;--ink:#ECE5D8;--muted:#A3AFBC;--line:#2A3949;--blue:#8DBDE6;--blue-ink:#B5D4EE;--sky:#203547;--code:#0B131B;color-scheme:dark}}
+*{box-sizing:border-box}[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:19px/1.7 var(--f-r);-webkit-font-smoothing:antialiased;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:var(--blue)}a:hover{color:var(--blue-ink)}:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+.w{max-width:740px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+.top{border-bottom:1px solid var(--line);background:var(--bg);position:sticky;top:0;z-index:5}
+.top .w{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px;max-width:1040px;font:500 14px/1.2 var(--f-u)}
+.me{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font:700 16px/1 var(--f-d)}
+.me img{width:30px;height:30px;border-radius:50%;object-fit:cover;background:var(--sky)}
+.top nav{display:flex;gap:16px;flex-wrap:wrap}.top nav a{text-decoration:none;color:var(--muted)}.top nav a:hover{color:var(--ink)}
+main{padding-block:48px 80px}
+.kicker{font:500 12px/1.4 var(--f-m);letter-spacing:.12em;text-transform:uppercase;color:var(--blue);margin:0 0 12px}
+h1{font:800 clamp(34px,5.4vw,50px)/1.06 var(--f-d);letter-spacing:-.028em;margin:0 0 14px;text-wrap:balance}
+.sub{font:400 clamp(19px,2.4vw,23px)/1.45 var(--f-r);color:var(--muted);margin:0 0 26px}
+.by{display:flex;align-items:center;gap:12px;font:14px/1.35 var(--f-u);padding-block:14px;border-block:1px solid var(--line);margin-bottom:34px}
+.by img{width:44px;height:44px;border-radius:50%;object-fit:cover;background:var(--sky)}.by b{display:block}.by span{color:var(--muted)}
+h2{font:700 30px/1.2 var(--f-d);letter-spacing:-.015em;margin:56px 0 14px;display:flex;align-items:baseline;gap:14px;text-wrap:balance}
+h2 span{font:500 14px/1 var(--f-m);color:var(--blue);border:1px solid var(--blue);border-radius:6px;padding:5px 7px}
+h3{font:700 22px/1.3 var(--f-d);margin:34px 0 10px}
+p{margin:0 0 20px}
+figure{margin:34px 0;max-width:100%}figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:8px;background:#fff}
+figure.hero{margin-top:0}
+figcaption{font:14px/1.45 var(--f-u);color:var(--muted);margin-top:10px;text-align:center}
+.tldr,.note{border-left:4px solid var(--blue);background:var(--paper);padding:16px 20px;margin:28px 0;border-radius:0 8px 8px 0}
+.tldr b,.note b{font:600 12px/1 var(--f-m);letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
+.tldr p,.note p{margin:8px 0 0}
+.note{border-left-color:var(--muted)}.note b{color:var(--muted)}
+.steps{padding:0;margin:0 0 20px;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;position:relative;padding:4px 0 12px 46px}
+.steps li::before{content:counter(s);position:absolute;left:0;top:4px;width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--bg);font:600 14px/30px var(--f-u);text-align:center}
+pre{background:var(--code);color:var(--code-fg);border-radius:10px;padding:18px 20px;overflow-x:auto;font:14px/1.6 var(--f-m);margin:0 0 24px}
+code{font-family:var(--f-m);font-size:.86em}pre code{font-size:inherit}
+.mods{padding-left:22px}.mods li{margin-bottom:6px}
+.tbl{overflow-x:auto;margin:0 0 18px}
+table{border-collapse:collapse;width:100%;font:15px/1.45 var(--f-u);min-width:520px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:600 12px/1.3 var(--f-m);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.see{padding-left:22px}
+.about{display:flex;gap:16px;margin-top:56px;padding-top:24px;border-top:2px solid var(--ink);font:15px/1.55 var(--f-u)}
+.about img{width:64px;height:64px;border-radius:50%;object-fit:cover;background:var(--sky);flex:none}
+.about p{margin:6px 0 0}.about .anon{color:var(--muted);font-size:13px}
+.idx{list-style:none;padding:0;margin:34px 0 0;font-family:var(--f-u)}
+.idx li{display:grid;grid-template-columns:44px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.idx .n{font:500 14px/1.6 var(--f-m);color:var(--blue)}
+.idx a{text-decoration:none}.idx b{font:700 19px/1.3 var(--f-d);color:var(--ink)}.idx a:hover b{color:var(--blue)}
+.idx small{display:block;color:var(--muted);font-size:14px;margin-top:4px}
+@media (max-width:600px){body{font-size:18px}h2{font-size:25px;margin-top:44px}.top nav a:first-child{display:none}.about{flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="top"><div class="w"><a class="me" href="../"><img src="../assets/foto.webp" alt="">Raphael Santos</a><nav><a href="../">Portfólio · Portfolio</a></nav></div></header>
+<main class="w"><h1>Artigos · Articles</h1><p class="sub">Arquiteturas reais, uma por artigo, com desenho, código Terraform e FinOps. Real architectures, one per article, with diagram, Terraform code and FinOps.</p><ol class="idx">
+<li><span class="n">01</span><div><a href="pt/transformacao-digital-h1-h3.html"><b>Evolução de arquitetura em três horizontes</b></a><small>Estudos de caso de arquitetura (2026) · <a href="en/transformacao-digital-h1-h3.html" hreflang="en">English: Architecture evolution in three horizons</a></small></div></li>
+<li><span class="n">02</span><div><a href="pt/automacao-com-ia-mvp.html"><b>MVP de automação de processos com IA</b></a><small>Estudos de caso de arquitetura (2026) · <a href="en/automacao-com-ia-mvp.html" hreflang="en">English: AI process automation MVP</a></small></div></li>
+<li><span class="n">03</span><div><a href="pt/fundacao-google-cloud.html"><b>Fundação no Google Cloud em três horizontes</b></a><small>Estudos de caso de arquitetura (2026) · <a href="en/fundacao-google-cloud.html" hreflang="en">English: Google Cloud foundation in three horizons</a></small></div></li>
+<li><span class="n">04</span><div><a href="pt/arvore-iam-google-cloud.html"><b>Árvore de recursos e permissões no Google Cloud</b></a><small>Estudos de caso de arquitetura (2026) · <a href="en/arvore-iam-google-cloud.html" hreflang="en">English: Google Cloud resource and permission tree</a></small></div></li>
+<li><span class="n">05</span><div><a href="pt/landing-zone-gcp.html"><b>Landing zone no Google Cloud</b></a><small>Arquiteturas de referência no Google Cloud (2026) · <a href="en/landing-zone-gcp.html" hreflang="en">English: Google Cloud landing zone</a></small></div></li>
+<li><span class="n">06</span><div><a href="pt/compartilhamento-de-rede.html"><b>Compartilhamento de rede no Google Cloud</b></a><small>Arquiteturas de referência no Google Cloud (2026) · <a href="en/compartilhamento-de-rede.html" hreflang="en">English: Network sharing on Google Cloud</a></small></div></li>
+<li><span class="n">07</span><div><a href="pt/gke-seguro.html"><b>GKE seguro de ponta a ponta</b></a><small>Arquiteturas de referência no Google Cloud (2026) · <a href="en/gke-seguro.html" hreflang="en">English: Secure GKE end to end</a></small></div></li>
+<li><span class="n">08</span><div><a href="pt/poc-terraform-ci-cd.html"><b>POC de Terraform com CI/CD no Google Cloud</b></a><small>Arquiteturas de referência no Google Cloud (2026) · <a href="en/poc-terraform-ci-cd.html" hreflang="en">English: Terraform CI/CD POC on Google Cloud</a></small></div></li>
+<li><span class="n">09</span><div><a href="pt/visao-geral-plataforma.html"><b>Plataforma AWS de uma operadora de saúde</b></a><small>Plataforma AWS de uma operadora de saúde (2024) · <a href="en/visao-geral-plataforma.html" hreflang="en">English: AWS platform of a health insurer</a></small></div></li>
+<li><span class="n">10</span><div><a href="pt/autenticacao-b2c.html"><b>Autenticação B2C em ECS Fargate</b></a><small>Plataforma AWS de uma operadora de saúde (2024) · <a href="en/autenticacao-b2c.html" hreflang="en">English: B2C authentication on ECS Fargate</a></small></div></li>
+<li><span class="n">11</span><div><a href="pt/cluster-eks.html"><b>Cluster EKS compartilhado</b></a><small>Plataforma AWS de uma operadora de saúde (2024) · <a href="en/cluster-eks.html" hreflang="en">English: Shared EKS cluster</a></small></div></li>
+<li><span class="n">12</span><div><a href="pt/evolucao-portal-de-seguros.html"><b>Evolução do portal de seguros</b></a><small>Plataforma AWS de uma operadora de saúde (2024) · <a href="en/evolucao-portal-de-seguros.html" hreflang="en">English: Insurance portal evolution</a></small></div></li>
+<li><span class="n">13</span><div><a href="pt/relatorios-regulatorios.html"><b>Relatórios regulatórios assíncronos</b></a><small>Plataforma AWS de uma operadora de saúde (2024) · <a href="en/relatorios-regulatorios.html" hreflang="en">English: Asynchronous regulatory reports</a></small></div></li>
+<li><span class="n">14</span><div><a href="pt/migracao-por-ondas.html"><b>Migração por ondas para EKS</b></a><small>Plataforma AWS de uma operadora de saúde (2024) · <a href="en/migracao-por-ondas.html" hreflang="en">English: Wave-based migration to EKS</a></small></div></li>
+<li><span class="n">15</span><div><a href="pt/ocr-de-documentos.html"><b>OCR de documentos em escala</b></a><small>Plataforma AWS de uma operadora de saúde (2024) · <a href="en/ocr-de-documentos.html" hreflang="en">English: Document OCR at scale</a></small></div></li>
+<li><span class="n">16</span><div><a href="pt/ocr-de-documentos-v2.html"><b>OCR de documentos — API v2</b></a><small>Plataforma AWS de uma operadora de saúde (2024) · <a href="en/ocr-de-documentos-v2.html" hreflang="en">English: Document OCR — API v2</a></small></div></li>
+<li><span class="n">17</span><div><a href="pt/api-equipamentos-medicos.html"><b>API de reembolso de equipamentos médicos</b></a><small>Plataforma AWS de uma operadora de saúde (2024) · <a href="en/api-equipamentos-medicos.html" hreflang="en">English: Medical equipment reimbursement API</a></small></div></li>
+<li><span class="n">18</span><div><a href="pt/automacao-rgs.html"><b>Automação de rotina operacional com IA</b></a><small>Plataforma AWS de uma operadora de saúde (2024) · <a href="en/automacao-rgs.html" hreflang="en">English: Operational routine automation with AI</a></small></div></li>
+<li><span class="n">19</span><div><a href="pt/envio-ao-regulador.html"><b>Envio periódico ao órgão regulador</b></a><small>Plataforma AWS de uma operadora de saúde (2024) · <a href="en/envio-ao-regulador.html" hreflang="en">English: Periodic submission to the regulator</a></small></div></li>
+<li><span class="n">20</span><div><a href="pt/api-de-download.html"><b>API de download por URL pré-assinada</b></a><small>Plataforma AWS de uma operadora de saúde (2024) · <a href="en/api-de-download.html" hreflang="en">English: Download API with pre-signed URLs</a></small></div></li>
+<li><span class="n">21</span><div><a href="pt/bff-acesso-externo.html"><b>BFF para parceiros externos</b></a><small>Plataforma AWS de uma operadora de saúde (2024) · <a href="en/bff-acesso-externo.html" hreflang="en">English: BFF for external partners</a></small></div></li>
+<li><span class="n">22</span><div><a href="pt/gestao-de-carteiras.html"><b>Gestão de carteiras de beneficiários</b></a><small>Plataforma AWS de uma operadora de saúde (2024) · <a href="en/gestao-de-carteiras.html" hreflang="en">English: Member portfolio management</a></small></div></li>
+<li><span class="n">23</span><div><a href="pt/simulador-odontologico.html"><b>Simulador de prévia de gastos</b></a><small>Plataforma AWS de uma operadora de saúde (2024) · <a href="en/simulador-odontologico.html" hreflang="en">English: Cost preview simulator</a></small></div></li>
+<li><span class="n">24</span><div><a href="pt/bloqueio-e-reset-de-acesso.html"><b>Bloqueio e reset de acesso compartilhado</b></a><small>Plataforma AWS de uma operadora de saúde (2024) · <a href="en/bloqueio-e-reset-de-acesso.html" hreflang="en">English: Shared access lock and reset</a></small></div></li>
+<li><span class="n">25</span><div><a href="pt/processamento-em-lote.html"><b>Processamento em lote com AWS Batch</b></a><small>Plataforma AWS de uma operadora de saúde (2024) · <a href="en/processamento-em-lote.html" hreflang="en">English: Batch processing with AWS Batch</a></small></div></li>
+<li><span class="n">26</span><div><a href="pt/portal-de-corretores.html"><b>Portal de corretores</b></a><small>Plataforma AWS de uma operadora de saúde (2024) · <a href="en/portal-de-corretores.html" hreflang="en">English: Broker portal</a></small></div></li>
+<li><span class="n">27</span><div><a href="pt/negociacao-de-debitos.html"><b>Portal de negociação de débitos</b></a><small>Plataforma AWS de uma operadora de saúde (2024) · <a href="en/negociacao-de-debitos.html" hreflang="en">English: Debt negotiation portal</a></small></div></li>
+<li><span class="n">28</span><div><a href="pt/guardrails-s3-rds-cloudfront.html"><b>Guardrails para S3, RDS e CloudFront</b></a><small>Plataforma AWS de uma operadora de saúde (2024) · <a href="en/guardrails-s3-rds-cloudfront.html" hreflang="en">English: Guardrails for S3, RDS and CloudFront</a></small></div></li>
+<li><span class="n">29</span><div><a href="pt/rede-oci.html"><b>Rede híbrida na OCI</b></a><small>Plataforma AWS de uma operadora de saúde (2024) · <a href="en/rede-oci.html" hreflang="en">English: Hybrid network on OCI</a></small></div></li>
+<li><span class="n">30</span><div><a href="pt/autenticacao-b2c-v1.html"><b>Autenticação B2C — primeira versão</b></a><small>Plataforma AWS de uma operadora de saúde (2024) · <a href="en/autenticacao-b2c-v1.html" hreflang="en">English: B2C authentication — first version</a></small></div></li>
+<li><span class="n">31</span><div><a href="pt/processo-finops.html"><b>Processo de FinOps</b></a><small>CCoE, landing zone e plataforma de uma operadora de telecom (2025-2026) · <a href="en/processo-finops.html" hreflang="en">English: FinOps process</a></small></div></li>
+<li><span class="n">32</span><div><a href="pt/infra-staging-c4.html"><b>Infra de staging em C4</b></a><small>CCoE, landing zone e plataforma de uma operadora de telecom (2025-2026) · <a href="en/infra-staging-c4.html" hreflang="en">English: Staging infrastructure in C4</a></small></div></li>
+<li><span class="n">33</span><div><a href="pt/fundamentos-aws.html"><b>Fundamentos de AWS: identidade e guardrails</b></a><small>CCoE, landing zone e plataforma de uma operadora de telecom (2025-2026) · <a href="en/fundamentos-aws.html" hreflang="en">English: AWS fundamentals: identity and guardrails</a></small></div></li>
+<li><span class="n">34</span><div><a href="pt/iac-cdk-x-terraform.html"><b>IaC: CDK x Terraform</b></a><small>CCoE, landing zone e plataforma de uma operadora de telecom (2025-2026) · <a href="en/iac-cdk-x-terraform.html" hreflang="en">English: IaC: CDK vs Terraform</a></small></div></li>
+<li><span class="n">35</span><div><a href="pt/landing-zone-azure.html"><b>Landing zone Azure com AKS privado</b></a><small>CCoE, landing zone e plataforma de uma operadora de telecom (2025-2026) · <a href="en/landing-zone-azure.html" hreflang="en">English: Azure landing zone with private AKS</a></small></div></li>
+<li><span class="n">36</span><div><a href="pt/eks-core-5g.html"><b>EKS para funções de core 5G</b></a><small>CCoE, landing zone e plataforma de uma operadora de telecom (2025-2026) · <a href="en/eks-core-5g.html" hreflang="en">English: EKS for 5G core network functions</a></small></div></li>
+<li><span class="n">37</span><div><a href="pt/integracao-rede-parceiro.html"><b>Integração de rede com parceiro</b></a><small>CCoE, landing zone e plataforma de uma operadora de telecom (2025-2026) · <a href="en/integracao-rede-parceiro.html" hreflang="en">English: Partner network integration</a></small></div></li>
+<li><span class="n">38</span><div><a href="pt/plataforma-multicloud.html"><b>Plataforma de tarifação multicloud</b></a><small>CCoE, landing zone e plataforma de uma operadora de telecom (2025-2026) · <a href="en/plataforma-multicloud.html" hreflang="en">English: Multicloud charging platform</a></small></div></li>
+<li><span class="n">39</span><div><a href="pt/migracao-de-conta-aws.html"><b>Migração de workload entre contas AWS</b></a><small>CCoE, landing zone e plataforma de uma operadora de telecom (2025-2026) · <a href="en/migracao-de-conta-aws.html" hreflang="en">English: Moving a workload between AWS accounts</a></small></div></li>
+<li><span class="n">40</span><div><a href="pt/governanca-ci-cd-repos.html"><b>Governança de CI/CD para repositórios Terraform</b></a><small>CCoE, landing zone e plataforma de uma operadora de telecom (2025-2026) · <a href="en/governanca-ci-cd-repos.html" hreflang="en">English: CI/CD governance for Terraform repositories</a></small></div></li>
+<li><span class="n">41</span><div><a href="pt/templates-de-iac.html"><b>Portal do desenvolvedor com templates de IaC</b></a><small>Portal do desenvolvedor e templates de infraestrutura (2024) · <a href="en/templates-de-iac.html" hreflang="en">English: Developer portal with IaC templates</a></small></div></li>
+<li><span class="n">42</span><div><a href="pt/workflow-multi-x-mono-repo.html"><b>Workflow de templates: multi-repo x monorepo</b></a><small>Portal do desenvolvedor e templates de infraestrutura (2024) · <a href="en/workflow-multi-x-mono-repo.html" hreflang="en">English: Template workflow: multi-repo vs monorepo</a></small></div></li>
+<li><span class="n">43</span><div><a href="pt/catalogo-de-servicos.html"><b>Catálogo de serviços self-service</b></a><small>Portal do desenvolvedor e templates de infraestrutura (2024) · <a href="en/catalogo-de-servicos.html" hreflang="en">English: Self-service catalog</a></small></div></li>
+<li><span class="n">44</span><div><a href="pt/gateways-de-api.html"><b>Gateways de API no Google Cloud</b></a><small>Rede, gateways e dados no Google Cloud (2024) · <a href="en/gateways-de-api.html" hreflang="en">English: API gateways on Google Cloud</a></small></div></li>
+<li><span class="n">45</span><div><a href="pt/rede-gke-compartilhada.html"><b>Shared VPC para GKE e bancos</b></a><small>Rede, gateways e dados no Google Cloud (2024) · <a href="en/rede-gke-compartilhada.html" hreflang="en">English: Shared VPC for GKE and databases</a></small></div></li>
+<li><span class="n">46</span><div><a href="pt/api-gateway-externo-kong.html"><b>Kong externo na DMZ do GKE</b></a><small>Rede, gateways e dados no Google Cloud (2024) · <a href="en/api-gateway-externo-kong.html" hreflang="en">English: External Kong in the GKE DMZ</a></small></div></li>
+<li><span class="n">47</span><div><a href="pt/ciclo-de-vida-cloud-sql.html"><b>Ciclo de vida de dados do Cloud SQL</b></a><small>Rede, gateways e dados no Google Cloud (2024) · <a href="en/ciclo-de-vida-cloud-sql.html" hreflang="en">English: Cloud SQL data lifecycle</a></small></div></li>
+<li><span class="n">48</span><div><a href="pt/migracao-alloydb.html"><b>Migração para AlloyDB</b></a><small>Rede, gateways e dados no Google Cloud (2024) · <a href="en/migracao-alloydb.html" hreflang="en">English: Migration to AlloyDB</a></small></div></li>
+<li><span class="n">49</span><div><a href="pt/opcoes-de-computacao.html"><b>Opções de computação: ECS, EKS e Beanstalk</b></a><small>Plataforma de benefícios em AWS (2023) · <a href="en/opcoes-de-computacao.html" hreflang="en">English: Compute options: ECS, EKS and Beanstalk</a></small></div></li>
+<li><span class="n">50</span><div><a href="pt/pipeline-de-deploy.html"><b>Pipeline de deploy por ambiente</b></a><small>Plataforma de benefícios em AWS (2023) · <a href="en/pipeline-de-deploy.html" hreflang="en">English: Deployment pipeline per environment</a></small></div></li>
+<li><span class="n">51</span><div><a href="pt/conectividade.html"><b>Integração assíncrona com filas no Azure</b></a><small>Governança e modernização em Azure para uma seguradora (2024-2025) · <a href="en/conectividade.html" hreflang="en">English: Asynchronous queue integration on Azure</a></small></div></li>
+<li><span class="n">52</span><div><a href="pt/storage-legado.html"><b>Storage legado: inventário antes da migração</b></a><small>Governança e modernização em Azure para uma seguradora (2024-2025) · <a href="en/storage-legado.html" hreflang="en">English: Legacy storage: inventory before migration</a></small></div></li>
+<li><span class="n">53</span><div><a href="pt/governanca-iac-devops.html"><b>Governança de IaC e DevOps no Azure</b></a><small>Governança e modernização em Azure para uma seguradora (2024-2025) · <a href="en/governanca-iac-devops.html" hreflang="en">English: IaC and DevOps governance on Azure</a></small></div></li>
+<li><span class="n">54</span><div><a href="pt/provisionamento-de-vms.html"><b>Provisionamento de VMs automatizado</b></a><small>Governança e modernização em Azure para uma seguradora (2024-2025) · <a href="en/provisionamento-de-vms.html" hreflang="en">English: Automated VM provisioning</a></small></div></li>
+<li><span class="n">55</span><div><a href="pt/governanca-de-nuvem.html"><b>Governança de nuvem e cálculo de migração</b></a><small>Governança e modernização em Azure para uma seguradora (2024-2025) · <a href="en/governanca-de-nuvem.html" hreflang="en">English: Cloud governance and migration sizing</a></small></div></li>
+<li><span class="n">56</span><div><a href="pt/dr-de-arquivos-azure.html"><b>DR de file system no Azure</b></a><small>Governança e modernização em Azure para uma seguradora (2024-2025) · <a href="en/dr-de-arquivos-azure.html" hreflang="en">English: File system DR on Azure</a></small></div></li>
+<li><span class="n">57</span><div><a href="pt/modernizacao-de-load-balancers.html"><b>Modernização de load balancers</b></a><small>Governança e modernização em Azure para uma seguradora (2024-2025) · <a href="en/modernizacao-de-load-balancers.html" hreflang="en">English: Load balancer modernization</a></small></div></li>
+<li><span class="n">58</span><div><a href="pt/portfolio-de-servicos.html"><b>Portfólio de serviços de nuvem</b></a><small>Governança e modernização em Azure para uma seguradora (2024-2025) · <a href="en/portfolio-de-servicos.html" hreflang="en">English: Cloud service portfolio</a></small></div></li>
+<li><span class="n">59</span><div><a href="pt/finops-atual-x-alvo.html"><b>FinOps: processo atual e alvo</b></a><small>Assessment e processo de FinOps (2024) · <a href="en/finops-atual-x-alvo.html" hreflang="en">English: FinOps: current and target process</a></small></div></li>
+<li><span class="n">60</span><div><a href="pt/desafio-api-serverless.html"><b>Desafio: API serverless</b></a><small>Desafios técnicos de arquitetura · <a href="en/desafio-api-serverless.html" hreflang="en">English: Challenge: serverless API</a></small></div></li>
+<li><span class="n">61</span><div><a href="pt/desafio-aplicacao-web.html"><b>Desafio: aplicação web escalável</b></a><small>Desafios técnicos de arquitetura · <a href="en/desafio-aplicacao-web.html" hreflang="en">English: Challenge: scalable web application</a></small></div></li>
+<li><span class="n">62</span><div><a href="pt/notificacao-serverless.html"><b>Aplicação em duas AZs com notificações</b></a><small>Desafios técnicos de arquitetura · <a href="en/notificacao-serverless.html" hreflang="en">English: Two-AZ application with notifications</a></small></div></li>
+</ol></main>
+</body>
+</html>

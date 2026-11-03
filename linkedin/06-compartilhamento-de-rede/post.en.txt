@@ -1,0 +1,8 @@
+People coming from AWS always ask: what is the Transit Gateway of Google Cloud?
+
+Teams used to Transit Gateway + RAM needing to design the network on Google Cloud.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/compartilhamento-de-rede.html
+
+#GoogleCloud #GCP #Terraform #IaC #DevOps #FinOps #CloudComputing

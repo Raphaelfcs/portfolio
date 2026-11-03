@@ -1,0 +1,8 @@
+The same platform on AWS, GCP, Azure and on-premises.
+
+Charging platform that had to be portable across clouds.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/plataforma-multicloud.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

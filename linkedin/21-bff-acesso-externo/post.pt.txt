@@ -1,0 +1,8 @@
+Expor serviço interno para parceiro sem abrir a rede.
+
+Parceiros externos precisando consumir serviços que só existiam na rede interna.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/bff-acesso-externo.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

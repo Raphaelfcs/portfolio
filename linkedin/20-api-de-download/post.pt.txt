@@ -1,0 +1,8 @@
+Download de arquivo não deveria passar pelo seu servidor.
+
+API que servia arquivos grandes e travava em horário de pico.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/api-de-download.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

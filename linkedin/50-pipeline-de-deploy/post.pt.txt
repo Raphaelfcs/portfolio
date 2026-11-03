@@ -1,0 +1,8 @@
+Pipeline por ambiente começa no template da imagem.
+
+Deploys manuais e imagens diferentes em cada ambiente.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/pipeline-de-deploy.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

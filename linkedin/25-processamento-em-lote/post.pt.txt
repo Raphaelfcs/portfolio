@@ -1,0 +1,8 @@
+Job em lote não precisa de servidor ligado 24 horas.
+
+Processamentos noturnos rodando em máquinas que ficavam ociosas o dia todo.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/processamento-em-lote.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

@@ -1,0 +1,8 @@
+Quantos servidores migrar, quanto custa e como governar depois?
+
+Programa de migração para Azure precisando de números e regras antes de começar.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/governanca-de-nuvem.html
+
+#Azure #CloudArchitecture #Terraform #IaC #DevOps #FinOps

@@ -1,0 +1,8 @@
+Modernizar tudo de uma vez costuma dar errado. Eu prefiro três horizontes.
+
+Empresa de médio porte com sistemas legados, pouca automação e um time pequeno de infraestrutura.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/transformacao-digital-h1-h3.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

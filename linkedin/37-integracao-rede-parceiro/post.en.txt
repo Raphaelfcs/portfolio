@@ -1,0 +1,8 @@
+Integrating a partner network without mixing responsibilities.
+
+Platform needing to exchange Diameter signaling with a partner network.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/integracao-rede-parceiro.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

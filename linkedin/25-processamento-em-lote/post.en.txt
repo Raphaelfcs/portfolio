@@ -1,0 +1,8 @@
+Batch jobs do not need a server running 24 hours.
+
+Nightly processing on machines that sat idle all day.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/processamento-em-lote.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

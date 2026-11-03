@@ -1,0 +1,8 @@
+Autenticação de cliente final é o serviço que não pode cair.
+
+Login de clientes finais com picos de acesso e integração com sistemas legados.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/autenticacao-b2c.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

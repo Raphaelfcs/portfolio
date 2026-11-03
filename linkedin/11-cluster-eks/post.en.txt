@@ -1,0 +1,8 @@
+A shared EKS cluster needs clear rules before the first deploy.
+
+Several applications moving into the same EKS cluster.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/cluster-eks.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

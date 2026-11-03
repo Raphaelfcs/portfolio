@@ -1,0 +1,8 @@
+Funções de core 5G rodando em EKS: rede é o requisito número um.
+
+Funções de rede de core 5G migrando para Kubernetes gerenciado.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/eks-core-5g.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

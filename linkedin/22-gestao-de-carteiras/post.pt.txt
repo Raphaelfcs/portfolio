@@ -1,0 +1,8 @@
+EKS e Lambda no mesmo produto: cada um onde faz sentido.
+
+API de gestão de carteiras com partes contínuas e partes por evento.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/gestao-de-carteiras.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

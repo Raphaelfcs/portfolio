@@ -1,0 +1,8 @@
+5G core functions on EKS: the network is requirement number one.
+
+Core network functions moving to managed Kubernetes.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/eks-core-5g.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

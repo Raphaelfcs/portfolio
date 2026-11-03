@@ -1,0 +1,8 @@
+Modernizing load balancers starts with understanding the AS-IS.
+
+Old load balancers with rules accumulated over years and quotes taking up to 13 seconds.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/modernizacao-de-load-balancers.html
+
+#Azure #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

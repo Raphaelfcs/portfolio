@@ -1,0 +1,8 @@
+CI/CD governance for Terraform repositories.
+
+Several teams applying Terraform with no approval standard.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/governanca-ci-cd-repos.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

@@ -1,0 +1,8 @@
+Legacy storage is the first inventory of any migration.
+
+Old corporate storage holding critical applications.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/storage-legado.html
+
+#Azure #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

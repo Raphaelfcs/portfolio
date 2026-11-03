@@ -1,0 +1,8 @@
+Rede híbrida AWS + OCI: o desenho que destravou o projeto.
+
+Sistemas na Oracle Cloud precisando falar com a plataforma na AWS.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/rede-oci.html
+
+#OCI #HybridCloud #Terraform #IaC #DevOps #FinOps

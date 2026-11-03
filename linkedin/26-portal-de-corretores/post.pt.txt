@@ -1,0 +1,8 @@
+Portal de corretores: front-end estático, API em container e backup testado.
+
+Portal web para corretores com picos em campanhas comerciais.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/portal-de-corretores.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

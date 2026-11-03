@@ -1,0 +1,8 @@
+Nuvem como produto: um portfólio de serviços para as áreas de negócio.
+
+Áreas de negócio pedindo "nuvem" sem saber o que existia.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/portfolio-de-servicos.html
+
+#Azure #CloudArchitecture #Terraform #IaC #DevOps #FinOps

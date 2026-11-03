@@ -1,0 +1,8 @@
+"Secure" GKE is a list of decisions, not a console checkbox.
+
+Lab to show private GKE end to end, from the edge to the database.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/gke-seguro.html
+
+#GoogleCloud #GCP #Terraform #IaC #DevOps #FinOps #CloudComputing

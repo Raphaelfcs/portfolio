@@ -1,0 +1,8 @@
+Migração para AlloyDB com plano de volta.
+
+Banco transacional precisando de mais desempenho sem reescrever a aplicação.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/migracao-alloydb.html
+
+#GoogleCloud #GCP #Terraform #IaC #DevOps #FinOps

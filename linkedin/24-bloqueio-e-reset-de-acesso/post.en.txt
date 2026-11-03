@@ -1,0 +1,8 @@
+A service shared between AWS and OCI: the network is half the project.
+
+Credential lock and reset used by several systems, some outside AWS.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/bloqueio-e-reset-de-acesso.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

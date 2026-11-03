@@ -1,0 +1,8 @@
+Integração com regulador: o desafio é a confiabilidade, não a tecnologia.
+
+Envio periódico de informações ao órgão regulador, com retentativas e evidência de envio.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/envio-ao-regulador.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

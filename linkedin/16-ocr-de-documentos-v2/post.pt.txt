@@ -1,0 +1,8 @@
+A versão 2 de uma API costuma ser sobre o que deu errado na versão 1.
+
+A primeira API de OCR era síncrona e sofria com documentos grandes.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/ocr-de-documentos-v2.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

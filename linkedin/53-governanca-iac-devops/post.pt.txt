@@ -1,0 +1,8 @@
+Governança de IaC: ferramentas, pipeline, branches e diretórios no mesmo desenho.
+
+Times provisionando Azure manualmente e sem padrão de repositório.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/governanca-iac-devops.html
+
+#Azure #CloudArchitecture #Terraform #IaC #DevOps #FinOps

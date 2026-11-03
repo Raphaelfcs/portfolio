@@ -1,0 +1,8 @@
+EKS and Lambda in the same product: each where it makes sense.
+
+Member portfolio management with continuous parts and event-driven parts.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/gestao-de-carteiras.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

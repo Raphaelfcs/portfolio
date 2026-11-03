@@ -1,0 +1,8 @@
+End-customer authentication is the service that cannot go down.
+
+Customer login with traffic peaks and integration with legacy systems.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/autenticacao-b2c.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

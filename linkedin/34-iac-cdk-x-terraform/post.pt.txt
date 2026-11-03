@@ -1,0 +1,8 @@
+CDK ou Terraform? Fiz o mesmo ambiente nos dois.
+
+Discussão recorrente no time sobre qual ferramenta de IaC adotar.
+
+Escrevi um artigo com o desenho completo, o passo a passo, o código Terraform e onde está o custo (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/pt/iac-cdk-x-terraform.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps

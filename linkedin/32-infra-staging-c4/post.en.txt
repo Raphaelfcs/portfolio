@@ -1,0 +1,8 @@
+C4 Model for infrastructure: it works, and very well.
+
+Staging environment with several stacks and unclear permissions.
+
+I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
+https://raphaelfcs.github.io/portfolio/artigos/en/infra-staging-c4.html
+
+#AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing
