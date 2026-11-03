@@ -3,6 +3,18 @@
  "gerado_em": "2026-11-03",
  "publicacoes": [
   {
+   "data": "2026-11-06",
+   "hora_brt": "17:00",
+   "idioma": "en",
+   "post": 61,
+   "slug": "desafio-aplicacao-web",
+   "titulo": "Challenge: scalable web application",
+   "texto": "linkedin/61-desafio-aplicacao-web/post.en.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/61-desafio-aplicacao-web/capa.en.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/desafio-aplicacao-web.html",
+   "artigo_md": "linkedin/61-desafio-aplicacao-web/artigo.en.md"
+  },
+  {
    "data": "2026-11-09",
    "hora_brt": "10:00",
    "idioma": "pt",
@@ -1453,18 +1465,6 @@
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/62-notificacao-serverless/capa.pt.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/notificacao-serverless.html",
    "artigo_md": "linkedin/62-notificacao-serverless/artigo.pt.md"
-  },
-  {
-   "data": "2027-02-12",
-   "hora_brt": "17:00",
-   "idioma": "en",
-   "post": 61,
-   "slug": "desafio-aplicacao-web",
-   "titulo": "Challenge: scalable web application",
-   "texto": "linkedin/61-desafio-aplicacao-web/post.en.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/61-desafio-aplicacao-web/capa.en.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/desafio-aplicacao-web.html",
-   "artigo_md": "linkedin/61-desafio-aplicacao-web/artigo.en.md"
   }
  ],
  "publicados_fora_do_calendario": [

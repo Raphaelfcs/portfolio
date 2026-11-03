@@ -1,6 +1,6 @@
 # Calendário de publicações no LinkedIn
 
-Dois posts por dia útil: **10h em português** (vagas no Brasil) e **17h em inglês** (EUA e Europa; 17h de Brasília é 15h na costa leste dos EUA). Na primeira rodada cada par sai com o post A em PT e o B em EN; na segunda rodada os idiomas se invertem, então todo post sai nos dois idiomas. Sem posts em fim de semana, em feriados nacionais e entre Natal e Ano-Novo.
+Começa em 6/nov com um post e segue com dois posts por dia útil a partir de 9/nov: **10h em português** (vagas no Brasil) e **17h em inglês** (EUA e Europa; 17h de Brasília é 15h na costa leste dos EUA). Na primeira rodada cada par sai com o post A em PT e o B em EN; na segunda rodada os idiomas se invertem, então todo post sai nos dois idiomas. Sem posts em fim de semana, em feriados nacionais e entre Natal e Ano-Novo.
 
 Cada post curto chama para um artigo no formato Medium/O'Reilly publicado em [raphaelfcs.github.io/portfolio/artigos](https://raphaelfcs.github.io/portfolio/artigos/). O `artigo.<idioma>.md` de cada pasta serve para importar no Medium ou colar como Artigo do LinkedIn.
 
@@ -8,6 +8,7 @@ Uma tarefa agendada roda toda sexta-feira, lê o [`calendario.json`](calendario.
 
 | Data | Hora (BRT) | Idioma | # | Post |
 |---|---|---|---|---|
+| 2026-11-06 | 17:00 | EN | 61 | [Challenge: scalable web application](61-desafio-aplicacao-web/post.en.txt) |
 | 2026-11-09 | 10:00 | PT | 01 | [Evolução de arquitetura em três horizontes](01-transformacao-digital-h1-h3/post.pt.txt) |
 | 2026-11-09 | 17:00 | EN | 02 | [AI process automation MVP](02-automacao-com-ia-mvp/post.en.txt) |
 | 2026-11-10 | 10:00 | PT | 03 | [Fundação no Google Cloud em três horizontes](03-fundacao-google-cloud/post.pt.txt) |
@@ -129,4 +130,3 @@ Uma tarefa agendada roda toda sexta-feira, lê o [`calendario.json`](calendario.
 | 2027-02-11 | 10:00 | PT | 60 | [Desafio: API serverless](60-desafio-api-serverless/post.pt.txt) |
 | 2027-02-11 | 17:00 | EN | 59 | [FinOps: current and target process](59-finops-atual-x-alvo/post.en.txt) |
 | 2027-02-12 | 10:00 | PT | 62 | [Aplicação em duas AZs com notificações](62-notificacao-serverless/post.pt.txt) |
-| 2027-02-12 | 17:00 | EN | 61 | [Challenge: scalable web application](61-desafio-aplicacao-web/post.en.txt) |
