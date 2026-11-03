@@ -1,0 +1,545 @@
+<title>Raphael Santos · Cloud Architect</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Lead Cloud Architect · DevOps · FinOps. AWS, Google Cloud, Azure, Terraform e Kubernetes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: areia como chão, azul-tinta como assinatura; trilhos de linha do tempo marcados por anos em mono, como um plano de infraestrutura lido de cima para baixo. */
+:root{
+  --bg:#F4EEE3; --band:#EAE1D1; --paper:#FBF8F2; --ink:#1A2836; --muted:#566475; --line:#D9CCB6;
+  --blue:#1E5A8F; --blue-ink:#14426B; --sky:#D5E4F0; --sand-deep:#C9B48F;
+  --aws:#C77A26; --gcp:#2F6FD0; --azure:#1C8AC9; --oci:#B5473A; --ok:#2E7D4F; --warn:#9A6B12;
+  --f-display:"Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --f-body:"IBM Plex Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --term-bg:#18293A; --term-fg:#E9E2D4; --term-dim:#8FA3B8; --term-ok:#9BD3A7; --term-acc:#F0C98A;
+  --shadow:0 1px 2px rgba(26,40,54,.06), 0 8px 24px rgba(26,40,54,.06);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#111A24; --band:#16212D; --paper:#1A2633; --ink:#ECE5D8; --muted:#A3AFBC; --line:#2A3949;
+  --blue:#8DBDE6; --blue-ink:#B5D4EE; --sky:#203547; --sand-deep:#8C7A5C;
+  --aws:#E3A25A; --gcp:#7BA7EC; --azure:#62B6E6; --oci:#E08374; --ok:#7CC796; --warn:#E0B45E;
+  --term-bg:#0B131B; --term-fg:#E9E2D4; --term-dim:#7F93A8; --term-ok:#9BD3A7; --term-acc:#F0C98A;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111A24; --band:#16212D; --paper:#1A2633; --ink:#ECE5D8; --muted:#A3AFBC; --line:#2A3949;
+  --blue:#8DBDE6; --blue-ink:#B5D4EE; --sky:#203547; --sand-deep:#8C7A5C;
+  --aws:#E3A25A; --gcp:#7BA7EC; --azure:#62B6E6; --oci:#E08374; --ok:#7CC796; --warn:#E0B45E;
+  --term-bg:#0B131B; --term-fg:#E9E2D4; --term-dim:#7F93A8; --term-ok:#9BD3A7; --term-acc:#F0C98A;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25); color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth; scroll-padding-top:72px}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto} *{animation:none!important; transition:none!important}}
+body{background:var(--bg); color:var(--ink); font:16px/1.6 var(--f-body); -webkit-font-smoothing:antialiased}
+body::before{content:""; position:fixed; inset:0 0 auto; height:env(safe-area-inset-top,0px); z-index:30; background:var(--bg)}
+a{color:var(--blue)} a:hover{color:var(--blue-ink)}
+:focus-visible{outline:2px solid var(--blue); outline-offset:3px; border-radius:4px}
+.wrap{max-width:1160px; margin:0 auto; padding-left:max(16px, env(safe-area-inset-left,0px)); padding-right:max(16px, env(safe-area-inset-right,0px))}
+:root[data-lang="en"] .pt, :root:not([data-lang="en"]) .en{display:none!important}
+
+/* nav */
+.nav{position:sticky; top:env(safe-area-inset-top,0px); z-index:20; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:blur(10px); border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex; align-items:center; gap:24px; padding-block:12px}
+.brand{font:700 18px/1 var(--f-display); color:var(--ink); text-decoration:none; letter-spacing:-.01em; display:flex; align-items:center; gap:10px; white-space:nowrap}
+.brand i{width:28px; height:28px; border-radius:7px; background:var(--blue); color:var(--paper); display:grid; place-items:center; font:700 13px/1 var(--f-mono); font-style:normal}
+.nav ul{display:flex; gap:20px; list-style:none; margin:0 0 0 auto; padding:0}
+.nav ul a{color:var(--muted); text-decoration:none; font-size:14px; font-weight:500}
+.nav ul a:hover{color:var(--ink)}
+.lang{display:flex; border:1px solid var(--line); border-radius:999px; padding:2px; background:var(--paper)}
+.lang button{border:0; background:transparent; color:var(--muted); font:600 12px/1 var(--f-mono); padding:7px 10px; border-radius:999px; cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--blue); color:var(--paper)}
+@media (max-width:860px){.nav ul{display:none} .lang{margin-left:auto}}
+
+/* hero */
+.hero{padding-block:72px 48px}
+.hero .wrap{display:grid; grid-template-columns:1.05fr .95fr; gap:56px; align-items:center}
+.eyebrow{font:500 12px/1.4 var(--f-mono); letter-spacing:.12em; text-transform:uppercase; color:var(--blue)}
+.who{display:flex; align-items:center; gap:28px; margin-bottom:6px}
+.portrait{width:clamp(108px,13vw,156px); height:auto; aspect-ratio:1; max-width:100%; border-radius:50%; object-fit:cover; background:var(--sky); border:4px solid var(--paper); box-shadow:0 0 0 1px var(--line), var(--shadow); flex:none}
+.brand .av{width:30px; height:30px; border-radius:50%; object-fit:cover; background:var(--sky); border:1px solid var(--line)}
+@media (max-width:480px){.who{flex-direction:column; align-items:flex-start; gap:18px}}
+h1{font:800 clamp(44px,7vw,84px)/.95 var(--f-display); letter-spacing:-.035em; margin:14px 0 18px; text-wrap:balance}
+h1 span{color:var(--blue)}
+.lede{font-size:clamp(17px,1.6vw,19px); color:var(--muted); max-width:56ch; margin:0 0 28px}
+.cta{display:flex; gap:12px; flex-wrap:wrap}
+.btn{display:inline-flex; align-items:center; gap:8px; padding:12px 18px; border-radius:10px; font:600 15px/1 var(--f-body); text-decoration:none; border:1px solid var(--blue)}
+.btn.primary{background:var(--blue); color:var(--paper)} .btn.primary:hover{background:var(--blue-ink); color:var(--paper)}
+.btn.ghost{color:var(--blue); background:transparent} .btn.ghost:hover{background:var(--sky)}
+.open{display:inline-flex; align-items:center; gap:8px; font:500 13px/1 var(--f-mono); color:var(--ok); margin-top:22px}
+.open::before{content:""; width:8px; height:8px; border-radius:50%; background:var(--ok); box-shadow:0 0 0 4px color-mix(in srgb, var(--ok) 20%, transparent)}
+
+.term{background:var(--term-bg); color:var(--term-fg); border-radius:14px; box-shadow:var(--shadow); overflow:hidden; font:13.5px/1.75 var(--f-mono); min-width:0}
+.term .bar{display:flex; gap:6px; padding:12px 14px; border-bottom:1px solid rgba(255,255,255,.08)}
+.term .bar b{width:10px; height:10px; border-radius:50%; background:rgba(255,255,255,.18)}
+.term .bar span{margin-left:auto; color:var(--term-dim); font-size:12px}
+.term pre{margin:0; padding:18px 20px 22px; white-space:pre-wrap; word-break:break-word; font:inherit}
+.term .d{color:var(--term-dim)} .term .g{color:var(--term-ok)} .term .a{color:var(--term-acc)}
+.term .cur{display:inline-block; width:8px; height:15px; background:var(--term-fg); vertical-align:-2px; animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+
+/* números */
+.stats{border-block:1px solid var(--line); background:var(--band)}
+.stats .wrap{display:grid; grid-template-columns:repeat(4,1fr); padding-block:28px}
+.stat{padding:4px 22px; border-left:1px solid var(--line); min-width:0}
+.stat:first-child{border-left:0; padding-left:0}
+.stat b{display:block; font:800 clamp(30px,3.6vw,44px)/1 var(--f-display); letter-spacing:-.03em; font-variant-numeric:tabular-nums}
+.stat b small{font-size:.5em; color:var(--muted); font-weight:600}
+.stat span{display:block; color:var(--muted); font-size:14px; margin-top:8px}
+
+/* seções */
+section.blk{padding-block:88px}
+section.alt{background:var(--band); border-block:1px solid var(--line)}
+.head{display:grid; grid-template-columns:220px 1fr; gap:40px; margin-bottom:44px}
+.head .k{font:500 12px/1.5 var(--f-mono); letter-spacing:.12em; text-transform:uppercase; color:var(--muted); padding-top:12px; border-top:2px solid var(--ink)}
+h2{font:700 clamp(30px,3.6vw,44px)/1.05 var(--f-display); letter-spacing:-.025em; margin:0 0 12px; text-wrap:balance}
+.head p{color:var(--muted); margin:0; max-width:62ch}
+@media (max-width:860px){.head{grid-template-columns:1fr; gap:14px} .hero .wrap{grid-template-columns:1fr; gap:36px} .hero{padding-block:44px 36px}
+  .stats .wrap{grid-template-columns:repeat(2,1fr); row-gap:22px} .stat:nth-child(3){border-left:0; padding-left:0}}
+
+/* sobre */
+.about{display:grid; grid-template-columns:220px 1fr 300px; gap:40px}
+.about .txt{min-width:0} .about .txt p{margin:0 0 16px; max-width:64ch}
+.about .txt p:first-child{font:500 21px/1.5 var(--f-display); letter-spacing:-.01em; color:var(--ink)}
+.facts{list-style:none; margin:0; padding:0; display:grid; gap:14px; align-content:start}
+.facts li{display:grid; gap:2px; padding-bottom:14px; border-bottom:1px solid var(--line)}
+.facts small{font:500 11px/1.4 var(--f-mono); letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
+@media (max-width:860px){.about{grid-template-columns:1fr; gap:24px} .about > .k{display:none}}
+
+/* trajetória */
+.tl{list-style:none; margin:0; padding:0; position:relative}
+.tl::before{content:""; position:absolute; left:156px; top:8px; bottom:8px; width:2px; background:var(--line)}
+.job{display:grid; grid-template-columns:140px 1fr; gap:32px; padding-block:22px; position:relative}
+.job::before{content:""; position:absolute; left:150px; top:30px; width:14px; height:14px; border-radius:50%; background:var(--bg); border:3px solid var(--sand-deep)}
+.job.now::before{border-color:var(--blue); background:var(--blue); box-shadow:0 0 0 5px var(--sky)}
+.job time{font:500 13px/1.5 var(--f-mono); color:var(--muted); padding-top:4px; text-align:right; font-variant-numeric:tabular-nums}
+.job .body{padding-left:24px; min-width:0}
+.job h3{font:700 21px/1.25 var(--f-display); margin:0; letter-spacing:-.01em}
+.job .org{color:var(--blue); font-weight:600; font-size:15px; margin:2px 0 10px}
+.job .org em{font-style:normal; color:var(--muted); font-weight:400}
+.job p{margin:0 0 10px; max-width:70ch; color:var(--ink)}
+.job .win{display:inline-flex; gap:8px; align-items:baseline; background:var(--sky); color:var(--blue-ink); border-radius:8px; padding:6px 10px; font-size:14px; font-weight:500; margin-bottom:10px}
+.job .win b{font:700 15px/1 var(--f-mono)}
+.tags{display:flex; flex-wrap:wrap; gap:6px; list-style:none; margin:0; padding:0}
+.tags li{font:500 12px/1 var(--f-mono); padding:6px 8px; border-radius:6px; border:1px solid var(--line); color:var(--muted); background:var(--paper)}
+@media (max-width:700px){.tl::before{left:6px} .job{grid-template-columns:1fr; gap:4px; padding-left:28px} .job::before{left:0; top:26px} .job time{text-align:left} .job .body{padding-left:0}}
+
+/* projetos */
+.filters{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:28px}
+.chip{display:inline-flex; align-items:center; gap:8px; border:1px solid var(--line); background:var(--paper); color:var(--ink); border-radius:999px; padding:8px 14px; font:500 13px/1 var(--f-body); cursor:pointer}
+.chip[aria-pressed="true"]{border-color:var(--blue); background:var(--blue); color:var(--paper)}
+.chip i{width:9px; height:9px; border-radius:50%; display:inline-block}
+.chip .n{font:500 12px/1 var(--f-mono); opacity:.7}
+.dot-aws{background:var(--aws)} .dot-gcp{background:var(--gcp)} .dot-azure{background:var(--azure)} .dot-oci{background:var(--oci)}
+.years{display:grid; gap:0}
+.yr{display:grid; grid-template-columns:140px 1fr; gap:32px; border-top:1px solid var(--line); padding-block:26px}
+.yr > time{font:800 34px/1 var(--f-display); letter-spacing:-.03em; color:var(--blue); font-variant-numeric:tabular-nums}
+.yr > time small{display:block; font:500 12px/1.5 var(--f-mono); letter-spacing:.06em; color:var(--muted); margin-top:8px}
+.grp + .grp{margin-top:26px}
+.grp h3{font:700 18px/1.3 var(--f-display); margin:0 0 12px}
+.grp h3 span{font:500 12px/1 var(--f-mono); color:var(--muted); margin-left:8px}
+.labs{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px 24px}
+.labs li[hidden]{display:none}
+.labs a{display:grid; grid-template-columns:12px 1fr; gap:10px; padding:10px 0; border-bottom:1px dashed var(--line); text-decoration:none; color:var(--ink)}
+.labs a:hover strong{color:var(--blue)}
+.labs a i{width:9px; height:9px; border-radius:50%; margin-top:7px}
+.labs strong{font-weight:600; font-size:15px; display:block}
+.labs small{color:var(--muted); font-size:13px; line-height:1.45; display:block}
+@media (max-width:760px){.yr{grid-template-columns:1fr; gap:14px} .labs{grid-template-columns:1fr}}
+
+/* destaques */
+.gal{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px}
+.card{background:var(--paper); border:1px solid var(--line); border-radius:14px; overflow:hidden; display:flex; flex-direction:column; min-width:0}
+.card button.shot{all:unset; cursor:zoom-in; display:block; background:#fff; border-bottom:1px solid var(--line); aspect-ratio:16/9; overflow:hidden; max-width:100%}
+.card button.shot:focus-visible{outline:2px solid var(--blue); outline-offset:-2px}
+.card img{width:100%; height:100%; object-fit:cover; object-position:left top; display:block; transition:transform .5s ease}
+.card button.shot:hover img{transform:scale(1.03)}
+.card .in{padding:18px 20px 20px; display:flex; flex-direction:column; gap:8px; flex:1}
+.card .meta{display:flex; gap:10px; align-items:center; font:500 12px/1 var(--f-mono); color:var(--muted); letter-spacing:.04em}
+.card .meta i{width:9px; height:9px; border-radius:50%}
+.card h3{font:700 20px/1.25 var(--f-display); margin:0; letter-spacing:-.01em}
+.card p{margin:0; color:var(--muted); font-size:15px}
+.card .foot{margin-top:auto; padding-top:10px; display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap}
+.card .foot a{font-weight:600; font-size:14px; text-decoration:none}
+.card .mods{font:500 12px/1 var(--f-mono); color:var(--muted)}
+@media (max-width:760px){.gal{grid-template-columns:1fr}}
+
+.lb{position:fixed; inset:0; z-index:50; background:color-mix(in srgb, var(--ink) 82%, transparent); display:grid; grid-template-rows:auto 1fr; padding:calc(env(safe-area-inset-top,0px) + 12px) max(12px, env(safe-area-inset-right,0px)) calc(env(safe-area-inset-bottom,0px) + 12px) max(12px, env(safe-area-inset-left,0px))}
+.lb .top{display:flex; justify-content:space-between; align-items:center; gap:12px; color:var(--bg); padding-bottom:10px; font:600 15px/1.3 var(--f-display)}
+.lb button{border:1px solid color-mix(in srgb, var(--bg) 40%, transparent); background:transparent; color:var(--bg); border-radius:8px; padding:8px 12px; font:600 13px/1 var(--f-body); cursor:pointer}
+.lb .sc{overflow:auto; background:#fff; border-radius:10px}
+.lb img{max-width:none; width:max(100%, 1200px); display:block}
+
+/* certificações */
+.certs{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 40px; align-items:start}
+.cert{display:grid; grid-template-columns:48px 1fr auto; gap:16px; align-items:start; padding-block:18px; border-bottom:1px solid var(--line)}
+.cert .badge{width:48px; height:48px; border-radius:12px; display:grid; place-items:center; font:700 13px/1 var(--f-mono); color:var(--paper)}
+.b-aws{background:var(--aws)} .b-finops{background:var(--blue)} .b-lf{background:#3B5B7A} .b-gcp{background:var(--gcp)} .b-en{background:var(--sand-deep)}
+.cert h3{font:600 16px/1.35 var(--f-body); margin:0}
+.cert .iss{color:var(--muted); font-size:14px}
+.cert .id{font:400 12px/1.5 var(--f-mono); color:var(--muted); word-break:break-all}
+.cert a.v{font:600 13px/1 var(--f-body); white-space:nowrap; text-decoration:none; padding-top:4px}
+.st{display:inline-block; font:500 11px/1 var(--f-mono); padding:4px 6px; border-radius:5px; margin-left:6px; vertical-align:1px}
+.st.ok{color:var(--ok); background:color-mix(in srgb, var(--ok) 14%, transparent)}
+.st.ren{color:var(--blue); background:var(--sky)}
+.cgrp{min-width:0; margin-bottom:28px}
+.cg{font:500 12px/1.4 var(--f-mono)!important; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin:0 0 4px!important; padding-bottom:10px; border-bottom:2px solid var(--ink)}
+.cg span{opacity:.7}
+a.cf{text-decoration:none; color:var(--ink)} a.cf:hover{border-color:var(--blue)}
+.b-gl{background:#8A5A2B} .b-fiap{background:#5B4B7A}
+.cert-feat{grid-column:1/-1; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; margin-bottom:22px}
+.cf{background:var(--paper); border:1px solid var(--line); border-radius:14px; padding:20px; display:grid; gap:6px}
+.cf b{font:700 19px/1.25 var(--f-display)}
+.cf span{color:var(--muted); font-size:14px}
+@media (max-width:860px){.certs{grid-template-columns:1fr} .cert-feat{grid-template-columns:1fr}}
+
+/* stack */
+.stack{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:36px 40px}
+.stack h3{font:700 17px/1.3 var(--f-display); margin:0 0 6px}
+.stack p{margin:0 0 12px; color:var(--muted); font-size:15px}
+@media (max-width:860px){.stack{grid-template-columns:1fr 1fr}} @media (max-width:560px){.stack{grid-template-columns:1fr}}
+
+/* contato */
+.contact{background:var(--blue); color:var(--paper)}
+.contact .wrap{padding-block:72px; display:grid; grid-template-columns:1.2fr 1fr; gap:40px; align-items:end}
+.contact h2{color:var(--paper)} .contact p{color:color-mix(in srgb, var(--paper) 80%, transparent); max-width:52ch; margin:0}
+.links{display:grid; gap:10px}
+.links a{display:flex; justify-content:space-between; align-items:center; gap:12px; color:var(--paper); text-decoration:none; border-bottom:1px solid color-mix(in srgb, var(--paper) 30%, transparent); padding-block:12px; font:600 17px/1.2 var(--f-display)}
+.crow{display:flex; align-items:center; gap:10px} .crow a{flex:1; min-width:0}
+.copy{border:1px solid color-mix(in srgb, currentColor 40%, transparent); background:transparent; color:inherit; border-radius:8px; padding:7px 10px; font:600 12px/1 var(--f-body); cursor:pointer; flex:none}
+.copy.ok{background:color-mix(in srgb, currentColor 18%, transparent)}
+.links a span{font:400 13px/1 var(--f-mono); opacity:.75}
+.links a:hover{border-bottom-color:var(--paper)}
+:root[data-theme="dark"] .contact, :root[data-theme="dark"] .contact h2, :root[data-theme="dark"] .links a{color:var(--bg)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .contact, :root:not([data-theme="light"]) .contact h2, :root:not([data-theme="light"]) .links a{color:var(--bg)}
+  :root:not([data-theme="light"]) .contact p{color:color-mix(in srgb, var(--bg) 80%, transparent)}}
+:root[data-theme="dark"] .contact p{color:color-mix(in srgb, var(--bg) 80%, transparent)}
+@media (max-width:760px){.contact .wrap{grid-template-columns:1fr}}
+footer .wrap{padding-block:24px; display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; color:var(--muted); font:400 13px/1.5 var(--f-mono)}
+</style>
+
+<nav class="nav" aria-label="Seções">
+  <div class="wrap">
+    <a class="brand" href="#top"><img class="av" src="assets/foto.webp" alt="" width="30" height="30">Raphael Santos</a>
+    <ul>
+      <li><a href="#sobre"><span class="pt">Sobre</span><span class="en">About</span></a></li>
+      <li><a href="#trajetoria"><span class="pt">Trajetória</span><span class="en">Career</span></a></li>
+      <li><a href="#projetos"><span class="pt">Projetos</span><span class="en">Projects</span></a></li>
+      <li><a href="#arquiteturas"><span class="pt">Arquiteturas</span><span class="en">Architectures</span></a></li>
+      <li><a href="#certificacoes"><span class="pt">Certificações</span><span class="en">Certifications</span></a></li>
+      <li><a href="#contato"><span class="pt">Contato</span><span class="en">Contact</span></a></li>
+    </ul>
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button type="button" id="lang-pt" data-l="pt" aria-pressed="true">PT</button>
+      <button type="button" id="lang-en" data-l="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="who">
+        <img class="portrait" src="assets/foto.webp" alt="Foto de Raphael Santos" width="320" height="320">
+        <div><div class="eyebrow">Lead Cloud Architect · DevOps · FinOps</div>
+        <h1>Raphael<br><span>Santos</span></h1></div>
+      </div>
+      <p class="lede pt">Arquiteto de nuvem com mais de 9 anos em DevOps. Desenho landing zones, plataformas Kubernetes e processos de FinOps em AWS, Google Cloud e Azure, e entrego tudo como código Terraform reutilizável.</p>
+      <p class="lede en">Cloud architect with 9+ years in DevOps. I design landing zones, Kubernetes platforms and FinOps processes on AWS, Google Cloud and Azure, and deliver all of it as reusable Terraform code.</p>
+      <div class="cta">
+        <a class="btn primary" href="#arquiteturas"><span class="pt">Ver arquiteturas</span><span class="en">See architectures</span></a>
+        <a class="btn ghost" href="https://github.com/Raphaelfcs/automacao_terraform" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+      <div class="open"><span class="pt">Aberto a oportunidades remotas · Brasil e exterior</span><span class="en">Open to remote roles · global</span></div>
+    </div>
+    <div class="term" aria-label="Resumo em formato de terminal">
+      <div class="bar"><b></b><b></b><b></b><span>~/carreira</span></div>
+<pre class="pt"><span class="d">$</span> terraform plan -out=<span class="a">carreira.tfplan</span>
+<span class="d">  # module.cloud_architect será criado</span>
+<span class="g">  +</span> clouds        = ["aws", "gcp", "azure", "oci"]
+<span class="g">  +</span> kubernetes    = ["eks", "gke", "aks"]
+<span class="g">  +</span> iac           = "terraform"   <span class="d"># 55 módulos</span>
+<span class="g">  +</span> landing_zone  = "control-tower + aft"
+<span class="g">  +</span> finops        = "engineer + practitioner"
+<span class="g">  +</span> lead_time     = "22d → 2d"
+
+<span class="a">Plan:</span> 65 arquiteturas, 14 certificações to add, <span class="g">0 to destroy</span>.
+<span class="d">$</span> <span class="cur"></span></pre><pre class="en"><span class="d">$</span> terraform plan -out=<span class="a">career.tfplan</span>
+<span class="d">  # module.cloud_architect will be created</span>
+<span class="g">  +</span> clouds        = ["aws", "gcp", "azure", "oci"]
+<span class="g">  +</span> kubernetes    = ["eks", "gke", "aks"]
+<span class="g">  +</span> iac           = "terraform"   <span class="d"># 55 modules</span>
+<span class="g">  +</span> landing_zone  = "control-tower + aft"
+<span class="g">  +</span> finops        = "engineer + practitioner"
+<span class="g">  +</span> lead_time     = "22d → 2d"
+
+<span class="a">Plan:</span> 65 architectures, 14 certifications to add, <span class="g">0 to destroy</span>.
+<span class="d">$</span> <span class="cur"></span></pre>
+    </div>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><b>22<small>d</small> → 2<small>d</small></b><span class="pt">Tempo para um time receber uma conta AWS pronta, com Control Tower + AFT</span><span class="en">Time for a team to get a ready AWS account, with Control Tower + AFT</span></div>
+    <div class="stat"><b>65</b><span class="pt">Arquiteturas documentadas, com desenho e README em PT e EN</span><span class="en">Documented architectures, with diagram and README in PT and EN</span></div>
+    <div class="stat"><b>55</b><span class="pt">Módulos Terraform reutilizáveis em AWS, GCP e Azure</span><span class="en">Reusable Terraform modules for AWS, GCP and Azure</span></div>
+    <div class="stat"><b>9<small>+ <span class="pt">anos</span><span class="en">years</span></small></b><span class="pt">Em DevOps e arquitetura de nuvem, desde 2017</span><span class="en">In DevOps and cloud architecture, since 2017</span></div>
+  </div>
+</div>
+
+<section class="blk" id="sobre">
+  <div class="wrap about">
+    <div class="k head" style="display:block;margin:0"><div class="k"><span class="pt">Sobre</span><span class="en">About</span></div></div>
+    <div class="txt">
+      <p class="pt">Comecei automatizando servidores com Puppet e Terraform e hoje lidero a arquitetura de um Cloud Center of Excellence.</p>
+      <p class="en">I started out automating servers with Puppet and Terraform, and today I lead the architecture of a Cloud Center of Excellence.</p>
+      <p class="pt">No caminho passei por consultorias, banco, energia e serviços, sempre no ponto em que infraestrutura vira produto: contas e redes provisionadas por pipeline, clusters Kubernetes com deploy progressivo e custo de nuvem ligado a KPI de negócio.</p>
+      <p class="en">Along the way I worked for consultancies, a bank, an energy exchange and service companies, always where infrastructure becomes a product: accounts and networks provisioned by pipeline, Kubernetes clusters with progressive delivery and cloud cost tied to business KPIs.</p>
+      <p class="pt">Meu trabalho hoje mistura desenho de solução, apoio a times em casos críticos de EKS e GKE, pré-venda de arquitetura e mentoria de arquitetos mais novos. Tudo que construo vira módulo, desenho e documentação, e está aberto no GitHub.</p>
+      <p class="en">Today my work blends solution design, hands-on support for critical EKS and GKE cases, architecture pre-sales and mentoring of newer architects. Everything I build turns into a module, a diagram and documentation, and it is open on GitHub.</p>
+    </div>
+    <ul class="facts">
+      <li><small><span class="pt">Atuação</span><span class="en">Role</span></small><span>Lead Cloud Architect · CCoE</span></li>
+      <li><small><span class="pt">Nuvens</span><span class="en">Clouds</span></small><span>AWS · Google Cloud · Azure · OCI</span></li>
+      <li><small><span class="pt">Base</span><span class="en">Based in</span></small><span><span class="pt">São Paulo, Brasil · remoto</span><span class="en">São Paulo, Brazil · remote</span></span></li>
+      <li><small><span class="pt">Idiomas</span><span class="en">Languages</span></small><span><span class="pt">Português · Inglês</span><span class="en">Portuguese · English</span></span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="blk alt" id="trajetoria">
+  <div class="wrap">
+    <div class="head">
+      <div class="k"><span class="pt">Trajetória</span><span class="en">Career</span></div>
+      <div><h2><span class="pt">De DevOps a líder de arquitetura</span><span class="en">From DevOps to architecture lead</span></h2>
+      <p><span class="pt">Dez passagens desde 2017, da automação de servidores à governança multi-conta.</span><span class="en">Ten roles since 2017, from server automation to multi-account governance.</span></p></div>
+    </div>
+    <ol class="tl" id="jobs"></ol>
+  </div>
+</section>
+
+<section class="blk" id="projetos">
+  <div class="wrap">
+    <div class="head">
+      <div class="k"><span class="pt">Projetos</span><span class="en">Projects</span></div>
+      <div><h2><span class="pt">Linha do tempo dos projetos</span><span class="en">Project timeline</span></h2>
+      <p><span class="pt">Cada item é um lab no GitHub com desenho draw.io, README e, quando existe, a automação Terraform. Nomes de clientes foram removidos.</span><span class="en">Each item is a lab on GitHub with a draw.io diagram, a README and, where it exists, the Terraform automation. Client names were removed.</span></p></div>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="Filtrar por nuvem"></div>
+    <div class="years" id="years"></div>
+  </div>
+</section>
+
+<section class="blk alt" id="arquiteturas">
+  <div class="wrap">
+    <div class="head">
+      <div class="k"><span class="pt">Arquiteturas</span><span class="en">Architectures</span></div>
+      <div><h2><span class="pt">Arquiteturas em destaque</span><span class="en">Featured architectures</span></h2>
+      <p><span class="pt">Doze desenhos que resumem o tipo de problema que resolvo. Clique na imagem para ampliar.</span><span class="en">Twelve diagrams that sum up the kind of problem I solve. Click an image to enlarge it.</span></p></div>
+    </div>
+    <div class="gal" id="gal"></div>
+  </div>
+</section>
+
+<section class="blk" id="certificacoes">
+  <div class="wrap">
+    <div class="head">
+      <div class="k"><span class="pt">Certificações</span><span class="en">Certifications</span></div>
+      <div><h2><span class="pt">Certificações e credenciais</span><span class="en">Certifications and credentials</span></h2>
+      <p><span class="pt">14 credenciais com link de verificação no emissor, organizadas por área, mais a formação na FIAP.</span><span class="en">14 credentials with a verification link at the issuer, grouped by area, plus my FIAP education.</span></p></div>
+    </div>
+    <div class="certs" id="certs"></div>
+  </div>
+</section>
+
+<section class="blk alt" id="stack">
+  <div class="wrap">
+    <div class="head">
+      <div class="k">Stack</div>
+      <div><h2><span class="pt">Conhecimento técnico</span><span class="en">Technical knowledge</span></h2></div>
+    </div>
+    <div class="stack" id="stackgrid"></div>
+  </div>
+</section>
+
+<section class="contact" id="contato">
+  <div class="wrap">
+    <div>
+      <h2><span class="pt">Vamos conversar</span><span class="en">Let's talk</span></h2>
+      <p><span class="pt">Arquitetura de nuvem, landing zone, Kubernetes, FinOps ou um time de plataforma para estruturar. Estou aberto a vagas remotas no Brasil e no exterior.</span><span class="en">Cloud architecture, landing zones, Kubernetes, FinOps or a platform team to set up. I'm open to remote roles in Brazil and abroad.</span></p>
+    </div>
+    <div class="links">
+      <div class="crow"><a href="mailto:raphaelfcs@gmail.com">E-mail <span>raphaelfcs@gmail.com</span></a><button type="button" class="copy" id="copy-mail" data-c="raphaelfcs@gmail.com"><span class="pt">Copiar</span><span class="en">Copy</span></button></div>
+      <div class="crow"><a href="tel:+5511992132911"><span class="pt" style="font:inherit;opacity:1">Telefone · WhatsApp</span><span class="en" style="font:inherit;opacity:1">Phone · WhatsApp</span> <span><span class="pt">(11) 99213-2911</span><span class="en">+55 11 99213-2911</span></span></a><button type="button" class="copy" id="copy-tel" data-pt="(11) 99213-2911" data-en="+55 11 99213-2911"><span class="pt">Copiar</span><span class="en">Copy</span></button></div>
+      <a href="https://www.linkedin.com/in/raphael-ferreira-coelho-santos/" target="_blank" rel="noopener">LinkedIn <span>/in/raphael-ferreira-coelho-santos ↗</span></a>
+      <a href="https://github.com/Raphaelfcs" target="_blank" rel="noopener">GitHub <span>/Raphaelfcs ↗</span></a>
+      <a href="https://github.com/Raphaelfcs/automacao_terraform" target="_blank" rel="noopener"><span class="pt" style="font:inherit;opacity:1">Monorepo Terraform</span><span class="en" style="font:inherit;opacity:1">Terraform monorepo</span> <span>automacao_terraform ↗</span></a>
+    </div>
+  </div>
+</section>
+<footer><div class="wrap"><span>© 2026 Raphael Ferreira Coelho Santos</span><span class="pt">Desenhos em draw.io · código em Terraform</span><span class="en">Diagrams in draw.io · code in Terraform</span></div></footer>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-labelledby="lb-t">
+  <div class="top"><span id="lb-t"></span><button type="button" id="lb-x">Fechar · Close</button></div>
+  <div class="sc"><img id="lb-img" alt=""></div>
+</div>
+
+<script>
+const DATA = /*DATA*/null;
+const JOBS = [
+ {d:['mar 2025 — hoje','Mar 2025 — now'], t:'Lead Cloud Architect', o:'Druid', now:1,
+  p:['Reestruturei o Cloud Center of Excellence: saímos de contas criadas à mão, com pouca visibilidade de custo e ajustes manuais de conectividade, para AWS Control Tower com AFT entregando contas já com segurança, rede e custo sob controle. Estruturei a área de FinOps com painéis de anomalia no QuickSight ligados a KPIs de negócio e sigo criando módulos e pipelines de IaC para os times.',
+     'I restructured the Cloud Center of Excellence: we moved from hand-made accounts, with little cost visibility and manual connectivity fixes, to AWS Control Tower with AFT delivering accounts with security, network and cost already under control. I set up the FinOps practice with QuickSight anomaly dashboards tied to business KPIs, and I keep building IaC modules and pipelines for the teams.'],
+  w:['22 → 2 dias','22 → 2 days','para um time receber uma conta pronta','for a team to get a ready account'],
+  s:['Control Tower','AFT','Terraform','FinOps','QuickSight','EKS','GKE']},
+ {d:['ago — dez 2025','Aug — Dec 2025'], t:'DevOps Engineer', o:'FIS', e:['freelance','freelance'],
+  p:['Automação de recursos AWS com Terraform, microsserviços em EKS, pipelines no Azure Pipelines e padrões de deploy canário e entrega progressiva.',
+     'AWS resource automation with Terraform, microservices on EKS, Azure Pipelines and standards for canary deployments and progressive delivery.'],
+  s:['Terraform','EKS','Azure Pipelines','Canary']},
+ {d:['jan 2024 — mar 2025','Jan 2024 — Mar 2025'], t:'Lead Cloud Architect', o:'TIVIT',
+  p:['Planos de transformação digital e arquitetura de nuvem para clientes, projetos de IA para automatizar serviços e extrair dados de documentos com OCR em serviços nativos. Coordenei um time de automação, formei profissionais juniores e liderei novos arquitetos, com foco em custo e processos fora do padrão de nuvem.',
+     'Digital transformation plans and cloud architecture for clients, AI projects to automate services and extract document data with OCR on native services. I coordinated an automation team, trained junior engineers and led new architects, with a focus on cost and processes that did not follow cloud standards.'],
+  s:['AWS','Textract','Step Functions','FinOps','Team lead']},
+ {d:['jul 2022 — dez 2023','Jul 2022 — Dec 2023'], t:'Cloud Architect', o:'Engineering Brasil',
+  p:['Arquitetura em Google Cloud, AWS e Azure, microsserviços em Kubernetes, IaC e pipelines (GitLab CI, GitHub Actions, Azure DevOps, Jenkins). Estruturei o time de FinOps para clientes.',
+     'Architecture on Google Cloud, AWS and Azure, microservices on Kubernetes, IaC and pipelines (GitLab CI, GitHub Actions, Azure DevOps, Jenkins). I set up the FinOps team for clients.'],
+  s:['GCP','AWS','Azure','Kubernetes','GitLab CI']},
+ {d:['abr — jul 2022','Apr — Jul 2022'], t:['Engenheiro de software sênior','Senior Software Engineer'], o:'Itaú Unibanco',
+  p:['Projeto de migração dos principais serviços de um monolito para microsserviços em Kubernetes na AWS, com automação completa por pipelines no GitLab CI.',
+     'Migration of core services from a monolith to microservices on Kubernetes on AWS, fully automated through GitLab CI pipelines.'],
+  s:['AWS','Kubernetes','GitLab CI','Prometheus']},
+ {d:['ago 2020 — abr 2022','Aug 2020 — Apr 2022'], t:'Cloud Architect', o:'Grupo FCamara',
+  p:['Automação de Azure, GKE e AWS com Terraform, OpenShift, pipelines no Azure Pipelines com deploy canário, reestruturação de contas AWS e projetos de FinOps e governança.',
+     'Azure, GKE and AWS automation with Terraform, OpenShift, Azure Pipelines with canary deploys, AWS account restructuring and FinOps and governance projects.'],
+  s:['Terraform','GKE','Azure','OpenShift','FinOps']},
+ {d:['mar — ago 2020','Mar — Aug 2020'], t:'DevOps Engineer', o:'BBCE',
+  p:['Terraform na AWS, EKS, Azure Pipelines e padrões de deploy canário. Estruturei o time de DevOps já com práticas de FinOps.',
+     'Terraform on AWS, EKS, Azure Pipelines and canary deployment standards. I set up the DevOps team with FinOps practices from the start.'],
+  s:['Terraform','EKS','Canary']},
+ {d:['mar 2019 — fev 2020','Mar 2019 — Feb 2020'], t:'DevOps Engineer', o:'Mandic Cloud Solutions',
+  p:['Terraform na AWS, Kubernetes, pipelines no GitLab CI, SonarQube para validação de código e entrega progressiva com canário.',
+     'Terraform on AWS, Kubernetes, GitLab CI pipelines, SonarQube for code validation and progressive delivery with canary.'],
+  s:['Terraform','Kubernetes','GitLab CI','SonarQube']},
+ {d:['ago 2018 — jan 2019','Aug 2018 — Jan 2019'], t:'DevOps Engineer', o:'Pitang',
+  p:['Infraestrutura como código com Terraform, serverless na AWS, servidores Red Hat, pipelines no Jenkins e migração de infraestrutura manual para IaC.',
+     'Infrastructure as code with Terraform, serverless on AWS, Red Hat servers, Jenkins pipelines and migration from manual infrastructure to IaC.'],
+  s:['Terraform','Serverless','Jenkins','Docker Swarm']},
+ {d:['mai 2017 — ago 2018','May 2017 — Aug 2018'], t:['Consultor DevOps','DevOps Consultant'], o:'ViViTECH',
+  p:['Terraform e Puppet Enterprise na AWS, pipelines no GitLab CI e GoCD, artefatos no Artifactory e cultura DevOps e ágil.',
+     'Terraform and Puppet Enterprise on AWS, GitLab CI and GoCD pipelines, artifacts in Artifactory and a DevOps and agile culture.'],
+  s:['Terraform','Puppet','GitLab CI','Artifactory']},
+];
+const CERTS = [
+ {g:'cloud', n:'AWS Certified Solutions Architect – Associate', i:'Amazon Web Services', b:'AWS', c:'b-aws', d:['dez 2023','Dec 2023'], x:['válida até dez 2026','valid until Dec 2026',1], id:'T0NKZZCDYJR1QNC0', u:'https://www.credly.com/badges/de4f0e55-95c3-4f8e-b366-f68ddd647289', f:1},
+ {g:'finops', n:'FinOps Certified Engineer', i:'FinOps Foundation · The Linux Foundation', b:'FO', c:'b-finops', d:['mar 2025','Mar 2025'], x:['válida até mar 2027','valid until Mar 2027',1], id:'vyghasutit2q', u:'https://www.credly.com/badges/54674df3-bfb6-4881-8e92-526340ea2ba0', f:1},
+ {g:'finops', n:'FinOps Certified Practitioner', i:'FinOps Foundation · The Linux Foundation', b:'FO', c:'b-finops', d:['set 2024','Sep 2024'], x:['renovação em dez 2026','renewal in Dec 2026',2], id:'ryoyfustrgzj', u:'https://www.credly.com/badges/9d9b95b8-9270-4f85-8ba5-b2c2474f3453', f:1},
+ {g:'finops', n:'Introduction to FOCUS', i:'FinOps Foundation', b:'FO', c:'b-finops', d:['ago 2024','Aug 2024'], x:['renovação em dez 2026','renewal in Dec 2026',2], id:'4ckm8kwq27xe', u:'https://verify.skilljar.com/c/4ckm8kwq27xe'},
+ {g:'finops', n:'Introduction to FinOps', i:'FinOps Foundation', b:'FO', c:'b-finops', d:['ago 2024','Aug 2024'], id:'pzf2q7udivyh', u:'https://verify.skilljar.com/c/pzf2q7udivyh'},
+ {g:'cloud', n:'AWS Educate Getting Started with Networking', i:'Amazon Web Services', b:'AWS', c:'b-aws', d:['mar 2025','Mar 2025'], u:'https://www.credly.com/badges/a8446761-3b6c-49a8-b7e6-13916fc9d034'},
+ {g:'cloud', n:'Google Cloud Essentials', i:'Google Cloud', b:'G', c:'b-gcp', d:['jan 2024','Jan 2024'], u:'https://www.skills.google/public_profiles/6b5eb589-995a-4f88-8b6f-3d5c642889ae/badges/6854776'},
+ {g:'devops', n:'LFS162: Introduction to DevOps and Site Reliability Engineering', i:'The Linux Foundation', b:'LF', c:'b-lf', d:['jan 2025','Jan 2025'], id:'LF-wmv4215yvj', u:'https://www.credly.com/badges/a86a478a-859a-4ad3-9eb9-fe61207e3b2a'},
+ {g:'devops', n:'LFS142: Introduction to Backstage – Developer Portals Made Easy', i:'The Linux Foundation', b:'LF', c:'b-lf', d:['ago 2024','Aug 2024'], u:'https://www.credly.com/badges/09b28418-6aa1-461c-b013-f5d59fa19589'},
+ {g:'devops', n:'GitLab Certified Git Associate', i:'GitLab', b:'GL', c:'b-gl', d:['mai 2021','May 2021'], u:'https://www.credly.com/badges/a553380a-28f3-4305-8bf6-17c9facfd30f'},
+ {g:'ai', n:'Introduction to Generative AI', i:'Google Cloud', b:'G', c:'b-gcp', d:['mai 2024','May 2024'], u:'https://www.skills.google/public_profiles/6b5eb589-995a-4f88-8b6f-3d5c642889ae/badges/9013436'},
+ {g:'ai', n:'Introduction to Large Language Models', i:'Google Cloud', b:'G', c:'b-gcp', d:['jul 2024','Jul 2024'], u:'https://www.skills.google/public_profiles/6b5eb589-995a-4f88-8b6f-3d5c642889ae/badges/9785586'},
+ {g:'ai', n:'Introduction to Responsible AI', i:'Google Cloud', b:'G', c:'b-gcp', d:['jul 2024','Jul 2024'], u:'https://www.skills.google/public_profiles/6b5eb589-995a-4f88-8b6f-3d5c642889ae/badges/9785814'},
+ {g:'lang', n:'English Certificate', i:'International English Test', b:'EN', c:'b-en', d:['set 2024','Sep 2024'], id:'1571D9B91-1571D9BF0-1571D73B6', u:'https://internationalenglishtest.com/verify-certificate/1571D9B91-1571D9BF0-1571D73B6/'},
+ {g:'edu', n:'Cloud Computing Solutions Architect', i:'FIAP', b:'FI', c:'b-fiap'},
+ {g:'edu', n:'DevOps Engineer', i:'FIAP', b:'FI', c:'b-fiap'},
+];
+const CGRP = [['cloud','Nuvem','Cloud'],['finops','FinOps','FinOps'],['devops','DevOps e plataforma','DevOps and platform'],['ai','Inteligência artificial','Artificial intelligence'],['lang','Idiomas','Languages'],['edu','Formação','Education']];
+const STACK = [
+ ['AWS',['Control Tower, AFT, Organizations e SCPs, Transit Gateway, EKS, ECS Fargate, Lambda, Textract, QuickSight.','Control Tower, AFT, Organizations and SCPs, Transit Gateway, EKS, ECS Fargate, Lambda, Textract, QuickSight.']],
+ ['Google Cloud',['Landing zone com pastas e Shared VPC, GKE privado e Autopilot, Cloud SQL, AlloyDB, BigQuery, Workload Identity.','Landing zone with folders and Shared VPC, private and Autopilot GKE, Cloud SQL, AlloyDB, BigQuery, Workload Identity.']],
+ ['Azure · OCI',['Landing zone com AKS privado, Front Door, Container Apps, ExpressRoute; rede híbrida com FastConnect na OCI.','Landing zone with private AKS, Front Door, Container Apps, ExpressRoute; hybrid networking with FastConnect on OCI.']],
+ ['Infraestrutura como código',['Terraform modular (engines e roots por ambiente), AWS CDK, Atlantis, Backstage, testes de Terraform.','Modular Terraform (engines and per-environment roots), AWS CDK, Atlantis, Backstage, Terraform tests.','Infrastructure as code']],
+ ['Kubernetes',['EKS e GKE em produção: criação, upgrades, migração blue-green sem downtime, Helm, Argo CD, Istio, Karpenter.','EKS and GKE in production: builds, upgrades, zero-downtime blue-green migration, Helm, Argo CD, Istio, Karpenter.']],
+ ['CI/CD',['GitLab CI, GitHub Actions, Azure Pipelines, Jenkins, GoCD; deploy canário e entrega progressiva.','GitLab CI, GitHub Actions, Azure Pipelines, Jenkins, GoCD; canary and progressive delivery.']],
+ ['FinOps',['Ciclo informar, otimizar e operar; CUR e FOCUS, tags obrigatórias, KPIs por área e alertas de anomalia.','Inform, optimize and operate cycle; CUR and FOCUS, mandatory tags, per-team KPIs and anomaly alerts.']],
+ ['Segurança e governança',['IAM Identity Center, permission boundaries, GuardDuty, Security Hub, Config, guardrails preventivos e detectivos.','IAM Identity Center, permission boundaries, GuardDuty, Security Hub, Config, preventive and detective guardrails.','Security and governance']],
+ ['Observabilidade',['Prometheus, Grafana e Loki, CloudWatch, Fluent Bit, Zabbix.','Prometheus, Grafana and Loki, CloudWatch, Fluent Bit, Zabbix.','Observability']],
+];
+const CLOUD = {aws:'AWS', gcp:'Google Cloud', azure:'Azure', oci:'OCI'};
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const bi = (pt, en) => `<span class="pt">${esc(pt)}</span><span class="en">${esc(en)}</span>`;
+const two = v => Array.isArray(v) ? v : [v, v];
+
+document.getElementById('jobs').innerHTML = JOBS.map(j => {
+  const [tp, te] = two(j.t);
+  return `<li class="job${j.now ? ' now' : ''}"><time>${bi(j.d[0], j.d[1])}</time><div class="body">
+  <h3>${bi(tp, te)}</h3><div class="org">${esc(j.o)}${j.e ? ` <em>· ${bi(j.e[0], j.e[1])}</em>` : ''}</div>
+  ${j.w ? `<div class="win"><b>${bi(j.w[0], j.w[1])}</b>${bi(j.w[2], j.w[3])}</div>` : ''}
+  <p>${bi(j.p[0], j.p[1])}</p><ul class="tags">${j.s.map(s => `<li>${esc(s)}</li>`).join('')}</ul></div></li>`;
+}).join('');
+
+// projetos por ano
+const anoGrupo = g => g.ini ? (g.ini === g.fim ? g.ini : `${g.ini}–${g.fim}`) : null;
+const porAno = {};
+DATA.grupos.forEach(g => { const k = g.ini || 'labs'; (porAno[k] = porAno[k] || []).push(g); });
+const ordem = Object.keys(porAno).sort((a, b) => a === 'labs' ? 1 : b === 'labs' ? -1 : b - a);
+const conta = {all: 0}; DATA.grupos.forEach(g => g.itens.forEach(it => { conta.all++; conta[it.c] = (conta[it.c] || 0) + 1; }));
+document.getElementById('years').innerHTML = ordem.map(k => `<div class="yr"><time>${k === 'labs' ? 'Labs' : k}<small>${bi(k === 'labs' ? 'estudos e desafios' : 'início', k === 'labs' ? 'studies and challenges' : 'start')}</small></time><div>
+  ${porAno[k].map(g => `<div class="grp"><h3>${bi(g.pt.replace(/ \(\d{4}(-\d{4})?\)$/, ''), g.en.replace(/ \(\d{4}(-\d{4})?\)$/, ''))}<span>${anoGrupo(g) || ''} · ${g.itens.length} labs</span></h3>
+  <ul class="labs">${g.itens.map(it => `<li data-c="${it.c}"><a href="${esc(it.u)}" target="_blank" rel="noopener"><i class="dot-${it.c}" title="${CLOUD[it.c]}"></i><span><strong>${bi(it.pt, it.en)}</strong><small>${bi(it.dpt, it.den)}</small></span></a></li>`).join('')}</ul></div>`).join('')}
+</div></div>`).join('');
+const fl = [['all', 'Todas', 'All'], ['aws', 'AWS', 'AWS'], ['gcp', 'Google Cloud', 'Google Cloud'], ['azure', 'Azure', 'Azure'], ['oci', 'OCI', 'OCI']];
+document.getElementById('filters').innerHTML = fl.map(([k, p, e]) => `<button type="button" class="chip" id="f-${k}" data-f="${k}" aria-pressed="${k === 'all'}">${k === 'all' ? '' : `<i class="dot-${k}"></i>`}${bi(p, e)}<span class="n">${conta[k] || 0}</span></button>`).join('');
+document.getElementById('filters').addEventListener('click', ev => {
+  const b = ev.target.closest('[data-f]'); if (!b) return; const f = b.dataset.f;
+  document.querySelectorAll('#filters .chip').forEach(c => c.setAttribute('aria-pressed', c === b));
+  document.querySelectorAll('#years li[data-c]').forEach(li => li.hidden = f !== 'all' && li.dataset.c !== f);
+  document.querySelectorAll('#years .grp').forEach(gr => gr.hidden = !gr.querySelector('li[data-c]:not([hidden])'));
+  document.querySelectorAll('#years .yr').forEach(y => y.hidden = !y.querySelector('.grp:not([hidden])'));
+});
+
+// destaques
+document.getElementById('gal').innerHTML = DATA.dest.map(d => `<article class="card">
+  <button type="button" class="shot" data-s="${d.s}" aria-label="${esc(d.pt)}"><img class="pt" loading="lazy" src="assets/arq/${d.s}.pt.webp" alt="${esc(d.pt)}"><img class="en" loading="lazy" src="assets/arq/${d.s}.en.webp" alt="${esc(d.en)}"></button>
+  <div class="in"><div class="meta"><i class="dot-${d.c}"></i>${CLOUD[d.c]} · ${bi(d.gpt, d.gen)}${d.ano ? ' · ' + d.ano : ''}</div>
+  <h3>${bi(d.pt, d.en)}</h3><p>${bi(d.dpt, d.den)}</p>
+  <div class="foot"><span class="mods">${d.m.length ? `${d.m.length} ${bi('módulos Terraform', 'Terraform modules')}` : bi('referência de processo', 'process reference')}</span><a href="${esc(d.u)}" target="_blank" rel="noopener">${bi('Ver lab no GitHub ↗', 'View lab on GitHub ↗')}</a></div></div></article>`).join('');
+const lb = document.getElementById('lb'), lbi = document.getElementById('lb-img'), lbt = document.getElementById('lb-t');
+let lastFocus = null;
+document.getElementById('gal').addEventListener('click', ev => {
+  const b = ev.target.closest('.shot'); if (!b) return; const d = DATA.dest.find(x => x.s === b.dataset.s);
+  const en = document.documentElement.dataset.lang === 'en'; lastFocus = b;
+  lbi.src = `assets/arq/${d.s}.${en ? 'en' : 'pt'}.webp`; lbi.alt = en ? d.en : d.pt; lbt.textContent = en ? d.en : d.pt;
+  lb.hidden = false; document.getElementById('lb-x').focus();
+});
+const fecha = () => { lb.hidden = true; lastFocus && lastFocus.focus(); };
+document.getElementById('lb-x').addEventListener('click', fecha);
+lb.addEventListener('click', ev => { if (ev.target === lb) fecha(); });
+addEventListener('keydown', ev => { if (ev.key === 'Escape' && !lb.hidden) fecha(); });
+
+// certificações
+const stClass = x => x[2] === 1 ? 'ok' : 'ren';
+const certRow = c => `<div class="cert"><div class="badge ${c.c}">${esc(c.b)}</div><div><h3>${esc(c.n)}${c.x ? `<span class="st ${stClass(c.x)}">${bi(c.x[0], c.x[1])}</span>` : ''}</h3>
+ <div class="iss">${esc(c.i)}${c.d ? ' · ' + bi('emitida em ' + c.d[0], 'issued ' + c.d[1]) : ''}</div>${c.id ? `<div class="id">ID ${esc(c.id)}</div>` : ''}</div>
+ ${c.u ? `<a class="v" href="${esc(c.u)}" target="_blank" rel="noopener">${bi('Verificar ↗', 'Verify ↗')}</a>` : '<span></span>'}</div>`;
+document.getElementById('certs').innerHTML = `<div class="cert-feat">${CERTS.filter(c => c.f).map(c => `<a class="cf" href="${esc(c.u)}" target="_blank" rel="noopener"><span>${esc(c.i)}</span><b>${esc(c.n)}</b><span><span class="st ${stClass(c.x)}" style="margin:0">${bi(c.x[0], c.x[1])}</span></span></a>`).join('')}</div>` +
+ CGRP.map(([k, p, e]) => `<div class="cgrp"><h3 class="cg">${bi(p, e)} <span>${CERTS.filter(c => c.g === k).length}</span></h3>${CERTS.filter(c => c.g === k).map(certRow).join('')}</div>`).join('');
+
+document.getElementById('stackgrid').innerHTML = STACK.map(([t, d]) => `<div><h3>${d[2] ? bi(t, d[2]) : esc(t)}</h3><p>${bi(d[0], d[1])}</p></div>`).join('');
+
+// copiar contato
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', () => {
+  const en = document.documentElement.dataset.lang === 'en';
+  const t = b.dataset.c || (en ? b.dataset.en : b.dataset.pt);
+  const ok = () => { b.classList.add('ok'); const h = b.innerHTML; b.innerHTML = en ? 'Copied' : 'Copiado'; setTimeout(() => { b.innerHTML = h; b.classList.remove('ok'); }, 1600); };
+  try { navigator.clipboard.writeText(t).then(ok, () => {}); } catch (e) {}
+}));
+
+// idioma
+function setLang(l) {
+  document.documentElement.dataset.lang = l; document.documentElement.lang = l === 'en' ? 'en' : 'pt-BR';
+  document.querySelectorAll('.lang button').forEach(b => b.setAttribute('aria-pressed', b.dataset.l === l));
+  try { localStorage.setItem('rs-lang', l); } catch (e) {}
+}
+document.querySelector('.lang').addEventListener('click', ev => { const b = ev.target.closest('[data-l]'); if (b) setLang(b.dataset.l); });
+let ini = 'pt';
+try { ini = localStorage.getItem('rs-lang') || ((navigator.language || '').toLowerCase().startsWith('pt') ? 'pt' : 'en'); } catch (e) { ini = (navigator.language || '').toLowerCase().startsWith('pt') ? 'pt' : 'en'; }
+setLang(ini);
+</script>
