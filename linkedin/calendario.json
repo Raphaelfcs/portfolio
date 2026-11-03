@@ -867,30 +867,6 @@
    "artigo_md": "linkedin/09-visao-geral-plataforma/artigo.en.md"
   },
   {
-   "data": "2027-01-08",
-   "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 12,
-   "slug": "evolucao-portal-de-seguros",
-   "titulo": "Evolução do portal de seguros",
-   "texto": "linkedin/12-evolucao-portal-de-seguros/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/12-evolucao-portal-de-seguros/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/evolucao-portal-de-seguros.html",
-   "artigo_md": "linkedin/12-evolucao-portal-de-seguros/artigo.pt.md"
-  },
-  {
-   "data": "2027-01-08",
-   "hora_brt": "17:00",
-   "idioma": "en",
-   "post": 11,
-   "slug": "cluster-eks",
-   "titulo": "Shared EKS cluster",
-   "texto": "linkedin/11-cluster-eks/post.en.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/11-cluster-eks/capa.en.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/cluster-eks.html",
-   "artigo_md": "linkedin/11-cluster-eks/artigo.en.md"
-  },
-  {
    "data": "2027-01-11",
    "hora_brt": "10:00",
    "idioma": "pt",
@@ -1489,6 +1465,22 @@
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/61-desafio-aplicacao-web/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/desafio-aplicacao-web.html",
    "artigo_md": "linkedin/61-desafio-aplicacao-web/artigo.en.md"
+  }
+ ],
+ "publicados_fora_do_calendario": [
+  {
+   "data": "2026-11-03",
+   "post": 12,
+   "idioma": "pt",
+   "ferramenta": "Taplio",
+   "motivo": "teste de integração"
+  },
+  {
+   "data": "2026-11-03",
+   "post": 11,
+   "idioma": "en",
+   "ferramenta": "Typefully",
+   "motivo": "teste de integração"
   }
  ]
 }

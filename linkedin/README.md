@@ -80,8 +80,6 @@ Uma tarefa agendada roda toda sexta-feira, lê o [`calendario.json`](calendario.
 | 2027-01-06 | 17:00 | EN | 07 | [Secure GKE end to end](07-gke-seguro/post.en.txt) |
 | 2027-01-07 | 10:00 | PT | 10 | [Autenticação B2C em ECS Fargate](10-autenticacao-b2c/post.pt.txt) |
 | 2027-01-07 | 17:00 | EN | 09 | [AWS platform of a health insurer](09-visao-geral-plataforma/post.en.txt) |
-| 2027-01-08 | 10:00 | PT | 12 | [Evolução do portal de seguros](12-evolucao-portal-de-seguros/post.pt.txt) |
-| 2027-01-08 | 17:00 | EN | 11 | [Shared EKS cluster](11-cluster-eks/post.en.txt) |
 | 2027-01-11 | 10:00 | PT | 14 | [Migração por ondas para EKS](14-migracao-por-ondas/post.pt.txt) |
 | 2027-01-11 | 17:00 | EN | 13 | [Asynchronous regulatory reports](13-relatorios-regulatorios/post.en.txt) |
 | 2027-01-12 | 10:00 | PT | 16 | [OCR de documentos — API v2](16-ocr-de-documentos-v2/post.pt.txt) |
