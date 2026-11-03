@@ -164,7 +164,12 @@ h2{font:700 clamp(30px,3.6vw,44px)/1.05 var(--f-display); letter-spacing:-.025em
 .card .foot{margin-top:auto; padding-top:10px; display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap}
 .card .foot a{font-weight:600; font-size:14px; text-decoration:none}
 .card .mods{font:500 12px/1 var(--f-mono); color:var(--muted)}
-@media (max-width:760px){.gal{grid-template-columns:1fr}}
+.card.wide{grid-column:1/-1; flex-direction:row}
+.card.wide button.shot{flex:1.3; aspect-ratio:auto; min-height:300px; border-bottom:0; border-right:1px solid var(--line)}
+.card.wide .in{flex:1}
+.tools{display:flex; flex-wrap:wrap; gap:8px; margin:-12px 0 28px}
+.tools span{font:500 13px/1 var(--f-mono); padding:8px 12px; border-radius:8px; background:var(--sky); color:var(--blue-ink)}
+@media (max-width:760px){.gal{grid-template-columns:1fr} .card.wide{flex-direction:column} .card.wide button.shot{aspect-ratio:16/9; min-height:0; border-right:0; border-bottom:1px solid var(--line)}}
 
 .lb{position:fixed; inset:0; z-index:50; background:color-mix(in srgb, var(--ink) 82%, transparent); display:grid; grid-template-rows:auto 1fr; padding:calc(env(safe-area-inset-top,0px) + 12px) max(12px, env(safe-area-inset-right,0px)) calc(env(safe-area-inset-bottom,0px) + 12px) max(12px, env(safe-area-inset-left,0px))}
 .lb .top{display:flex; justify-content:space-between; align-items:center; gap:12px; color:var(--bg); padding-bottom:10px; font:600 15px/1.3 var(--f-display)}
@@ -251,6 +256,7 @@ html{-webkit-text-size-adjust:100%; text-size-adjust:100%}
       <li><a href="#trajetoria"><span class="pt">Trajetória</span><span class="en">Career</span></a></li>
       <li><a href="#projetos"><span class="pt">Projetos</span><span class="en">Projects</span></a></li>
       <li><a href="#arquiteturas"><span class="pt">Arquiteturas</span><span class="en">Architectures</span></a></li>
+      <li><a href="#entrega"><span class="pt">Entrega</span><span class="en">Delivery</span></a></li>
       <li><a href="#certificacoes"><span class="pt">Certificações</span><span class="en">Certifications</span></a></li>
       <li><a href="#contato"><span class="pt">Contato</span><span class="en">Contact</span></a></li>
     </ul>
@@ -264,6 +270,7 @@ html{-webkit-text-size-adjust:100%; text-size-adjust:100%}
       <li><a href="#trajetoria"><span class="pt">Trajetória</span><span class="en">Career</span></a></li>
       <li><a href="#projetos"><span class="pt">Projetos</span><span class="en">Projects</span></a></li>
       <li><a href="#arquiteturas"><span class="pt">Arquiteturas</span><span class="en">Architectures</span></a></li>
+      <li><a href="#entrega"><span class="pt">Entrega</span><span class="en">Delivery</span></a></li>
       <li><a href="#certificacoes"><span class="pt">Certificações</span><span class="en">Certifications</span></a></li>
       <li><a href="#contato"><span class="pt">Contato</span><span class="en">Contact</span></a></li>
     </ul></div>
@@ -375,7 +382,21 @@ html{-webkit-text-size-adjust:100%; text-size-adjust:100%}
   </div>
 </section>
 
-<section class="blk" id="certificacoes">
+<section class="blk" id="entrega">
+  <div class="wrap">
+    <div class="head">
+      <div class="k"><span class="pt">Entrega</span><span class="en">Delivery</span></div>
+      <div><h2><span class="pt">Pipelines, Kubernetes e automação</span><span class="en">Pipelines, Kubernetes and automation</span></h2>
+      <p><span class="pt">Como o código chega em produção: pipelines nas quatro ferramentas que mais uso, padrões de cluster, estratégias de deploy, GitOps com Argo CD e recuperação de desastre.</span><span class="en">How code reaches production: pipelines in the four tools I use most, cluster patterns, deployment strategies, GitOps with Argo CD and disaster recovery.</span></p></div>
+    </div>
+    <div class="tools" aria-label="Ferramentas de CI/CD">
+      <span>GitLab CI</span><span>GitHub Actions</span><span>Azure DevOps</span><span>Jenkins</span><span>Argo CD</span><span>Argo Rollouts</span><span>Helm</span><span>Velero</span><span>Karpenter</span>
+    </div>
+    <div class="gal" id="plat"></div>
+  </div>
+</section>
+
+<section class="blk alt" id="certificacoes">
   <div class="wrap">
     <div class="head">
       <div class="k"><span class="pt">Certificações</span><span class="en">Certifications</span></div>
@@ -386,7 +407,7 @@ html{-webkit-text-size-adjust:100%; text-size-adjust:100%}
   </div>
 </section>
 
-<section class="blk alt" id="stack">
+<section class="blk" id="stack">
   <div class="wrap">
     <div class="head">
       <div class="k">Stack</div>
@@ -487,11 +508,20 @@ const STACK = [
  ['Google Cloud',['Landing zone com pastas e Shared VPC, GKE privado e Autopilot, Cloud SQL, AlloyDB, BigQuery, Workload Identity.','Landing zone with folders and Shared VPC, private and Autopilot GKE, Cloud SQL, AlloyDB, BigQuery, Workload Identity.']],
  ['Azure · OCI',['Landing zone com AKS privado, Front Door, Container Apps, ExpressRoute; rede híbrida com FastConnect na OCI.','Landing zone with private AKS, Front Door, Container Apps, ExpressRoute; hybrid networking with FastConnect on OCI.']],
  ['Infraestrutura como código',['Terraform modular (engines e roots por ambiente), AWS CDK, Atlantis, Backstage, testes de Terraform.','Modular Terraform (engines and per-environment roots), AWS CDK, Atlantis, Backstage, Terraform tests.','Infrastructure as code']],
- ['Kubernetes',['EKS e GKE em produção: criação, upgrades, migração blue-green sem downtime, Helm, Argo CD, Istio, Karpenter.','EKS and GKE in production: builds, upgrades, zero-downtime blue-green migration, Helm, Argo CD, Istio, Karpenter.']],
- ['CI/CD',['GitLab CI, GitHub Actions, Azure Pipelines, Jenkins, GoCD; deploy canário e entrega progressiva.','GitLab CI, GitHub Actions, Azure Pipelines, Jenkins, GoCD; canary and progressive delivery.']],
+ ['Kubernetes',['EKS e GKE em produção: criação, upgrades, migração blue-green sem downtime, DR com Velero, Helm, Argo CD e Argo Rollouts, Istio, Karpenter.','EKS and GKE in production: builds, upgrades, zero-downtime blue-green migration, DR with Velero, Helm, Argo CD and Argo Rollouts, Istio, Karpenter.']],
+ ['CI/CD',['GitLab CI, GitHub Actions, Azure DevOps, Jenkins e GoCD; OIDC sem chaves fixas, Checkov, Sonar, Trivy, deploy canário e GitOps.','GitLab CI, GitHub Actions, Azure DevOps, Jenkins and GoCD; keyless OIDC, Checkov, Sonar, Trivy, canary and GitOps.']],
  ['FinOps',['Ciclo informar, otimizar e operar; CUR e FOCUS, tags obrigatórias, KPIs por área e alertas de anomalia.','Inform, optimize and operate cycle; CUR and FOCUS, mandatory tags, per-team KPIs and anomaly alerts.']],
  ['Segurança e governança',['IAM Identity Center, permission boundaries, GuardDuty, Security Hub, Config, guardrails preventivos e detectivos.','IAM Identity Center, permission boundaries, GuardDuty, Security Hub, Config, preventive and detective guardrails.','Security and governance']],
  ['Observabilidade',['Prometheus, Grafana e Loki, CloudWatch, Fluent Bit, Zabbix.','Prometheus, Grafana and Loki, CloudWatch, Fluent Bit, Zabbix.','Observability']],
+];
+const PLAT = [
+ {k:'pipeline-terraform', t:['Pipeline de Terraform: do PR ao apply','Terraform pipeline: from PR to apply'], d:['fmt, validate, tflint, testes e Checkov no PR; plan comentado para revisão; apply do plano aprovado com credencial temporária via OIDC. Mesmo fluxo em GitLab CI, GitHub Actions, Azure DevOps e Jenkins.','fmt, validate, tflint, tests and Checkov on the PR; plan posted for review; apply of the approved plan with a temporary credential via OIDC. Same flow in GitLab CI, GitHub Actions, Azure DevOps and Jenkins.'], tag:['CI/CD','CI/CD'], m:'4 pipelines', u:'https://github.com/Raphaelfcs/automacao_terraform/tree/main/pipelines'},
+ {k:'pipeline-app', t:['Pipeline de aplicação com GitOps','Application pipeline with GitOps'], d:['Testes, build, Sonar e Trivy barram a imagem; push no ECR com tag imutável; o CI abre PR no repositório GitOps e o Argo CD entrega. O CI nunca acessa o cluster.','Tests, build, Sonar and Trivy gate the image; push to ECR with an immutable tag; CI opens a PR in the GitOps repository and Argo CD delivers. CI never touches the cluster.'], tag:['CI/CD · GitOps','CI/CD · GitOps'], m:'4 pipelines', u:'https://github.com/Raphaelfcs/automacao_terraform/tree/main/pipelines'},
+ {k:'k8s-design', t:['Design de cluster Kubernetes multi-time','Multi-team Kubernetes cluster design'], d:['Namespace por time com ResourceQuota, LimitRange, HPA, PDB e NetworkPolicy deny-all; Karpenter com on-demand e spot; IRSA/Pod Identity; imagens só do registry interno. Mesmo padrão em EKS, GKE e AKS.','One namespace per team with ResourceQuota, LimitRange, HPA, PDB and deny-all NetworkPolicy; Karpenter with on-demand and spot; IRSA/Pod Identity; images only from the internal registry. Same pattern on EKS, GKE and AKS.'], tag:['Kubernetes','Kubernetes'], u:'https://github.com/Raphaelfcs/automacao_terraform/tree/main/kubernetes/design'},
+ {k:'k8s-deploy', t:['Estratégias de deploy','Deployment strategies'], d:['Rolling update para serviços internos, blue-green quando a troca precisa ser atômica e canary com Argo Rollouts para tráfego de usuário, com análise de erro e latência no Prometheus e rollback automático.','Rolling update for internal services, blue-green when the switch must be atomic, and canary with Argo Rollouts for user traffic, with error and latency analysis in Prometheus and automatic rollback.'], tag:['Kubernetes','Kubernetes'], u:'https://github.com/Raphaelfcs/automacao_terraform/tree/main/kubernetes/estrategias-de-deploy'},
+ {k:'k8s-argocd', t:['Argo CD hub-spoke com app-of-apps','Hub-spoke Argo CD with app-of-apps'], d:['Um Argo CD central gerencia os clusters de dev, staging e prod com ApplicationSet e credencial via IRSA; produção sincroniza com aprovação. Bootstrap por Terraform, o resto vem do Git.','A central Argo CD manages the dev, staging and prod clusters with ApplicationSet and IRSA credentials; production syncs with approval. Bootstrapped by Terraform, everything else comes from Git.'], tag:['GitOps','GitOps'], m:'aws/eks-argocd', u:'https://github.com/Raphaelfcs/automacao_terraform/tree/main/kubernetes/argocd'},
+ {k:'k8s-dr', t:['DR e migração de cluster sem downtime','DR and zero-downtime cluster migration'], d:['Velero com backup diário em S3, cluster verde criado por Terraform + Argo CD e troca gradual de peso no Route 53. O mesmo processo serve para upgrade de versão e para DR regional (RPO 24h, RTO de horas).','Velero with daily backups to S3, a green cluster built by Terraform + Argo CD and a gradual weight shift in Route 53. The same process covers version upgrades and regional DR (24h RPO, RTO in hours).'], tag:['Kubernetes · DR','Kubernetes · DR'], u:'https://github.com/Raphaelfcs/automacao_terraform/tree/main/kubernetes/dr'},
+ {k:'monitoria-guia', w:1, t:['Monitoria do guia de programação','TV program guide monitoring'], d:['Lambda em Python agendada três vezes ao dia que confere se todos os canais oficiais estão no guia (EPG), grava a métrica em EMF, aciona o NOC por alarme e SNS e envia relatório HTML pelo SES. Versão 2026 de uma Lambda que escrevi em 2018, com testes em pytest e custo próximo de zero.','A Python Lambda scheduled three times a day that checks whether every official channel is in the program guide (EPG), writes the metric in EMF, alerts the NOC through an alarm and SNS, and sends an HTML report via SES. The 2026 version of a Lambda I wrote in 2018, with pytest tests and near-zero cost.'], tag:['Serverless · Python','Serverless · Python'], m:'Terraform + pytest', u:'https://github.com/Raphaelfcs/automacao_terraform/tree/main/labs/monitoria-de-guia'},
 ];
 const CLOUD = {aws:'AWS', gcp:'Google Cloud', azure:'Azure', oci:'OCI'};
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -532,14 +562,23 @@ document.getElementById('gal').innerHTML = DATA.dest.map(d => `<article class="c
   <div class="in"><div class="meta"><i class="dot-${d.c}"></i>${CLOUD[d.c]} · ${bi(d.gpt, d.gen)}${d.ano ? ' · ' + d.ano : ''}</div>
   <h3>${bi(d.pt, d.en)}</h3><p>${bi(d.dpt, d.den)}</p>
   <div class="foot"><span class="mods">${d.m.length ? `${d.m.length} ${bi('módulos Terraform', 'Terraform modules')}` : bi('referência de processo', 'process reference')}</span><a href="${esc(d.u)}" target="_blank" rel="noopener">${bi('Ver lab no GitHub ↗', 'View lab on GitHub ↗')}</a></div></div></article>`).join('');
+
+document.getElementById('plat').innerHTML = PLAT.map(d => `<article class="card${d.w ? ' wide' : ''}">
+  <button type="button" class="shot" data-base="assets/plat/${d.k}" data-tpt="${esc(d.t[0])}" data-ten="${esc(d.t[1])}" aria-label="${esc(d.t[0])}"><img class="pt" loading="lazy" src="assets/plat/${d.k}.pt.webp" alt="${esc(d.t[0])}"><img class="en" loading="lazy" src="assets/plat/${d.k}.en.webp" alt="${esc(d.t[1])}"></button>
+  <div class="in"><div class="meta">${bi(d.tag[0], d.tag[1])}</div><h3>${bi(d.t[0], d.t[1])}</h3><p>${bi(d.d[0], d.d[1])}</p>
+  <div class="foot"><span class="mods">${d.m ? esc(d.m) : ''}</span><a href="${esc(d.u)}" target="_blank" rel="noopener">${bi('Ver no GitHub ↗', 'View on GitHub ↗')}</a></div></div></article>`).join('');
 const lb = document.getElementById('lb'), lbi = document.getElementById('lb-img'), lbt = document.getElementById('lb-t');
 let lastFocus = null;
-document.getElementById('gal').addEventListener('click', ev => {
-  const b = ev.target.closest('.shot'); if (!b) return; const d = DATA.dest.find(x => x.s === b.dataset.s);
+const abre = ev => {
+  const b = ev.target.closest('.shot'); if (!b) return;
   const en = document.documentElement.dataset.lang === 'en'; lastFocus = b;
-  lbi.src = `assets/arq/${d.s}.${en ? 'en' : 'pt'}.webp`; lbi.alt = en ? d.en : d.pt; lbt.textContent = en ? d.en : d.pt;
+  let base = b.dataset.base, tpt = b.dataset.tpt, ten = b.dataset.ten;
+  if (!base) { const d = DATA.dest.find(x => x.s === b.dataset.s); base = `assets/arq/${d.s}`; tpt = d.pt; ten = d.en; }
+  lbi.src = `${base}.${en ? 'en' : 'pt'}.webp`; lbi.alt = en ? ten : tpt; lbt.textContent = en ? ten : tpt;
   lb.hidden = false; document.getElementById('lb-x').focus();
-});
+};
+document.getElementById('gal').addEventListener('click', abre);
+document.getElementById('plat').addEventListener('click', abre);
 const fecha = () => { lb.hidden = true; lastFocus && lastFocus.focus(); };
 document.getElementById('lb-x').addEventListener('click', fecha);
 lb.addEventListener('click', ev => { if (ev.target === lb) fecha(); });
