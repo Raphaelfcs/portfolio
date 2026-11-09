@@ -206,6 +206,17 @@ a.cf{text-decoration:none; color:var(--ink)} a.cf:hover{border-color:var(--blue)
 .stack p{margin:0 0 12px; color:var(--muted); font-size:15px}
 @media (max-width:860px){.stack{grid-template-columns:1fr 1fr}} @media (max-width:560px){.stack{grid-template-columns:1fr}}
 
+/* aws na prática */
+.xps{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px}
+.xp{background:var(--paper); border:1px solid var(--line); border-left:4px solid var(--aws); border-radius:14px; padding:20px 22px; display:flex; flex-direction:column; gap:8px; min-width:0}
+.xp .xk{font:500 12px/1 var(--f-mono); letter-spacing:.06em; text-transform:uppercase; color:var(--aws)}
+.xp h3{font:700 19px/1.25 var(--f-display); margin:0}
+.xp p{margin:0; color:var(--muted); font-size:15px}
+.xp .mods{display:flex; flex-wrap:wrap; gap:6px; margin-top:auto; padding-top:6px}
+.xp .mods a{font:500 12px/1 var(--f-mono); padding:7px 9px; border-radius:7px; background:var(--sky); color:var(--blue-ink); text-decoration:none; overflow-wrap:anywhere}
+.xp .mods a:hover{background:var(--blue); color:var(--paper)}
+@media (max-width:860px){.xps{grid-template-columns:1fr}}
+
 /* contato */
 .contact{background:var(--blue); color:var(--paper)}
 .contact .wrap{padding-block:72px; display:grid; grid-template-columns:1.2fr 1fr; gap:40px; align-items:end}
@@ -253,6 +264,7 @@ html{-webkit-text-size-adjust:100%; text-size-adjust:100%}
     <a class="brand" href="#top"><img class="av" src="assets/foto.webp" alt="" width="30" height="30">Raphael Santos</a>
     <ul>
       <li><a href="#sobre"><span class="pt">Sobre</span><span class="en">About</span></a></li>
+      <li><a href="#aws"><span class="pt">AWS</span><span class="en">AWS</span></a></li>
       <li><a href="#trajetoria"><span class="pt">Trajetória</span><span class="en">Career</span></a></li>
       <li><a href="#projetos"><span class="pt">Projetos</span><span class="en">Projects</span></a></li>
       <li><a href="#arquiteturas"><span class="pt">Arquiteturas</span><span class="en">Architectures</span></a></li>
@@ -301,7 +313,7 @@ html{-webkit-text-size-adjust:100%; text-size-adjust:100%}
 <span class="d">  # module.cloud_architect será criado</span>
 <span class="g">  +</span> clouds        = ["aws", "gcp", "azure", "oci"]
 <span class="g">  +</span> kubernetes    = ["eks", "gke", "aks"]
-<span class="g">  +</span> iac           = "terraform"   <span class="d"># 55 módulos</span>
+<span class="g">  +</span> iac           = "terraform"   <span class="d"># 63 módulos</span>
 <span class="g">  +</span> landing_zone  = "control-tower + aft"
 <span class="g">  +</span> finops        = "engineer + practitioner"
 <span class="g">  +</span> lead_time     = "22d → 2d"
@@ -311,7 +323,7 @@ html{-webkit-text-size-adjust:100%; text-size-adjust:100%}
 <span class="d">  # module.cloud_architect will be created</span>
 <span class="g">  +</span> clouds        = ["aws", "gcp", "azure", "oci"]
 <span class="g">  +</span> kubernetes    = ["eks", "gke", "aks"]
-<span class="g">  +</span> iac           = "terraform"   <span class="d"># 55 modules</span>
+<span class="g">  +</span> iac           = "terraform"   <span class="d"># 63 modules</span>
 <span class="g">  +</span> landing_zone  = "control-tower + aft"
 <span class="g">  +</span> finops        = "engineer + practitioner"
 <span class="g">  +</span> lead_time     = "22d → 2d"
@@ -326,7 +338,7 @@ html{-webkit-text-size-adjust:100%; text-size-adjust:100%}
   <div class="wrap">
     <div class="stat"><b>22<small>d</small> → 2<small>d</small></b><span class="pt">Tempo para um time receber uma conta AWS pronta, com Control Tower + AFT</span><span class="en">Time for a team to get a ready AWS account, with Control Tower + AFT</span></div>
     <div class="stat"><b>65</b><span class="pt">Arquiteturas documentadas, com desenho e README em PT e EN</span><span class="en">Documented architectures, with diagram and README in PT and EN</span></div>
-    <div class="stat"><b>55</b><span class="pt">Módulos Terraform reutilizáveis em AWS, GCP e Azure</span><span class="en">Reusable Terraform modules for AWS, GCP and Azure</span></div>
+    <div class="stat"><b>63</b><span class="pt">Módulos Terraform reutilizáveis em AWS, GCP e Azure</span><span class="en">Reusable Terraform modules for AWS, GCP and Azure</span></div>
     <div class="stat"><b>9<small>+ <span class="pt">anos</span><span class="en">years</span></small></b><span class="pt">Em DevOps e arquitetura de nuvem, desde 2017</span><span class="en">In DevOps and cloud architecture, since 2017</span></div>
   </div>
 </div>
@@ -351,7 +363,67 @@ html{-webkit-text-size-adjust:100%; text-size-adjust:100%}
   </div>
 </section>
 
-<section class="blk alt" id="trajetoria">
+<section class="blk alt" id="aws">
+  <div class="wrap">
+    <div class="head">
+      <div class="k"><span class="pt">AWS na prática</span><span class="en">Hands-on AWS</span></div>
+      <div><h2><span class="pt">Governança, identidade, rede e automação na AWS</span><span class="en">Governance, identity, networking and automation on AWS</span></h2>
+      <p><span class="pt">O que já montei e operei em ambientes multi-conta, cada item com o módulo Terraform, os testes e o desenho no GitHub.</span><span class="en">What I have built and run in multi-account environments, each item with its Terraform module, tests and diagram on GitHub.</span></p></div>
+    </div>
+    <div class="xps">
+      <article class="xp">
+        <span class="xk">SCP · RCP</span>
+        <h3><span class="pt">SCP e RCP no AWS Organizations</span><span class="en">SCP and RCP in AWS Organizations</span></h3>
+        <p><span class="pt">OUs em dois níveis e SCPs preventivas: região permitida, proteção de CloudTrail, GuardDuty, Config e Security Hub, root negado, criptografia e tags na criação. RCPs fecham o perímetro de dados: S3, KMS, SQS, STS e Secrets Manager só aceitam identidades da organização, com TLS obrigatório. Um budget estourado aplica uma SCP de congelamento.</span><span class="en">Two-level OUs and preventive SCPs: allowed regions, protection of CloudTrail, GuardDuty, Config and Security Hub, root denied, encryption and tags on create. RCPs close the data perimeter: S3, KMS, SQS, STS and Secrets Manager only accept identities from the organization, with mandatory TLS. A blown budget applies a freeze SCP.</span></p>
+        <div class="mods" aria-label="Módulos"><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/organizations-scp" target="_blank" rel="noopener">organizations-scp</a><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/budget-guardrail" target="_blank" rel="noopener">budget-guardrail</a></div>
+      </article>
+      <article class="xp">
+        <span class="xk">Control Tower</span>
+        <h3><span class="pt">Landing zone com Control Tower e AFT</span><span class="en">Landing zone with Control Tower and AFT</span></h3>
+        <p><span class="pt">Landing zone 4.0 como código, contas Log Archive e Audit, registro de OUs e Account Factory for Terraform sem VPC na conta do AFT. Uma conta pronta para o time passou de 22 para 2 dias.</span><span class="en">Landing zone 4.0 as code, Log Archive and Audit accounts, OU registration and Account Factory for Terraform with no VPC in the AFT account. A ready account for a team went from 22 days to 2.</span></p>
+        <div class="mods" aria-label="Módulos"><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/control-tower-landing-zone" target="_blank" rel="noopener">control-tower-landing-zone</a><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/control-tower-aft" target="_blank" rel="noopener">control-tower-aft</a><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/control-tower-ou-registration" target="_blank" rel="noopener">control-tower-ou-registration</a></div>
+      </article>
+      <article class="xp">
+        <span class="xk">Identity Center</span>
+        <h3><span class="pt">IAM Identity Center como código</span><span class="en">IAM Identity Center as code</span></h3>
+        <p><span class="pt">Acesso humano federado sem usuário IAM: grupos no diretório, permission sets com políticas gerenciadas, inline, customer managed e permissions boundary, e atribuições grupo para conta. Break-glass separado e pipelines por OIDC, sem chave fixa.</span><span class="en">Federated human access with no IAM users: directory groups, permission sets with managed, inline and customer managed policies and permissions boundary, and group-to-account assignments. Separate break-glass and pipelines over OIDC, with no long-lived keys.</span></p>
+        <div class="mods" aria-label="Módulos"><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/identity-center-groups" target="_blank" rel="noopener">identity-center-groups</a><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/identity-center-permission-set" target="_blank" rel="noopener">identity-center-permission-set</a><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/iam-github-oidc" target="_blank" rel="noopener">iam-github-oidc</a></div>
+      </article>
+      <article class="xp">
+        <span class="xk">VPC</span>
+        <h3><span class="pt">VPC em camadas e tráfego privado</span><span class="en">Tiered VPC and private traffic</span></h3>
+        <p><span class="pt">Três camadas por AZ, com a de dados sem rota para a internet, flow logs, VPC endpoints Interface e Gateway para falar com serviços AWS sem NAT e security groups por referência, não por CIDR.</span><span class="en">Three tiers per AZ, with the data tier having no internet route, flow logs, Interface and Gateway VPC endpoints to reach AWS services without NAT, and security groups by reference instead of CIDR.</span></p>
+        <div class="mods" aria-label="Módulos"><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/vpc" target="_blank" rel="noopener">vpc</a><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/vpc-endpoints" target="_blank" rel="noopener">vpc-endpoints</a><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/security-group" target="_blank" rel="noopener">security-group</a></div>
+      </article>
+      <article class="xp">
+        <span class="xk">Transit Gateway · VPN · DX</span>
+        <h3><span class="pt">Conectividade hub-and-spoke e híbrida</span><span class="en">Hub-and-spoke and hybrid connectivity</span></h3>
+        <p><span class="pt">Conta Network com Transit Gateway compartilhado por RAM, tabelas de rota segmentadas (prod, nonprod, shared), Direct Connect com transit VIF e VPN Site-to-Site com BGP como contingência. Integração de rede com parceiro via Transit Gateway.</span><span class="en">Network account with a Transit Gateway shared through RAM, segmented route tables (prod, nonprod, shared), Direct Connect with a transit VIF and a Site-to-Site VPN with BGP as backup. Partner network integration through Transit Gateway.</span></p>
+        <div class="mods" aria-label="Módulos"><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/network-hub" target="_blank" rel="noopener">network-hub</a><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/transit-gateway-attachment" target="_blank" rel="noopener">transit-gateway-attachment</a><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/vpn-site-to-site" target="_blank" rel="noopener">vpn-site-to-site</a></div>
+      </article>
+      <article class="xp">
+        <span class="xk">Route 53</span>
+        <h3><span class="pt">DNS entre contas e híbrido</span><span class="en">Cross-account and hybrid DNS</span></h3>
+        <p><span class="pt">Zonas privadas com nomes estáveis e autorização entre contas, Resolver para DNS híbrido com o ambiente on-premises e outras nuvens, zona pública por conta com ACM curinga e CAA, e delegação de subdomínio em estado próprio.</span><span class="en">Private zones with stable names and cross-account authorization, Resolver for hybrid DNS with on-premises and other clouds, a public zone per account with wildcard ACM and CAA, and subdomain delegation in its own state.</span></p>
+        <div class="mods" aria-label="Módulos"><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/route53-private-zone" target="_blank" rel="noopener">route53-private-zone</a><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/route53-public-zone" target="_blank" rel="noopener">route53-public-zone</a><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/route53-zone-delegation" target="_blank" rel="noopener">route53-zone-delegation</a></div>
+      </article>
+      <article class="xp">
+        <span class="xk">EventBridge · Lambda</span>
+        <h3><span class="pt">Integração orientada a eventos</span><span class="en">Event-driven integration</span></h3>
+        <p><span class="pt">Barramento EventBridge entre contas entregando em SQS com DLQ, archive e replay; Lambdas com menor privilégio, DLQ e X-Ray, disparadas por agenda, padrão de evento ou fila; EventBridge Scheduler com fuso horário.</span><span class="en">Cross-account EventBridge bus delivering into SQS with DLQ, archive and replay; least-privilege Lambdas with DLQ and X-Ray, triggered by schedule, event pattern or queue; EventBridge Scheduler with time zones.</span></p>
+        <div class="mods" aria-label="Módulos"><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/eventbridge-bus-sqs" target="_blank" rel="noopener">eventbridge-bus-sqs</a><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/lambda-function" target="_blank" rel="noopener">lambda-function</a><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/api-gateway-lambda" target="_blank" rel="noopener">api-gateway-lambda</a></div>
+      </article>
+      <article class="xp">
+        <span class="xk"><span class="pt">Automação</span><span class="en">Automation</span></span>
+        <h3><span class="pt">Automações de governança</span><span class="en">Governance automations</span></h3>
+        <p><span class="pt">CloudTrail para EventBridge para Lambda na conformidade de tags, auditoria de MFA, inventário IAM semanal, alerta de certificados vencendo, achados de segurança no SNS, liga e desliga de EC2 e RDS por tag e relatório diário de custos. Várias são redesenhos de scripts boto3 que escrevi a partir de 2017.</span><span class="en">CloudTrail to EventBridge to Lambda for tag compliance, MFA audit, weekly IAM inventory, expiring certificate alerts, security findings to SNS, EC2 and RDS start/stop by tag and a daily cost report. Several are redesigns of boto3 scripts I wrote from 2017 on.</span></p>
+        <div class="mods" aria-label="Módulos"><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/tag-compliance" target="_blank" rel="noopener">tag-compliance</a><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/iam-mfa-audit" target="_blank" rel="noopener">iam-mfa-audit</a><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/iam-inventory-export" target="_blank" rel="noopener">iam-inventory-export</a><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/acm-expiry-alert" target="_blank" rel="noopener">acm-expiry-alert</a><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/instance-scheduler" target="_blank" rel="noopener">instance-scheduler</a><a href="https://github.com/Raphaelfcs/automacao_terraform/tree/main/aws/finops-cost-report" target="_blank" rel="noopener">finops-cost-report</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="blk" id="trajetoria">
   <div class="wrap">
     <div class="head">
       <div class="k"><span class="pt">Trajetória</span><span class="en">Career</span></div>
@@ -362,7 +434,7 @@ html{-webkit-text-size-adjust:100%; text-size-adjust:100%}
   </div>
 </section>
 
-<section class="blk" id="projetos">
+<section class="blk alt" id="projetos">
   <div class="wrap">
     <div class="head">
       <div class="k"><span class="pt">Projetos</span><span class="en">Projects</span></div>
@@ -374,7 +446,7 @@ html{-webkit-text-size-adjust:100%; text-size-adjust:100%}
   </div>
 </section>
 
-<section class="blk alt" id="arquiteturas">
+<section class="blk" id="arquiteturas">
   <div class="wrap">
     <div class="head">
       <div class="k"><span class="pt">Arquiteturas</span><span class="en">Architectures</span></div>
@@ -385,7 +457,7 @@ html{-webkit-text-size-adjust:100%; text-size-adjust:100%}
   </div>
 </section>
 
-<section class="blk" id="entrega">
+<section class="blk alt" id="entrega">
   <div class="wrap">
     <div class="head">
       <div class="k"><span class="pt">Entrega</span><span class="en">Delivery</span></div>
@@ -399,7 +471,7 @@ html{-webkit-text-size-adjust:100%; text-size-adjust:100%}
   </div>
 </section>
 
-<section class="blk alt" id="certificacoes">
+<section class="blk" id="certificacoes">
   <div class="wrap">
     <div class="head">
       <div class="k"><span class="pt">Certificações</span><span class="en">Certifications</span></div>
@@ -410,7 +482,7 @@ html{-webkit-text-size-adjust:100%; text-size-adjust:100%}
   </div>
 </section>
 
-<section class="blk" id="stack">
+<section class="blk alt" id="stack">
   <div class="wrap">
     <div class="head">
       <div class="k">Stack</div>
@@ -507,7 +579,7 @@ const CERTS = [
 ];
 const CGRP = [['cloud','Nuvem','Cloud'],['finops','FinOps','FinOps'],['devops','DevOps e plataforma','DevOps and platform'],['ai','Inteligência artificial','Artificial intelligence'],['lang','Idiomas','Languages'],['edu','Formação','Education']];
 const STACK = [
- ['AWS',['Control Tower, AFT, Organizations e SCPs, Transit Gateway, EKS, ECS Fargate, Lambda, Textract, QuickSight.','Control Tower, AFT, Organizations and SCPs, Transit Gateway, EKS, ECS Fargate, Lambda, Textract, QuickSight.']],
+ ['AWS',['Control Tower, AFT, Organizations com SCP e RCP, IAM Identity Center, VPC, Transit Gateway, Direct Connect, VPN, Route 53, EventBridge, Lambda, EKS, ECS Fargate, Textract.','Control Tower, AFT, Organizations with SCP and RCP, IAM Identity Center, VPC, Transit Gateway, Direct Connect, VPN, Route 53, EventBridge, Lambda, EKS, ECS Fargate, Textract.']],
  ['Google Cloud',['Landing zone com pastas e Shared VPC, GKE privado e Autopilot, Cloud SQL, AlloyDB, BigQuery, Workload Identity.','Landing zone with folders and Shared VPC, private and Autopilot GKE, Cloud SQL, AlloyDB, BigQuery, Workload Identity.']],
  ['Azure · OCI',['Landing zone com AKS privado, Front Door, Container Apps, ExpressRoute; rede híbrida com FastConnect na OCI.','Landing zone with private AKS, Front Door, Container Apps, ExpressRoute; hybrid networking with FastConnect on OCI.']],
  ['Infraestrutura como código',['Terraform modular (engines e roots por ambiente), AWS CDK, Atlantis, Backstage, testes de Terraform.','Modular Terraform (engines and per-environment roots), AWS CDK, Atlantis, Backstage, Terraform tests.','Infrastructure as code']],
