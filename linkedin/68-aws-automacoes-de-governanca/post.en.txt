@@ -1,0 +1,16 @@
+Governance that depends on someone remembering to look at a screen does not happen.
+
+What I automate on AWS with CloudTrail, EventBridge and Lambda:
+→ Tag compliance when the resource is created
+→ Continuous MFA audit and a weekly report
+→ Versioned IAM inventory in S3
+→ Expiring certificate alerts, with no code
+→ Security findings straight to SNS
+→ EC2/RDS start/stop by tag and a daily cost report
+
+Many started as boto3 scripts I wrote in 2017. Today they are Terraform modules with least privilege, logs with retention and tests.
+
+Full article, with diagram, step by step and Terraform code:
+https://raphaelfcs.github.io/portfolio/artigos/en/aws-automacoes-de-governanca.html
+
+#AWS #EventBridge #AWSLambda #CloudGovernance #FinOps #Terraform

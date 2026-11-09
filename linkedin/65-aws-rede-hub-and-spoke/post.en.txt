@@ -1,0 +1,14 @@
+VPC peering works until the tenth account. After that, the network needs a hub.
+
+The network model I use in multi-account AWS environments:
+→ A Network account with a Transit Gateway shared through RAM
+→ Segmented route tables: prod, nonprod and shared
+→ Direct Connect over a transit VIF and a Site-to-Site VPN with BGP as backup
+→ Three-tier VPCs, data with no internet route, and VPC endpoints to cut NAT cost
+
+It is the same model I used to integrate a partner’s network without exposing the other VPCs.
+
+Full article, with diagram, step by step and Terraform code:
+https://raphaelfcs.github.io/portfolio/artigos/en/aws-rede-hub-and-spoke.html
+
+#AWS #AWSNetworking #TransitGateway #HybridCloud #Terraform #IaC

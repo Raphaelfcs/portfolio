@@ -1,0 +1,15 @@
+Em ambiente multi-conta, cada usuário IAM é uma chave de longa duração esperando vazar.
+
+Como estruturo o acesso nas contas AWS:
+→ IAM Identity Center com grupos por função e permission sets de menor privilégio
+→ Atribuições grupo → conta em Terraform: revisar acesso vira revisar um pull request
+→ Delegated administrator, para não operar acesso a partir da conta de gerenciamento
+→ Break-glass separado, com MFA e alerta de uso
+→ Pipelines por OIDC, sem chave fixa
+
+Os módulos estão abertos no GitHub, com testes e desenho.
+
+Artigo completo, com desenho, passo a passo e código Terraform:
+https://raphaelfcs.github.io/portfolio/artigos/pt/aws-identity-center.html
+
+#AWS #IAMIdentityCenter #IAM #CloudSecurity #Terraform #IaC

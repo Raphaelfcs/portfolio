@@ -1,0 +1,15 @@
+Integração por evento só é confiável quando você sabe o que acontece com a mensagem que falhou.
+
+O padrão que uso para integrar contas e parceiros na AWS:
+→ Barramento EventBridge dedicado, liberado só para as roles do produtor
+→ Regra entregando em SQS cifrada, com DLQ na regra e na fila
+→ Archive para replay sem depender do produtor
+→ Lambda com menor privilégio, X-Ray e falhas parciais em lote
+→ Alarmes de consumidor parado, mensagem antiga e DLQ
+
+O código, os testes e o desenho estão no GitHub.
+
+Artigo completo, com desenho, passo a passo e código Terraform:
+https://raphaelfcs.github.io/portfolio/artigos/pt/aws-eventbridge-lambda.html
+
+#AWS #EventBridge #AWSLambda #Serverless #EventDriven #Terraform

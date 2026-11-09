@@ -1,0 +1,14 @@
+A database address pasted into an environment variable is an incident waiting for the next instance replacement.
+
+How I organize DNS in multi-account AWS environments:
+→ Private zones with stable names, authorized for VPCs in other accounts
+→ Route 53 Resolver in the Network account for hybrid DNS with on-premises and other clouds
+→ One public zone per account, with wildcard ACM and CAA
+→ Cross-account subdomain delegation in its own state, with no lifecycle coupling
+
+All in Terraform, one module per responsibility.
+
+Full article, with diagram, step by step and Terraform code:
+https://raphaelfcs.github.io/portfolio/artigos/en/aws-route53-entre-contas.html
+
+#AWS #Route53 #DNS #AWSNetworking #Terraform #IaC

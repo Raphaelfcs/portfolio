@@ -1,0 +1,14 @@
+Peering entre VPCs funciona até a décima conta. Depois disso, a rede precisa de um hub.
+
+O modelo de rede que uso em ambientes AWS multi-conta:
+→ Conta Network com Transit Gateway compartilhado por RAM
+→ Tabelas de rota segmentadas: prod, nonprod e shared
+→ Direct Connect por transit VIF e VPN Site-to-Site com BGP como contingência
+→ VPC em três camadas, dados sem rota para a internet, e VPC endpoints para cortar custo de NAT
+
+Foi o mesmo modelo que usei para integrar a rede de um parceiro sem expor as demais VPCs.
+
+Artigo completo, com desenho, passo a passo e código Terraform:
+https://raphaelfcs.github.io/portfolio/artigos/pt/aws-rede-hub-and-spoke.html
+
+#AWS #AWSNetworking #TransitGateway #HybridCloud #Terraform #IaC

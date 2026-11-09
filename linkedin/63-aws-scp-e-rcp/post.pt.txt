@@ -1,0 +1,13 @@
+SCP sozinha não impede que uma conta de fora leia o seu bucket. RCP sozinha não impede que alguém de dentro desligue o CloudTrail.
+
+O que eu aplico nas landing zones multi-conta que monto:
+→ SCPs nas OUs: região permitida, CloudTrail/GuardDuty/Config/Security Hub protegidos, root negado, criptografia e tags na criação
+→ RCPs de perímetro de dados: S3, KMS, SQS, STS e Secrets Manager só aceitam identidades da organização e contas declaradas, com TLS
+→ Budget com SCP de congelamento quando o gasto estoura
+
+Tudo em Terraform, com testes que conferem o conteúdo das políticas antes do apply.
+
+Artigo completo, com desenho, passo a passo e código Terraform:
+https://raphaelfcs.github.io/portfolio/artigos/pt/aws-scp-e-rcp.html
+
+#AWS #AWSOrganizations #CloudSecurity #Terraform #IaC #CloudGovernance

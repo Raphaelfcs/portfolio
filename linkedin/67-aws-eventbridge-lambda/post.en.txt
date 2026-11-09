@@ -1,0 +1,15 @@
+Event-driven integration is only reliable when you know what happens to the message that failed.
+
+The pattern I use to integrate accounts and partners on AWS:
+→ A dedicated EventBridge bus, opened only to the producer’s roles
+→ A rule delivering into an encrypted SQS queue, with DLQs on the rule and the queue
+→ An archive for replay without depending on the producer
+→ Least-privilege Lambda with X-Ray and partial batch failures
+→ Alarms for a stopped consumer, old messages and the DLQ
+
+The code, tests and diagram are on GitHub.
+
+Full article, with diagram, step by step and Terraform code:
+https://raphaelfcs.github.io/portfolio/artigos/en/aws-eventbridge-lambda.html
+
+#AWS #EventBridge #AWSLambda #Serverless #EventDriven #Terraform

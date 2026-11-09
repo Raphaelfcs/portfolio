@@ -1,0 +1,14 @@
+Endereço de banco colado em variável de ambiente é incidente esperando a próxima troca de instância.
+
+Como organizo DNS em ambientes AWS multi-conta:
+→ Zonas privadas com nomes estáveis, autorizadas para VPCs de outras contas
+→ Route 53 Resolver na conta Network para DNS híbrido com on-premises e outras nuvens
+→ Zona pública por conta, com ACM curinga e CAA
+→ Delegação de subdomínio entre contas em estado próprio, sem acoplar ciclos de vida
+
+Tudo em Terraform, um módulo para cada responsabilidade.
+
+Artigo completo, com desenho, passo a passo e código Terraform:
+https://raphaelfcs.github.io/portfolio/artigos/pt/aws-route53-entre-contas.html
+
+#AWS #Route53 #DNS #AWSNetworking #Terraform #IaC

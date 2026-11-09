@@ -1,6 +1,6 @@
 {
  "fuso": "America/Sao_Paulo",
- "gerado_em": "2026-11-03",
+ "gerado_em": "2026-11-09",
  "publicacoes": [
   {
    "data": "2026-11-06",
@@ -138,6 +138,162 @@
    "data": "2026-11-16",
    "hora_brt": "10:00",
    "idioma": "pt",
+   "post": 63,
+   "slug": "aws-scp-e-rcp",
+   "titulo": "SCP e RCP: o perímetro de dados da organização AWS",
+   "trilha": "aws-na-pratica",
+   "texto": "linkedin/63-aws-scp-e-rcp/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/63-aws-scp-e-rcp/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/aws-scp-e-rcp.html",
+   "artigo_md": "linkedin/63-aws-scp-e-rcp/artigo.pt.md"
+  },
+  {
+   "data": "2026-11-16",
+   "hora_brt": "17:00",
+   "idioma": "en",
+   "post": 63,
+   "slug": "aws-scp-e-rcp",
+   "titulo": "SCP and RCP: the data perimeter of an AWS organization",
+   "trilha": "aws-na-pratica",
+   "texto": "linkedin/63-aws-scp-e-rcp/post.en.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/63-aws-scp-e-rcp/capa.en.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/aws-scp-e-rcp.html",
+   "artigo_md": "linkedin/63-aws-scp-e-rcp/artigo.en.md"
+  },
+  {
+   "data": "2026-11-17",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 64,
+   "slug": "aws-identity-center",
+   "titulo": "IAM Identity Center como código: acesso sem usuário IAM",
+   "trilha": "aws-na-pratica",
+   "texto": "linkedin/64-aws-identity-center/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/64-aws-identity-center/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/aws-identity-center.html",
+   "artigo_md": "linkedin/64-aws-identity-center/artigo.pt.md"
+  },
+  {
+   "data": "2026-11-17",
+   "hora_brt": "17:00",
+   "idioma": "en",
+   "post": 64,
+   "slug": "aws-identity-center",
+   "titulo": "IAM Identity Center as code: access with no IAM users",
+   "trilha": "aws-na-pratica",
+   "texto": "linkedin/64-aws-identity-center/post.en.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/64-aws-identity-center/capa.en.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/aws-identity-center.html",
+   "artigo_md": "linkedin/64-aws-identity-center/artigo.en.md"
+  },
+  {
+   "data": "2026-11-18",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 65,
+   "slug": "aws-rede-hub-and-spoke",
+   "titulo": "Rede AWS hub-and-spoke: VPC, Transit Gateway, VPN e Direct Connect",
+   "trilha": "aws-na-pratica",
+   "texto": "linkedin/65-aws-rede-hub-and-spoke/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/65-aws-rede-hub-and-spoke/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/aws-rede-hub-and-spoke.html",
+   "artigo_md": "linkedin/65-aws-rede-hub-and-spoke/artigo.pt.md"
+  },
+  {
+   "data": "2026-11-18",
+   "hora_brt": "17:00",
+   "idioma": "en",
+   "post": 65,
+   "slug": "aws-rede-hub-and-spoke",
+   "titulo": "Hub-and-spoke AWS networking: VPC, Transit Gateway, VPN and Direct Connect",
+   "trilha": "aws-na-pratica",
+   "texto": "linkedin/65-aws-rede-hub-and-spoke/post.en.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/65-aws-rede-hub-and-spoke/capa.en.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/aws-rede-hub-and-spoke.html",
+   "artigo_md": "linkedin/65-aws-rede-hub-and-spoke/artigo.en.md"
+  },
+  {
+   "data": "2026-11-19",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 66,
+   "slug": "aws-route53-entre-contas",
+   "titulo": "Route 53 entre contas: DNS privado, híbrido e delegação de subdomínio",
+   "trilha": "aws-na-pratica",
+   "texto": "linkedin/66-aws-route53-entre-contas/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/66-aws-route53-entre-contas/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/aws-route53-entre-contas.html",
+   "artigo_md": "linkedin/66-aws-route53-entre-contas/artigo.pt.md"
+  },
+  {
+   "data": "2026-11-19",
+   "hora_brt": "17:00",
+   "idioma": "en",
+   "post": 66,
+   "slug": "aws-route53-entre-contas",
+   "titulo": "Route 53 across accounts: private DNS, hybrid DNS and subdomain delegation",
+   "trilha": "aws-na-pratica",
+   "texto": "linkedin/66-aws-route53-entre-contas/post.en.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/66-aws-route53-entre-contas/capa.en.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/aws-route53-entre-contas.html",
+   "artigo_md": "linkedin/66-aws-route53-entre-contas/artigo.en.md"
+  },
+  {
+   "data": "2026-11-23",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 67,
+   "slug": "aws-eventbridge-lambda",
+   "titulo": "EventBridge e Lambda: integração entre contas que aguenta falha",
+   "trilha": "aws-na-pratica",
+   "texto": "linkedin/67-aws-eventbridge-lambda/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/67-aws-eventbridge-lambda/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/aws-eventbridge-lambda.html",
+   "artigo_md": "linkedin/67-aws-eventbridge-lambda/artigo.pt.md"
+  },
+  {
+   "data": "2026-11-23",
+   "hora_brt": "17:00",
+   "idioma": "en",
+   "post": 67,
+   "slug": "aws-eventbridge-lambda",
+   "titulo": "EventBridge and Lambda: cross-account integration that survives failure",
+   "trilha": "aws-na-pratica",
+   "texto": "linkedin/67-aws-eventbridge-lambda/post.en.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/67-aws-eventbridge-lambda/capa.en.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/aws-eventbridge-lambda.html",
+   "artigo_md": "linkedin/67-aws-eventbridge-lambda/artigo.en.md"
+  },
+  {
+   "data": "2026-11-24",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 68,
+   "slug": "aws-automacoes-de-governanca",
+   "titulo": "Automações de governança na AWS orientadas a eventos",
+   "trilha": "aws-na-pratica",
+   "texto": "linkedin/68-aws-automacoes-de-governanca/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/68-aws-automacoes-de-governanca/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/aws-automacoes-de-governanca.html",
+   "artigo_md": "linkedin/68-aws-automacoes-de-governanca/artigo.pt.md"
+  },
+  {
+   "data": "2026-11-24",
+   "hora_brt": "17:00",
+   "idioma": "en",
+   "post": 68,
+   "slug": "aws-automacoes-de-governanca",
+   "titulo": "Event-driven governance automations on AWS",
+   "trilha": "aws-na-pratica",
+   "texto": "linkedin/68-aws-automacoes-de-governanca/post.en.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/68-aws-automacoes-de-governanca/capa.en.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/aws-automacoes-de-governanca.html",
+   "artigo_md": "linkedin/68-aws-automacoes-de-governanca/artigo.en.md"
+  },
+  {
+   "data": "2026-11-25",
+   "hora_brt": "10:00",
+   "idioma": "pt",
    "post": 11,
    "slug": "cluster-eks",
    "titulo": "Cluster EKS compartilhado",
@@ -147,7 +303,7 @@
    "artigo_md": "linkedin/11-cluster-eks/artigo.pt.md"
   },
   {
-   "data": "2026-11-16",
+   "data": "2026-11-25",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 12,
@@ -159,7 +315,7 @@
    "artigo_md": "linkedin/12-evolucao-portal-de-seguros/artigo.en.md"
   },
   {
-   "data": "2026-11-17",
+   "data": "2026-11-26",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 13,
@@ -171,7 +327,7 @@
    "artigo_md": "linkedin/13-relatorios-regulatorios/artigo.pt.md"
   },
   {
-   "data": "2026-11-17",
+   "data": "2026-11-26",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 14,
@@ -183,7 +339,7 @@
    "artigo_md": "linkedin/14-migracao-por-ondas/artigo.en.md"
   },
   {
-   "data": "2026-11-18",
+   "data": "2026-11-27",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 15,
@@ -195,7 +351,7 @@
    "artigo_md": "linkedin/15-ocr-de-documentos/artigo.pt.md"
   },
   {
-   "data": "2026-11-18",
+   "data": "2026-11-27",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 16,
@@ -207,7 +363,7 @@
    "artigo_md": "linkedin/16-ocr-de-documentos-v2/artigo.en.md"
   },
   {
-   "data": "2026-11-19",
+   "data": "2026-11-30",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 17,
@@ -219,7 +375,7 @@
    "artigo_md": "linkedin/17-api-equipamentos-medicos/artigo.pt.md"
   },
   {
-   "data": "2026-11-19",
+   "data": "2026-11-30",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 18,
@@ -231,7 +387,7 @@
    "artigo_md": "linkedin/18-automacao-rgs/artigo.en.md"
   },
   {
-   "data": "2026-11-23",
+   "data": "2026-12-01",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 19,
@@ -243,7 +399,7 @@
    "artigo_md": "linkedin/19-envio-ao-regulador/artigo.pt.md"
   },
   {
-   "data": "2026-11-23",
+   "data": "2026-12-01",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 20,
@@ -255,7 +411,7 @@
    "artigo_md": "linkedin/20-api-de-download/artigo.en.md"
   },
   {
-   "data": "2026-11-24",
+   "data": "2026-12-02",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 21,
@@ -267,7 +423,7 @@
    "artigo_md": "linkedin/21-bff-acesso-externo/artigo.pt.md"
   },
   {
-   "data": "2026-11-24",
+   "data": "2026-12-02",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 22,
@@ -279,7 +435,7 @@
    "artigo_md": "linkedin/22-gestao-de-carteiras/artigo.en.md"
   },
   {
-   "data": "2026-11-25",
+   "data": "2026-12-03",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 23,
@@ -291,7 +447,7 @@
    "artigo_md": "linkedin/23-simulador-odontologico/artigo.pt.md"
   },
   {
-   "data": "2026-11-25",
+   "data": "2026-12-03",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 24,
@@ -303,7 +459,7 @@
    "artigo_md": "linkedin/24-bloqueio-e-reset-de-acesso/artigo.en.md"
   },
   {
-   "data": "2026-11-26",
+   "data": "2026-12-04",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 25,
@@ -315,7 +471,7 @@
    "artigo_md": "linkedin/25-processamento-em-lote/artigo.pt.md"
   },
   {
-   "data": "2026-11-26",
+   "data": "2026-12-04",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 26,
@@ -327,7 +483,7 @@
    "artigo_md": "linkedin/26-portal-de-corretores/artigo.en.md"
   },
   {
-   "data": "2026-11-27",
+   "data": "2026-12-07",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 27,
@@ -339,7 +495,7 @@
    "artigo_md": "linkedin/27-negociacao-de-debitos/artigo.pt.md"
   },
   {
-   "data": "2026-11-27",
+   "data": "2026-12-07",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 28,
@@ -351,7 +507,7 @@
    "artigo_md": "linkedin/28-guardrails-s3-rds-cloudfront/artigo.en.md"
   },
   {
-   "data": "2026-11-30",
+   "data": "2026-12-08",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 29,
@@ -363,7 +519,7 @@
    "artigo_md": "linkedin/29-rede-oci/artigo.pt.md"
   },
   {
-   "data": "2026-11-30",
+   "data": "2026-12-08",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 30,
@@ -375,7 +531,7 @@
    "artigo_md": "linkedin/30-autenticacao-b2c-v1/artigo.en.md"
   },
   {
-   "data": "2026-12-01",
+   "data": "2026-12-09",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 31,
@@ -387,7 +543,7 @@
    "artigo_md": "linkedin/31-processo-finops/artigo.pt.md"
   },
   {
-   "data": "2026-12-01",
+   "data": "2026-12-09",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 32,
@@ -399,7 +555,7 @@
    "artigo_md": "linkedin/32-infra-staging-c4/artigo.en.md"
   },
   {
-   "data": "2026-12-02",
+   "data": "2026-12-10",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 33,
@@ -411,7 +567,7 @@
    "artigo_md": "linkedin/33-fundamentos-aws/artigo.pt.md"
   },
   {
-   "data": "2026-12-02",
+   "data": "2026-12-10",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 34,
@@ -423,7 +579,7 @@
    "artigo_md": "linkedin/34-iac-cdk-x-terraform/artigo.en.md"
   },
   {
-   "data": "2026-12-03",
+   "data": "2026-12-11",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 35,
@@ -435,7 +591,7 @@
    "artigo_md": "linkedin/35-landing-zone-azure/artigo.pt.md"
   },
   {
-   "data": "2026-12-03",
+   "data": "2026-12-11",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 36,
@@ -447,7 +603,7 @@
    "artigo_md": "linkedin/36-eks-core-5g/artigo.en.md"
   },
   {
-   "data": "2026-12-04",
+   "data": "2026-12-14",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 37,
@@ -459,7 +615,7 @@
    "artigo_md": "linkedin/37-integracao-rede-parceiro/artigo.pt.md"
   },
   {
-   "data": "2026-12-04",
+   "data": "2026-12-14",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 38,
@@ -471,7 +627,7 @@
    "artigo_md": "linkedin/38-plataforma-multicloud/artigo.en.md"
   },
   {
-   "data": "2026-12-07",
+   "data": "2026-12-15",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 39,
@@ -483,7 +639,7 @@
    "artigo_md": "linkedin/39-migracao-de-conta-aws/artigo.pt.md"
   },
   {
-   "data": "2026-12-07",
+   "data": "2026-12-15",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 40,
@@ -495,7 +651,7 @@
    "artigo_md": "linkedin/40-governanca-ci-cd-repos/artigo.en.md"
   },
   {
-   "data": "2026-12-08",
+   "data": "2026-12-16",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 41,
@@ -507,7 +663,7 @@
    "artigo_md": "linkedin/41-templates-de-iac/artigo.pt.md"
   },
   {
-   "data": "2026-12-08",
+   "data": "2026-12-16",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 42,
@@ -519,7 +675,7 @@
    "artigo_md": "linkedin/42-workflow-multi-x-mono-repo/artigo.en.md"
   },
   {
-   "data": "2026-12-09",
+   "data": "2026-12-17",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 43,
@@ -531,7 +687,7 @@
    "artigo_md": "linkedin/43-catalogo-de-servicos/artigo.pt.md"
   },
   {
-   "data": "2026-12-09",
+   "data": "2026-12-17",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 44,
@@ -543,7 +699,7 @@
    "artigo_md": "linkedin/44-gateways-de-api/artigo.en.md"
   },
   {
-   "data": "2026-12-10",
+   "data": "2026-12-18",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 45,
@@ -555,7 +711,7 @@
    "artigo_md": "linkedin/45-rede-gke-compartilhada/artigo.pt.md"
   },
   {
-   "data": "2026-12-10",
+   "data": "2026-12-18",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 46,
@@ -567,7 +723,7 @@
    "artigo_md": "linkedin/46-api-gateway-externo-kong/artigo.en.md"
   },
   {
-   "data": "2026-12-11",
+   "data": "2026-12-21",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 47,
@@ -579,7 +735,7 @@
    "artigo_md": "linkedin/47-ciclo-de-vida-cloud-sql/artigo.pt.md"
   },
   {
-   "data": "2026-12-11",
+   "data": "2026-12-21",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 48,
@@ -591,7 +747,7 @@
    "artigo_md": "linkedin/48-migracao-alloydb/artigo.en.md"
   },
   {
-   "data": "2026-12-14",
+   "data": "2026-12-22",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 49,
@@ -603,7 +759,7 @@
    "artigo_md": "linkedin/49-opcoes-de-computacao/artigo.pt.md"
   },
   {
-   "data": "2026-12-14",
+   "data": "2026-12-22",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 50,
@@ -615,7 +771,7 @@
    "artigo_md": "linkedin/50-pipeline-de-deploy/artigo.en.md"
   },
   {
-   "data": "2026-12-15",
+   "data": "2026-12-23",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 51,
@@ -627,7 +783,7 @@
    "artigo_md": "linkedin/51-conectividade/artigo.pt.md"
   },
   {
-   "data": "2026-12-15",
+   "data": "2026-12-23",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 52,
@@ -639,7 +795,7 @@
    "artigo_md": "linkedin/52-storage-legado/artigo.en.md"
   },
   {
-   "data": "2026-12-16",
+   "data": "2027-01-04",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 53,
@@ -651,7 +807,7 @@
    "artigo_md": "linkedin/53-governanca-iac-devops/artigo.pt.md"
   },
   {
-   "data": "2026-12-16",
+   "data": "2027-01-04",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 54,
@@ -663,7 +819,7 @@
    "artigo_md": "linkedin/54-provisionamento-de-vms/artigo.en.md"
   },
   {
-   "data": "2026-12-17",
+   "data": "2027-01-05",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 55,
@@ -675,7 +831,7 @@
    "artigo_md": "linkedin/55-governanca-de-nuvem/artigo.pt.md"
   },
   {
-   "data": "2026-12-17",
+   "data": "2027-01-05",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 56,
@@ -687,7 +843,7 @@
    "artigo_md": "linkedin/56-dr-de-arquivos-azure/artigo.en.md"
   },
   {
-   "data": "2026-12-18",
+   "data": "2027-01-06",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 57,
@@ -699,7 +855,7 @@
    "artigo_md": "linkedin/57-modernizacao-de-load-balancers/artigo.pt.md"
   },
   {
-   "data": "2026-12-18",
+   "data": "2027-01-06",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 58,
@@ -711,7 +867,7 @@
    "artigo_md": "linkedin/58-portfolio-de-servicos/artigo.en.md"
   },
   {
-   "data": "2026-12-21",
+   "data": "2027-01-07",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 59,
@@ -723,7 +879,7 @@
    "artigo_md": "linkedin/59-finops-atual-x-alvo/artigo.pt.md"
   },
   {
-   "data": "2026-12-21",
+   "data": "2027-01-07",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 60,
@@ -735,7 +891,7 @@
    "artigo_md": "linkedin/60-desafio-api-serverless/artigo.en.md"
   },
   {
-   "data": "2026-12-22",
+   "data": "2027-01-08",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 61,
@@ -747,7 +903,7 @@
    "artigo_md": "linkedin/61-desafio-aplicacao-web/artigo.pt.md"
   },
   {
-   "data": "2026-12-22",
+   "data": "2027-01-08",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 62,
@@ -759,7 +915,7 @@
    "artigo_md": "linkedin/62-notificacao-serverless/artigo.en.md"
   },
   {
-   "data": "2026-12-23",
+   "data": "2027-01-11",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 2,
@@ -771,7 +927,7 @@
    "artigo_md": "linkedin/02-automacao-com-ia-mvp/artigo.pt.md"
   },
   {
-   "data": "2026-12-23",
+   "data": "2027-01-11",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 1,
@@ -783,7 +939,7 @@
    "artigo_md": "linkedin/01-transformacao-digital-h1-h3/artigo.en.md"
   },
   {
-   "data": "2027-01-04",
+   "data": "2027-01-12",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 4,
@@ -795,7 +951,7 @@
    "artigo_md": "linkedin/04-arvore-iam-google-cloud/artigo.pt.md"
   },
   {
-   "data": "2027-01-04",
+   "data": "2027-01-12",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 3,
@@ -807,7 +963,7 @@
    "artigo_md": "linkedin/03-fundacao-google-cloud/artigo.en.md"
   },
   {
-   "data": "2027-01-05",
+   "data": "2027-01-13",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 6,
@@ -819,7 +975,7 @@
    "artigo_md": "linkedin/06-compartilhamento-de-rede/artigo.pt.md"
   },
   {
-   "data": "2027-01-05",
+   "data": "2027-01-13",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 5,
@@ -831,7 +987,7 @@
    "artigo_md": "linkedin/05-landing-zone-gcp/artigo.en.md"
   },
   {
-   "data": "2027-01-06",
+   "data": "2027-01-14",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 8,
@@ -843,7 +999,7 @@
    "artigo_md": "linkedin/08-poc-terraform-ci-cd/artigo.pt.md"
   },
   {
-   "data": "2027-01-06",
+   "data": "2027-01-14",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 7,
@@ -855,7 +1011,7 @@
    "artigo_md": "linkedin/07-gke-seguro/artigo.en.md"
   },
   {
-   "data": "2027-01-07",
+   "data": "2027-01-15",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 10,
@@ -867,7 +1023,7 @@
    "artigo_md": "linkedin/10-autenticacao-b2c/artigo.pt.md"
   },
   {
-   "data": "2027-01-07",
+   "data": "2027-01-15",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 9,
@@ -879,7 +1035,7 @@
    "artigo_md": "linkedin/09-visao-geral-plataforma/artigo.en.md"
   },
   {
-   "data": "2027-01-11",
+   "data": "2027-01-18",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 14,
@@ -891,7 +1047,7 @@
    "artigo_md": "linkedin/14-migracao-por-ondas/artigo.pt.md"
   },
   {
-   "data": "2027-01-11",
+   "data": "2027-01-18",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 13,
@@ -903,7 +1059,7 @@
    "artigo_md": "linkedin/13-relatorios-regulatorios/artigo.en.md"
   },
   {
-   "data": "2027-01-12",
+   "data": "2027-01-19",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 16,
@@ -915,7 +1071,7 @@
    "artigo_md": "linkedin/16-ocr-de-documentos-v2/artigo.pt.md"
   },
   {
-   "data": "2027-01-12",
+   "data": "2027-01-19",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 15,
@@ -927,7 +1083,7 @@
    "artigo_md": "linkedin/15-ocr-de-documentos/artigo.en.md"
   },
   {
-   "data": "2027-01-13",
+   "data": "2027-01-20",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 18,
@@ -939,7 +1095,7 @@
    "artigo_md": "linkedin/18-automacao-rgs/artigo.pt.md"
   },
   {
-   "data": "2027-01-13",
+   "data": "2027-01-20",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 17,
@@ -951,7 +1107,7 @@
    "artigo_md": "linkedin/17-api-equipamentos-medicos/artigo.en.md"
   },
   {
-   "data": "2027-01-14",
+   "data": "2027-01-21",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 20,
@@ -963,7 +1119,7 @@
    "artigo_md": "linkedin/20-api-de-download/artigo.pt.md"
   },
   {
-   "data": "2027-01-14",
+   "data": "2027-01-21",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 19,
@@ -975,7 +1131,7 @@
    "artigo_md": "linkedin/19-envio-ao-regulador/artigo.en.md"
   },
   {
-   "data": "2027-01-15",
+   "data": "2027-01-22",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 22,
@@ -987,7 +1143,7 @@
    "artigo_md": "linkedin/22-gestao-de-carteiras/artigo.pt.md"
   },
   {
-   "data": "2027-01-15",
+   "data": "2027-01-22",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 21,
@@ -999,7 +1155,7 @@
    "artigo_md": "linkedin/21-bff-acesso-externo/artigo.en.md"
   },
   {
-   "data": "2027-01-18",
+   "data": "2027-01-25",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 24,
@@ -1011,7 +1167,7 @@
    "artigo_md": "linkedin/24-bloqueio-e-reset-de-acesso/artigo.pt.md"
   },
   {
-   "data": "2027-01-18",
+   "data": "2027-01-25",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 23,
@@ -1023,7 +1179,7 @@
    "artigo_md": "linkedin/23-simulador-odontologico/artigo.en.md"
   },
   {
-   "data": "2027-01-19",
+   "data": "2027-01-26",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 26,
@@ -1035,7 +1191,7 @@
    "artigo_md": "linkedin/26-portal-de-corretores/artigo.pt.md"
   },
   {
-   "data": "2027-01-19",
+   "data": "2027-01-26",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 25,
@@ -1047,7 +1203,7 @@
    "artigo_md": "linkedin/25-processamento-em-lote/artigo.en.md"
   },
   {
-   "data": "2027-01-20",
+   "data": "2027-01-27",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 28,
@@ -1059,7 +1215,7 @@
    "artigo_md": "linkedin/28-guardrails-s3-rds-cloudfront/artigo.pt.md"
   },
   {
-   "data": "2027-01-20",
+   "data": "2027-01-27",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 27,
@@ -1071,7 +1227,7 @@
    "artigo_md": "linkedin/27-negociacao-de-debitos/artigo.en.md"
   },
   {
-   "data": "2027-01-21",
+   "data": "2027-01-28",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 30,
@@ -1083,7 +1239,7 @@
    "artigo_md": "linkedin/30-autenticacao-b2c-v1/artigo.pt.md"
   },
   {
-   "data": "2027-01-21",
+   "data": "2027-01-28",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 29,
@@ -1095,7 +1251,7 @@
    "artigo_md": "linkedin/29-rede-oci/artigo.en.md"
   },
   {
-   "data": "2027-01-22",
+   "data": "2027-01-29",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 32,
@@ -1107,7 +1263,7 @@
    "artigo_md": "linkedin/32-infra-staging-c4/artigo.pt.md"
   },
   {
-   "data": "2027-01-22",
+   "data": "2027-01-29",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 31,
@@ -1119,7 +1275,7 @@
    "artigo_md": "linkedin/31-processo-finops/artigo.en.md"
   },
   {
-   "data": "2027-01-25",
+   "data": "2027-02-01",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 34,
@@ -1131,7 +1287,7 @@
    "artigo_md": "linkedin/34-iac-cdk-x-terraform/artigo.pt.md"
   },
   {
-   "data": "2027-01-25",
+   "data": "2027-02-01",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 33,
@@ -1143,7 +1299,7 @@
    "artigo_md": "linkedin/33-fundamentos-aws/artigo.en.md"
   },
   {
-   "data": "2027-01-26",
+   "data": "2027-02-02",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 36,
@@ -1155,7 +1311,7 @@
    "artigo_md": "linkedin/36-eks-core-5g/artigo.pt.md"
   },
   {
-   "data": "2027-01-26",
+   "data": "2027-02-02",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 35,
@@ -1167,7 +1323,7 @@
    "artigo_md": "linkedin/35-landing-zone-azure/artigo.en.md"
   },
   {
-   "data": "2027-01-27",
+   "data": "2027-02-03",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 38,
@@ -1179,7 +1335,7 @@
    "artigo_md": "linkedin/38-plataforma-multicloud/artigo.pt.md"
   },
   {
-   "data": "2027-01-27",
+   "data": "2027-02-03",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 37,
@@ -1191,7 +1347,7 @@
    "artigo_md": "linkedin/37-integracao-rede-parceiro/artigo.en.md"
   },
   {
-   "data": "2027-01-28",
+   "data": "2027-02-04",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 40,
@@ -1203,7 +1359,7 @@
    "artigo_md": "linkedin/40-governanca-ci-cd-repos/artigo.pt.md"
   },
   {
-   "data": "2027-01-28",
+   "data": "2027-02-04",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 39,
@@ -1215,7 +1371,7 @@
    "artigo_md": "linkedin/39-migracao-de-conta-aws/artigo.en.md"
   },
   {
-   "data": "2027-01-29",
+   "data": "2027-02-05",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 42,
@@ -1227,7 +1383,7 @@
    "artigo_md": "linkedin/42-workflow-multi-x-mono-repo/artigo.pt.md"
   },
   {
-   "data": "2027-01-29",
+   "data": "2027-02-05",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 41,
@@ -1239,7 +1395,7 @@
    "artigo_md": "linkedin/41-templates-de-iac/artigo.en.md"
   },
   {
-   "data": "2027-02-01",
+   "data": "2027-02-08",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 44,
@@ -1251,7 +1407,7 @@
    "artigo_md": "linkedin/44-gateways-de-api/artigo.pt.md"
   },
   {
-   "data": "2027-02-01",
+   "data": "2027-02-08",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 43,
@@ -1263,7 +1419,7 @@
    "artigo_md": "linkedin/43-catalogo-de-servicos/artigo.en.md"
   },
   {
-   "data": "2027-02-02",
+   "data": "2027-02-09",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 46,
@@ -1275,7 +1431,7 @@
    "artigo_md": "linkedin/46-api-gateway-externo-kong/artigo.pt.md"
   },
   {
-   "data": "2027-02-02",
+   "data": "2027-02-09",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 45,
@@ -1287,7 +1443,7 @@
    "artigo_md": "linkedin/45-rede-gke-compartilhada/artigo.en.md"
   },
   {
-   "data": "2027-02-03",
+   "data": "2027-02-10",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 48,
@@ -1299,7 +1455,7 @@
    "artigo_md": "linkedin/48-migracao-alloydb/artigo.pt.md"
   },
   {
-   "data": "2027-02-03",
+   "data": "2027-02-10",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 47,
@@ -1311,7 +1467,7 @@
    "artigo_md": "linkedin/47-ciclo-de-vida-cloud-sql/artigo.en.md"
   },
   {
-   "data": "2027-02-04",
+   "data": "2027-02-11",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 50,
@@ -1323,7 +1479,7 @@
    "artigo_md": "linkedin/50-pipeline-de-deploy/artigo.pt.md"
   },
   {
-   "data": "2027-02-04",
+   "data": "2027-02-11",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 49,
@@ -1335,7 +1491,7 @@
    "artigo_md": "linkedin/49-opcoes-de-computacao/artigo.en.md"
   },
   {
-   "data": "2027-02-05",
+   "data": "2027-02-12",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 52,
@@ -1347,7 +1503,7 @@
    "artigo_md": "linkedin/52-storage-legado/artigo.pt.md"
   },
   {
-   "data": "2027-02-05",
+   "data": "2027-02-12",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 51,
@@ -1359,7 +1515,7 @@
    "artigo_md": "linkedin/51-conectividade/artigo.en.md"
   },
   {
-   "data": "2027-02-08",
+   "data": "2027-02-15",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 54,
@@ -1371,7 +1527,7 @@
    "artigo_md": "linkedin/54-provisionamento-de-vms/artigo.pt.md"
   },
   {
-   "data": "2027-02-08",
+   "data": "2027-02-15",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 53,
@@ -1383,7 +1539,7 @@
    "artigo_md": "linkedin/53-governanca-iac-devops/artigo.en.md"
   },
   {
-   "data": "2027-02-09",
+   "data": "2027-02-16",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 56,
@@ -1395,7 +1551,7 @@
    "artigo_md": "linkedin/56-dr-de-arquivos-azure/artigo.pt.md"
   },
   {
-   "data": "2027-02-09",
+   "data": "2027-02-16",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 55,
@@ -1407,7 +1563,7 @@
    "artigo_md": "linkedin/55-governanca-de-nuvem/artigo.en.md"
   },
   {
-   "data": "2027-02-10",
+   "data": "2027-02-17",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 58,
@@ -1419,7 +1575,7 @@
    "artigo_md": "linkedin/58-portfolio-de-servicos/artigo.pt.md"
   },
   {
-   "data": "2027-02-10",
+   "data": "2027-02-17",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 57,
@@ -1431,7 +1587,7 @@
    "artigo_md": "linkedin/57-modernizacao-de-load-balancers/artigo.en.md"
   },
   {
-   "data": "2027-02-11",
+   "data": "2027-02-18",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 60,
@@ -1443,7 +1599,7 @@
    "artigo_md": "linkedin/60-desafio-api-serverless/artigo.pt.md"
   },
   {
-   "data": "2027-02-11",
+   "data": "2027-02-18",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 59,
@@ -1455,7 +1611,7 @@
    "artigo_md": "linkedin/59-finops-atual-x-alvo/artigo.en.md"
   },
   {
-   "data": "2027-02-12",
+   "data": "2027-02-19",
    "hora_brt": "10:00",
    "idioma": "pt",
    "post": 62,

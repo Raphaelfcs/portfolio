@@ -1,0 +1,15 @@
+In a multi-account environment, every IAM user is a long-lived key waiting to leak.
+
+How I structure access across AWS accounts:
+→ IAM Identity Center with role-based groups and least-privilege permission sets
+→ Group → account assignments in Terraform: reviewing access means reviewing a pull request
+→ A delegated administrator, so access is not operated from the management account
+→ A separate break-glass, with MFA and usage alerts
+→ Pipelines over OIDC, with no long-lived keys
+
+The modules are open on GitHub, with tests and diagrams.
+
+Full article, with diagram, step by step and Terraform code:
+https://raphaelfcs.github.io/portfolio/artigos/en/aws-identity-center.html
+
+#AWS #IAMIdentityCenter #IAM #CloudSecurity #Terraform #IaC
