@@ -686,6 +686,9 @@ function setLang(l) {
 }
 document.querySelector('.lang').addEventListener('click', ev => { const b = ev.target.closest('[data-l]'); if (b) setLang(b.dataset.l); });
 let ini = 'pt';
-try { ini = localStorage.getItem('rs-lang') || ((navigator.language || '').toLowerCase().startsWith('pt') ? 'pt' : 'en'); } catch (e) { ini = (navigator.language || '').toLowerCase().startsWith('pt') ? 'pt' : 'en'; }
+// link direto: ?lang=en ou ?lang=pt vence a preferência salva e o idioma do navegador
+const qLang = new URLSearchParams(location.search).get('lang');
+if (qLang === 'en' || qLang === 'pt') ini = qLang;
+else try { ini = localStorage.getItem('rs-lang') || ((navigator.language || '').toLowerCase().startsWith('pt') ? 'pt' : 'en'); } catch (e) { ini = (navigator.language || '').toLowerCase().startsWith('pt') ? 'pt' : 'en'; }
 setLang(ini);
 </script>
