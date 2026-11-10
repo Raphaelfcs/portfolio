@@ -22,7 +22,7 @@ Groups in the Identity Center directory (or synced from the corporate IdP), perm
 2. Create permission sets with least privilege and a short session duration for the write ones.
 3. Assign group to account based on OU and environment: write in dev, read in prd.
 4. Use a delegated administrator so Identity Center is not operated from the management account.
-5. Keep an IAM break-glass group with MFA and usage alerts, outside Identity Center.
+5. Keep an IAM break-glass group with mandatory MFA, outside Identity Center.
 6. Replace pipeline keys with roles assumed over OIDC, one for plan and one for deploy with approval.
 
 > **Note:** A permission set change is reprovisioned in every assigned account. Test it in a sandbox account first.

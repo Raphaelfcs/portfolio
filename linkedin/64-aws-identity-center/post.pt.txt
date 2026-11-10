@@ -4,7 +4,7 @@ Como estruturo o acesso nas contas AWS:
 → IAM Identity Center com grupos por função e permission sets de menor privilégio
 → Atribuições grupo → conta em Terraform: revisar acesso vira revisar um pull request
 → Delegated administrator, para não operar acesso a partir da conta de gerenciamento
-→ Break-glass separado, com MFA e alerta de uso
+→ Break-glass separado, com MFA obrigatório
 → Pipelines por OIDC, sem chave fixa
 
 Os módulos estão abertos no GitHub, com testes e desenho.

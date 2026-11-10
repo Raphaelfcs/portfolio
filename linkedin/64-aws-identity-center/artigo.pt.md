@@ -22,7 +22,7 @@ Grupos no diretório do Identity Center (ou sincronizados do IdP corporativo), p
 2. Crie os permission sets com o menor privilégio e duração de sessão curta para os de escrita.
 3. Atribua grupo para conta com base em OU e ambiente: escrita em dev, leitura em prd.
 4. Use delegated administrator para não operar o Identity Center a partir da conta de gerenciamento.
-5. Mantenha um grupo IAM de break-glass com MFA e alerta de uso, fora do Identity Center.
+5. Mantenha um grupo IAM de break-glass com MFA obrigatório, fora do Identity Center.
 6. Troque as chaves das pipelines por roles assumidas via OIDC, uma de plan e outra de deploy com aprovação.
 
 > **Nota:** Mudança em permission set é reprovisionada em todas as contas atribuídas. Teste em uma conta de sandbox antes.
