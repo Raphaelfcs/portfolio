@@ -76,6 +76,32 @@
   },
   {
    "data": "2026-11-11",
+   "hora_brt": "14:50",
+   "idioma": "pt",
+   "post": 69,
+   "slug": "docs-pacientes-ativo-ativo",
+   "titulo": "Documentos de pacientes ativo-ativo em AWS e Google Cloud",
+   "trilha": "multicloud",
+   "texto": "linkedin/69-docs-pacientes-ativo-ativo/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/69-docs-pacientes-ativo-ativo/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/docs-pacientes-ativo-ativo.html",
+   "artigo_md": "linkedin/69-docs-pacientes-ativo-ativo/artigo.pt.md"
+  },
+  {
+   "data": "2026-11-11",
+   "hora_brt": "14:55",
+   "idioma": "en",
+   "post": 69,
+   "slug": "docs-pacientes-ativo-ativo",
+   "titulo": "Active-active patient documents on AWS and Google Cloud",
+   "trilha": "multicloud",
+   "texto": "linkedin/69-docs-pacientes-ativo-ativo/post.en.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/69-docs-pacientes-ativo-ativo/capa.en.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/docs-pacientes-ativo-ativo.html",
+   "artigo_md": "linkedin/69-docs-pacientes-ativo-ativo/artigo.en.md"
+  },
+  {
+   "data": "2026-11-11",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 6,

@@ -1,0 +1,18 @@
+Challenge: store exams, diagnoses and prescriptions as PDFs for 20 clinics today and 3,000 tomorrow, with each patient opening their own in one click. Security first, AWS and Google Cloud, and a US$ 200 a month ceiling.
+
+The solution I designed and coded:
+→ Active-active on both clouds: Route 53 splits the traffic and pulls the failing cloud out of DNS in about a minute
+→ Serverless and event-driven: Lambda and Cloud Run scale from zero, and a PDF’s arrival triggers validation and replication to the other cloud
+→ PDFs go straight to the bucket through signed URLs and are validated before reaching the patient
+→ Per-clinic and per-patient isolation covered by tests, and patients see who accessed their documents (LGPD)
+→ No stored keys between clouds: OIDC and Workload Identity Federation
+→ Data in São Paulo, customer-managed keys on both clouds and 20-year retention
+
+Estimated cost: US$ 48 a month with 20 clinics and US$ 75 with 100. At 3,000, sign-in becomes 85% of the bill, and the article shows the ways out.
+
+Modular Terraform (6 roots with dev, staging and prod, 14 new modules with tests), a Python API and a web app you can install on your phone.
+
+Full article, with the diagrams, the decisions and the cost item by item:
+https://raphaelfcs.github.io/portfolio/artigos/en/docs-pacientes-ativo-ativo.html
+
+#AWS #GoogleCloud #Multicloud #Serverless #EventDriven #Terraform #CloudSecurity #LGPD #FinOps

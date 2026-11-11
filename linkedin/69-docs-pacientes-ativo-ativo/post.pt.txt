@@ -1,0 +1,18 @@
+Desafio: guardar exames, diagnósticos e receitas em PDF para 20 clínicas hoje e 3.000 amanhã, com cada paciente abrindo os seus a um clique. Segurança em primeiro lugar, AWS e Google Cloud, e teto de US$ 200 por mês.
+
+A solução que desenhei e codifiquei:
+→ Ativo-ativo nas duas nuvens: o Route 53 divide o tráfego e tira do ar, em cerca de 1 minuto, a nuvem que falhar
+→ Serverless e orientada a eventos: Lambda e Cloud Run escalam do zero, e a chegada do PDF dispara a validação e a réplica para a outra nuvem
+→ PDF direto ao bucket por URL assinada, validado antes de chegar ao paciente
+→ Isolamento por clínica e por paciente, coberto por testes, e o paciente vê quem acessou seus documentos (LGPD)
+→ Nenhuma chave guardada entre as nuvens: OIDC e Workload Identity Federation
+→ Dados em São Paulo, chave própria nas duas nuvens e retenção de 20 anos
+
+Custo estimado: US$ 48 por mês com 20 clínicas e US$ 75 com 100. Com 3.000, o login vira 85% da conta, e o artigo mostra as saídas.
+
+Terraform modular (6 roots com dev, hml e prd e 14 módulos novos com testes), API em Python e app web instalável no celular.
+
+Artigo completo, com os desenhos, as decisões e o custo item a item:
+https://raphaelfcs.github.io/portfolio/artigos/pt/docs-pacientes-ativo-ativo.html
+
+#AWS #GoogleCloud #Multicloud #Serverless #EventDriven #Terraform #CloudSecurity #LGPD #FinOps
