@@ -2,7 +2,6 @@ A good guardrail stops the mistake before the deploy.
 
 Public buckets by accident, unencrypted databases and distributions without minimum TLS.
 
-I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
-https://raphaelfcs.github.io/portfolio/artigos/en/guardrails-s3-rds-cloudfront.html
+Full article with the diagram, the Terraform code and the costs: link in the first comment.
 
 #AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

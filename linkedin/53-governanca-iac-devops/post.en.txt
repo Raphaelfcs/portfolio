@@ -2,7 +2,6 @@ IaC governance: engines, review, pipeline and state in one drawing.
 
 Teams provisioning Azure by hand with no repository standard.
 
-I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
-https://raphaelfcs.github.io/portfolio/artigos/en/governanca-iac-devops.html
+Full article with the diagram, the Terraform code and the costs: link in the first comment.
 
 #Azure #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

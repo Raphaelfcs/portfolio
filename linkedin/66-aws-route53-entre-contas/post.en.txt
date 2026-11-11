@@ -8,7 +8,6 @@ How I organize DNS in multi-account AWS environments:
 
 All in Terraform, one module per responsibility.
 
-Full article, with diagram, step by step and Terraform code:
-https://raphaelfcs.github.io/portfolio/artigos/en/aws-route53-entre-contas.html
+Full article with the diagram, the Terraform code and the costs: link in the first comment.
 
 #AWS #Route53 #DNS #AWSNetworking #Terraform #IaC

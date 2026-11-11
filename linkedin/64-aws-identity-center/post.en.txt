@@ -9,7 +9,6 @@ How I structure access across AWS accounts:
 
 The modules are open on GitHub, with tests and diagrams.
 
-Full article, with diagram, step by step and Terraform code:
-https://raphaelfcs.github.io/portfolio/artigos/en/aws-identity-center.html
+Full article with the diagram, the Terraform code and the costs: link in the first comment.
 
 #AWS #IAMIdentityCenter #IAM #CloudSecurity #Terraform #IaC

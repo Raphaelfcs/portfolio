@@ -2,7 +2,6 @@ FinOps is a cycle: inform, optimize and operate, every week.
 
 Cloud bill growing with no clear owner for each cost.
 
-I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
-https://raphaelfcs.github.io/portfolio/artigos/en/processo-finops.html
+Full article with the diagram, the Terraform code and the costs: link in the first comment.
 
 #AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

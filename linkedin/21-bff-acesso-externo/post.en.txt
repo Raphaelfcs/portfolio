@@ -2,7 +2,6 @@ Exposing an internal service to partners without opening the network.
 
 External partners needing services that only existed on the internal network.
 
-I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
-https://raphaelfcs.github.io/portfolio/artigos/en/bff-acesso-externo.html
+Full article with the diagram, the Terraform code and the costs: link in the first comment.
 
 #AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

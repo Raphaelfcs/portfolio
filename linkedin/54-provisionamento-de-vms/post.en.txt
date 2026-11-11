@@ -2,7 +2,6 @@ A VM request that takes weeks is a process problem, not a technology one.
 
 Linux VM and database creation with many manual approvals.
 
-I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
-https://raphaelfcs.github.io/portfolio/artigos/en/provisionamento-de-vms.html
+Full article with the diagram, the Terraform code and the costs: link in the first comment.
 
 #Azure #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

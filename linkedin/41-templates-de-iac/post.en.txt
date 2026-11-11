@@ -2,7 +2,6 @@ Developer portal with IaC templates: from MVP to full architecture.
 
 Teams requesting infrastructure through tickets and waiting days.
 
-I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
-https://raphaelfcs.github.io/portfolio/artigos/en/templates-de-iac.html
+Full article with the diagram, the Terraform code and the costs: link in the first comment.
 
 #AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

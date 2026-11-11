@@ -10,7 +10,6 @@ What I automate on AWS with CloudTrail, EventBridge and Lambda:
 
 Many started as boto3 scripts I wrote in 2017. Today they are Terraform modules with least privilege, logs with retention and tests.
 
-Full article, with diagram, step by step and Terraform code:
-https://raphaelfcs.github.io/portfolio/artigos/en/aws-automacoes-de-governanca.html
+Full article with the diagram, the Terraform code and the costs: link in the first comment.
 
 #AWS #EventBridge #AWSLambda #CloudGovernance #FinOps #Terraform

@@ -1,6 +1,6 @@
 {
  "fuso": "America/Sao_Paulo",
- "gerado_em": "2026-11-09",
+ "gerado_em": "2026-11-11",
  "publicacoes": [
   {
    "data": "2026-11-06",
@@ -114,18 +114,6 @@
   },
   {
    "data": "2026-11-12",
-   "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 7,
-   "slug": "gke-seguro",
-   "titulo": "GKE seguro de ponta a ponta",
-   "texto": "linkedin/07-gke-seguro/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/07-gke-seguro/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/gke-seguro.html",
-   "artigo_md": "linkedin/07-gke-seguro/artigo.pt.md"
-  },
-  {
-   "data": "2026-11-12",
    "hora_brt": "17:00",
    "idioma": "en",
    "post": 8,
@@ -134,19 +122,8 @@
    "texto": "linkedin/08-poc-terraform-ci-cd/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/08-poc-terraform-ci-cd/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/poc-terraform-ci-cd.html",
-   "artigo_md": "linkedin/08-poc-terraform-ci-cd/artigo.en.md"
-  },
-  {
-   "data": "2026-11-13",
-   "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 9,
-   "slug": "visao-geral-plataforma",
-   "titulo": "Plataforma AWS de uma operadora de saúde",
-   "texto": "linkedin/09-visao-geral-plataforma/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/09-visao-geral-plataforma/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/visao-geral-plataforma.html",
-   "artigo_md": "linkedin/09-visao-geral-plataforma/artigo.pt.md"
+   "artigo_md": "linkedin/08-poc-terraform-ci-cd/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/poc-terraform-ci-cd.html"
   },
   {
    "data": "2026-11-13",
@@ -158,24 +135,12 @@
    "texto": "linkedin/10-autenticacao-b2c/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/10-autenticacao-b2c/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/autenticacao-b2c.html",
-   "artigo_md": "linkedin/10-autenticacao-b2c/artigo.en.md"
+   "artigo_md": "linkedin/10-autenticacao-b2c/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/autenticacao-b2c.html"
   },
   {
-   "data": "2026-11-16",
+   "data": "2026-11-17",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 63,
-   "slug": "aws-scp-e-rcp",
-   "titulo": "SCP e RCP: o perímetro de dados da organização AWS",
-   "trilha": "aws-na-pratica",
-   "texto": "linkedin/63-aws-scp-e-rcp/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/63-aws-scp-e-rcp/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/aws-scp-e-rcp.html",
-   "artigo_md": "linkedin/63-aws-scp-e-rcp/artigo.pt.md"
-  },
-  {
-   "data": "2026-11-16",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 63,
    "slug": "aws-scp-e-rcp",
@@ -184,24 +149,12 @@
    "texto": "linkedin/63-aws-scp-e-rcp/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/63-aws-scp-e-rcp/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/aws-scp-e-rcp.html",
-   "artigo_md": "linkedin/63-aws-scp-e-rcp/artigo.en.md"
+   "artigo_md": "linkedin/63-aws-scp-e-rcp/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/aws-scp-e-rcp.html"
   },
   {
-   "data": "2026-11-17",
+   "data": "2026-11-18",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 64,
-   "slug": "aws-identity-center",
-   "titulo": "IAM Identity Center como código: acesso sem usuário IAM",
-   "trilha": "aws-na-pratica",
-   "texto": "linkedin/64-aws-identity-center/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/64-aws-identity-center/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/aws-identity-center.html",
-   "artigo_md": "linkedin/64-aws-identity-center/artigo.pt.md"
-  },
-  {
-   "data": "2026-11-17",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 64,
    "slug": "aws-identity-center",
@@ -210,24 +163,12 @@
    "texto": "linkedin/64-aws-identity-center/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/64-aws-identity-center/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/aws-identity-center.html",
-   "artigo_md": "linkedin/64-aws-identity-center/artigo.en.md"
+   "artigo_md": "linkedin/64-aws-identity-center/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/aws-identity-center.html"
   },
   {
-   "data": "2026-11-18",
+   "data": "2026-11-19",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 65,
-   "slug": "aws-rede-hub-and-spoke",
-   "titulo": "Rede AWS hub-and-spoke: VPC, Transit Gateway, VPN e Direct Connect",
-   "trilha": "aws-na-pratica",
-   "texto": "linkedin/65-aws-rede-hub-and-spoke/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/65-aws-rede-hub-and-spoke/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/aws-rede-hub-and-spoke.html",
-   "artigo_md": "linkedin/65-aws-rede-hub-and-spoke/artigo.pt.md"
-  },
-  {
-   "data": "2026-11-18",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 65,
    "slug": "aws-rede-hub-and-spoke",
@@ -236,24 +177,12 @@
    "texto": "linkedin/65-aws-rede-hub-and-spoke/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/65-aws-rede-hub-and-spoke/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/aws-rede-hub-and-spoke.html",
-   "artigo_md": "linkedin/65-aws-rede-hub-and-spoke/artigo.en.md"
+   "artigo_md": "linkedin/65-aws-rede-hub-and-spoke/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/aws-rede-hub-and-spoke.html"
   },
   {
-   "data": "2026-11-19",
+   "data": "2026-11-24",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 66,
-   "slug": "aws-route53-entre-contas",
-   "titulo": "Route 53 entre contas: DNS privado, híbrido e delegação de subdomínio",
-   "trilha": "aws-na-pratica",
-   "texto": "linkedin/66-aws-route53-entre-contas/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/66-aws-route53-entre-contas/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/aws-route53-entre-contas.html",
-   "artigo_md": "linkedin/66-aws-route53-entre-contas/artigo.pt.md"
-  },
-  {
-   "data": "2026-11-19",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 66,
    "slug": "aws-route53-entre-contas",
@@ -262,24 +191,12 @@
    "texto": "linkedin/66-aws-route53-entre-contas/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/66-aws-route53-entre-contas/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/aws-route53-entre-contas.html",
-   "artigo_md": "linkedin/66-aws-route53-entre-contas/artigo.en.md"
+   "artigo_md": "linkedin/66-aws-route53-entre-contas/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/aws-route53-entre-contas.html"
   },
   {
-   "data": "2026-11-23",
+   "data": "2026-11-25",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 67,
-   "slug": "aws-eventbridge-lambda",
-   "titulo": "EventBridge e Lambda: integração entre contas que aguenta falha",
-   "trilha": "aws-na-pratica",
-   "texto": "linkedin/67-aws-eventbridge-lambda/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/67-aws-eventbridge-lambda/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/aws-eventbridge-lambda.html",
-   "artigo_md": "linkedin/67-aws-eventbridge-lambda/artigo.pt.md"
-  },
-  {
-   "data": "2026-11-23",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 67,
    "slug": "aws-eventbridge-lambda",
@@ -288,24 +205,12 @@
    "texto": "linkedin/67-aws-eventbridge-lambda/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/67-aws-eventbridge-lambda/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/aws-eventbridge-lambda.html",
-   "artigo_md": "linkedin/67-aws-eventbridge-lambda/artigo.en.md"
+   "artigo_md": "linkedin/67-aws-eventbridge-lambda/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/aws-eventbridge-lambda.html"
   },
   {
-   "data": "2026-11-24",
+   "data": "2026-11-26",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 68,
-   "slug": "aws-automacoes-de-governanca",
-   "titulo": "Automações de governança na AWS orientadas a eventos",
-   "trilha": "aws-na-pratica",
-   "texto": "linkedin/68-aws-automacoes-de-governanca/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/68-aws-automacoes-de-governanca/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/aws-automacoes-de-governanca.html",
-   "artigo_md": "linkedin/68-aws-automacoes-de-governanca/artigo.pt.md"
-  },
-  {
-   "data": "2026-11-24",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 68,
    "slug": "aws-automacoes-de-governanca",
@@ -314,23 +219,12 @@
    "texto": "linkedin/68-aws-automacoes-de-governanca/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/68-aws-automacoes-de-governanca/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/aws-automacoes-de-governanca.html",
-   "artigo_md": "linkedin/68-aws-automacoes-de-governanca/artigo.en.md"
+   "artigo_md": "linkedin/68-aws-automacoes-de-governanca/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/aws-automacoes-de-governanca.html"
   },
   {
-   "data": "2026-11-25",
+   "data": "2026-12-01",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 11,
-   "slug": "cluster-eks",
-   "titulo": "Cluster EKS compartilhado",
-   "texto": "linkedin/11-cluster-eks/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/11-cluster-eks/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/cluster-eks.html",
-   "artigo_md": "linkedin/11-cluster-eks/artigo.pt.md"
-  },
-  {
-   "data": "2026-11-25",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 12,
    "slug": "evolucao-portal-de-seguros",
@@ -338,23 +232,12 @@
    "texto": "linkedin/12-evolucao-portal-de-seguros/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/12-evolucao-portal-de-seguros/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/evolucao-portal-de-seguros.html",
-   "artigo_md": "linkedin/12-evolucao-portal-de-seguros/artigo.en.md"
+   "artigo_md": "linkedin/12-evolucao-portal-de-seguros/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/evolucao-portal-de-seguros.html"
   },
   {
-   "data": "2026-11-26",
+   "data": "2026-12-02",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 13,
-   "slug": "relatorios-regulatorios",
-   "titulo": "Relatórios regulatórios assíncronos",
-   "texto": "linkedin/13-relatorios-regulatorios/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/13-relatorios-regulatorios/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/relatorios-regulatorios.html",
-   "artigo_md": "linkedin/13-relatorios-regulatorios/artigo.pt.md"
-  },
-  {
-   "data": "2026-11-26",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 14,
    "slug": "migracao-por-ondas",
@@ -362,23 +245,12 @@
    "texto": "linkedin/14-migracao-por-ondas/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/14-migracao-por-ondas/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/migracao-por-ondas.html",
-   "artigo_md": "linkedin/14-migracao-por-ondas/artigo.en.md"
+   "artigo_md": "linkedin/14-migracao-por-ondas/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/migracao-por-ondas.html"
   },
   {
-   "data": "2026-11-27",
+   "data": "2026-12-03",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 15,
-   "slug": "ocr-de-documentos",
-   "titulo": "OCR de documentos em escala",
-   "texto": "linkedin/15-ocr-de-documentos/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/15-ocr-de-documentos/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/ocr-de-documentos.html",
-   "artigo_md": "linkedin/15-ocr-de-documentos/artigo.pt.md"
-  },
-  {
-   "data": "2026-11-27",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 16,
    "slug": "ocr-de-documentos-v2",
@@ -386,23 +258,12 @@
    "texto": "linkedin/16-ocr-de-documentos-v2/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/16-ocr-de-documentos-v2/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/ocr-de-documentos-v2.html",
-   "artigo_md": "linkedin/16-ocr-de-documentos-v2/artigo.en.md"
+   "artigo_md": "linkedin/16-ocr-de-documentos-v2/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/ocr-de-documentos-v2.html"
   },
   {
-   "data": "2026-11-30",
+   "data": "2026-12-08",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 17,
-   "slug": "api-equipamentos-medicos",
-   "titulo": "API de reembolso de equipamentos médicos",
-   "texto": "linkedin/17-api-equipamentos-medicos/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/17-api-equipamentos-medicos/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/api-equipamentos-medicos.html",
-   "artigo_md": "linkedin/17-api-equipamentos-medicos/artigo.pt.md"
-  },
-  {
-   "data": "2026-11-30",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 18,
    "slug": "automacao-rgs",
@@ -410,23 +271,12 @@
    "texto": "linkedin/18-automacao-rgs/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/18-automacao-rgs/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/automacao-rgs.html",
-   "artigo_md": "linkedin/18-automacao-rgs/artigo.en.md"
+   "artigo_md": "linkedin/18-automacao-rgs/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/automacao-rgs.html"
   },
   {
-   "data": "2026-12-01",
+   "data": "2026-12-09",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 19,
-   "slug": "envio-ao-regulador",
-   "titulo": "Envio periódico ao órgão regulador",
-   "texto": "linkedin/19-envio-ao-regulador/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/19-envio-ao-regulador/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/envio-ao-regulador.html",
-   "artigo_md": "linkedin/19-envio-ao-regulador/artigo.pt.md"
-  },
-  {
-   "data": "2026-12-01",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 20,
    "slug": "api-de-download",
@@ -434,23 +284,12 @@
    "texto": "linkedin/20-api-de-download/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/20-api-de-download/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/api-de-download.html",
-   "artigo_md": "linkedin/20-api-de-download/artigo.en.md"
+   "artigo_md": "linkedin/20-api-de-download/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/api-de-download.html"
   },
   {
-   "data": "2026-12-02",
+   "data": "2026-12-10",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 21,
-   "slug": "bff-acesso-externo",
-   "titulo": "BFF para parceiros externos",
-   "texto": "linkedin/21-bff-acesso-externo/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/21-bff-acesso-externo/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/bff-acesso-externo.html",
-   "artigo_md": "linkedin/21-bff-acesso-externo/artigo.pt.md"
-  },
-  {
-   "data": "2026-12-02",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 22,
    "slug": "gestao-de-carteiras",
@@ -458,23 +297,12 @@
    "texto": "linkedin/22-gestao-de-carteiras/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/22-gestao-de-carteiras/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/gestao-de-carteiras.html",
-   "artigo_md": "linkedin/22-gestao-de-carteiras/artigo.en.md"
+   "artigo_md": "linkedin/22-gestao-de-carteiras/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/gestao-de-carteiras.html"
   },
   {
-   "data": "2026-12-03",
+   "data": "2026-12-15",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 23,
-   "slug": "simulador-odontologico",
-   "titulo": "Simulador de prévia de gastos",
-   "texto": "linkedin/23-simulador-odontologico/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/23-simulador-odontologico/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/simulador-odontologico.html",
-   "artigo_md": "linkedin/23-simulador-odontologico/artigo.pt.md"
-  },
-  {
-   "data": "2026-12-03",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 24,
    "slug": "bloqueio-e-reset-de-acesso",
@@ -482,23 +310,12 @@
    "texto": "linkedin/24-bloqueio-e-reset-de-acesso/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/24-bloqueio-e-reset-de-acesso/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/bloqueio-e-reset-de-acesso.html",
-   "artigo_md": "linkedin/24-bloqueio-e-reset-de-acesso/artigo.en.md"
+   "artigo_md": "linkedin/24-bloqueio-e-reset-de-acesso/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/bloqueio-e-reset-de-acesso.html"
   },
   {
-   "data": "2026-12-04",
+   "data": "2026-12-16",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 25,
-   "slug": "processamento-em-lote",
-   "titulo": "Processamento em lote com AWS Batch",
-   "texto": "linkedin/25-processamento-em-lote/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/25-processamento-em-lote/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/processamento-em-lote.html",
-   "artigo_md": "linkedin/25-processamento-em-lote/artigo.pt.md"
-  },
-  {
-   "data": "2026-12-04",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 26,
    "slug": "portal-de-corretores",
@@ -506,23 +323,12 @@
    "texto": "linkedin/26-portal-de-corretores/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/26-portal-de-corretores/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/portal-de-corretores.html",
-   "artigo_md": "linkedin/26-portal-de-corretores/artigo.en.md"
+   "artigo_md": "linkedin/26-portal-de-corretores/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/portal-de-corretores.html"
   },
   {
-   "data": "2026-12-07",
+   "data": "2026-12-17",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 27,
-   "slug": "negociacao-de-debitos",
-   "titulo": "Portal de negociação de débitos",
-   "texto": "linkedin/27-negociacao-de-debitos/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/27-negociacao-de-debitos/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/negociacao-de-debitos.html",
-   "artigo_md": "linkedin/27-negociacao-de-debitos/artigo.pt.md"
-  },
-  {
-   "data": "2026-12-07",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 28,
    "slug": "guardrails-s3-rds-cloudfront",
@@ -530,23 +336,12 @@
    "texto": "linkedin/28-guardrails-s3-rds-cloudfront/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/28-guardrails-s3-rds-cloudfront/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/guardrails-s3-rds-cloudfront.html",
-   "artigo_md": "linkedin/28-guardrails-s3-rds-cloudfront/artigo.en.md"
+   "artigo_md": "linkedin/28-guardrails-s3-rds-cloudfront/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/guardrails-s3-rds-cloudfront.html"
   },
   {
-   "data": "2026-12-08",
+   "data": "2027-01-05",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 29,
-   "slug": "rede-oci",
-   "titulo": "Rede híbrida na OCI",
-   "texto": "linkedin/29-rede-oci/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/29-rede-oci/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/rede-oci.html",
-   "artigo_md": "linkedin/29-rede-oci/artigo.pt.md"
-  },
-  {
-   "data": "2026-12-08",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 30,
    "slug": "autenticacao-b2c-v1",
@@ -554,23 +349,12 @@
    "texto": "linkedin/30-autenticacao-b2c-v1/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/30-autenticacao-b2c-v1/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/autenticacao-b2c-v1.html",
-   "artigo_md": "linkedin/30-autenticacao-b2c-v1/artigo.en.md"
+   "artigo_md": "linkedin/30-autenticacao-b2c-v1/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/autenticacao-b2c-v1.html"
   },
   {
-   "data": "2026-12-09",
+   "data": "2027-01-06",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 31,
-   "slug": "processo-finops",
-   "titulo": "Processo de FinOps",
-   "texto": "linkedin/31-processo-finops/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/31-processo-finops/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/processo-finops.html",
-   "artigo_md": "linkedin/31-processo-finops/artigo.pt.md"
-  },
-  {
-   "data": "2026-12-09",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 32,
    "slug": "infra-staging-c4",
@@ -578,23 +362,12 @@
    "texto": "linkedin/32-infra-staging-c4/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/32-infra-staging-c4/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/infra-staging-c4.html",
-   "artigo_md": "linkedin/32-infra-staging-c4/artigo.en.md"
+   "artigo_md": "linkedin/32-infra-staging-c4/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/infra-staging-c4.html"
   },
   {
-   "data": "2026-12-10",
+   "data": "2027-01-07",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 33,
-   "slug": "fundamentos-aws",
-   "titulo": "Fundamentos de AWS: identidade e guardrails",
-   "texto": "linkedin/33-fundamentos-aws/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/33-fundamentos-aws/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/fundamentos-aws.html",
-   "artigo_md": "linkedin/33-fundamentos-aws/artigo.pt.md"
-  },
-  {
-   "data": "2026-12-10",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 34,
    "slug": "iac-cdk-x-terraform",
@@ -602,23 +375,12 @@
    "texto": "linkedin/34-iac-cdk-x-terraform/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/34-iac-cdk-x-terraform/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/iac-cdk-x-terraform.html",
-   "artigo_md": "linkedin/34-iac-cdk-x-terraform/artigo.en.md"
+   "artigo_md": "linkedin/34-iac-cdk-x-terraform/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/iac-cdk-x-terraform.html"
   },
   {
-   "data": "2026-12-11",
+   "data": "2027-01-12",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 35,
-   "slug": "landing-zone-azure",
-   "titulo": "Landing zone Azure com AKS privado",
-   "texto": "linkedin/35-landing-zone-azure/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/35-landing-zone-azure/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/landing-zone-azure.html",
-   "artigo_md": "linkedin/35-landing-zone-azure/artigo.pt.md"
-  },
-  {
-   "data": "2026-12-11",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 36,
    "slug": "eks-core-5g",
@@ -626,23 +388,12 @@
    "texto": "linkedin/36-eks-core-5g/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/36-eks-core-5g/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/eks-core-5g.html",
-   "artigo_md": "linkedin/36-eks-core-5g/artigo.en.md"
+   "artigo_md": "linkedin/36-eks-core-5g/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/eks-core-5g.html"
   },
   {
-   "data": "2026-12-14",
+   "data": "2027-01-13",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 37,
-   "slug": "integracao-rede-parceiro",
-   "titulo": "Integração de rede com parceiro",
-   "texto": "linkedin/37-integracao-rede-parceiro/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/37-integracao-rede-parceiro/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/integracao-rede-parceiro.html",
-   "artigo_md": "linkedin/37-integracao-rede-parceiro/artigo.pt.md"
-  },
-  {
-   "data": "2026-12-14",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 38,
    "slug": "plataforma-multicloud",
@@ -650,23 +401,12 @@
    "texto": "linkedin/38-plataforma-multicloud/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/38-plataforma-multicloud/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/plataforma-multicloud.html",
-   "artigo_md": "linkedin/38-plataforma-multicloud/artigo.en.md"
+   "artigo_md": "linkedin/38-plataforma-multicloud/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/plataforma-multicloud.html"
   },
   {
-   "data": "2026-12-15",
+   "data": "2027-01-14",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 39,
-   "slug": "migracao-de-conta-aws",
-   "titulo": "Migração de workload entre contas AWS",
-   "texto": "linkedin/39-migracao-de-conta-aws/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/39-migracao-de-conta-aws/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/migracao-de-conta-aws.html",
-   "artigo_md": "linkedin/39-migracao-de-conta-aws/artigo.pt.md"
-  },
-  {
-   "data": "2026-12-15",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 40,
    "slug": "governanca-ci-cd-repos",
@@ -674,23 +414,12 @@
    "texto": "linkedin/40-governanca-ci-cd-repos/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/40-governanca-ci-cd-repos/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/governanca-ci-cd-repos.html",
-   "artigo_md": "linkedin/40-governanca-ci-cd-repos/artigo.en.md"
+   "artigo_md": "linkedin/40-governanca-ci-cd-repos/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/governanca-ci-cd-repos.html"
   },
   {
-   "data": "2026-12-16",
+   "data": "2027-01-19",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 41,
-   "slug": "templates-de-iac",
-   "titulo": "Portal do desenvolvedor com templates de IaC",
-   "texto": "linkedin/41-templates-de-iac/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/41-templates-de-iac/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/templates-de-iac.html",
-   "artigo_md": "linkedin/41-templates-de-iac/artigo.pt.md"
-  },
-  {
-   "data": "2026-12-16",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 42,
    "slug": "workflow-multi-x-mono-repo",
@@ -698,23 +427,12 @@
    "texto": "linkedin/42-workflow-multi-x-mono-repo/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/42-workflow-multi-x-mono-repo/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/workflow-multi-x-mono-repo.html",
-   "artigo_md": "linkedin/42-workflow-multi-x-mono-repo/artigo.en.md"
+   "artigo_md": "linkedin/42-workflow-multi-x-mono-repo/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/workflow-multi-x-mono-repo.html"
   },
   {
-   "data": "2026-12-17",
+   "data": "2027-01-20",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 43,
-   "slug": "catalogo-de-servicos",
-   "titulo": "Catálogo de serviços self-service",
-   "texto": "linkedin/43-catalogo-de-servicos/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/43-catalogo-de-servicos/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/catalogo-de-servicos.html",
-   "artigo_md": "linkedin/43-catalogo-de-servicos/artigo.pt.md"
-  },
-  {
-   "data": "2026-12-17",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 44,
    "slug": "gateways-de-api",
@@ -722,23 +440,12 @@
    "texto": "linkedin/44-gateways-de-api/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/44-gateways-de-api/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/gateways-de-api.html",
-   "artigo_md": "linkedin/44-gateways-de-api/artigo.en.md"
+   "artigo_md": "linkedin/44-gateways-de-api/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/gateways-de-api.html"
   },
   {
-   "data": "2026-12-18",
+   "data": "2027-01-21",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 45,
-   "slug": "rede-gke-compartilhada",
-   "titulo": "Shared VPC para GKE e bancos",
-   "texto": "linkedin/45-rede-gke-compartilhada/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/45-rede-gke-compartilhada/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/rede-gke-compartilhada.html",
-   "artigo_md": "linkedin/45-rede-gke-compartilhada/artigo.pt.md"
-  },
-  {
-   "data": "2026-12-18",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 46,
    "slug": "api-gateway-externo-kong",
@@ -746,23 +453,12 @@
    "texto": "linkedin/46-api-gateway-externo-kong/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/46-api-gateway-externo-kong/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/api-gateway-externo-kong.html",
-   "artigo_md": "linkedin/46-api-gateway-externo-kong/artigo.en.md"
+   "artigo_md": "linkedin/46-api-gateway-externo-kong/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/api-gateway-externo-kong.html"
   },
   {
-   "data": "2026-12-21",
+   "data": "2027-01-26",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 47,
-   "slug": "ciclo-de-vida-cloud-sql",
-   "titulo": "Ciclo de vida de dados do Cloud SQL",
-   "texto": "linkedin/47-ciclo-de-vida-cloud-sql/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/47-ciclo-de-vida-cloud-sql/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/ciclo-de-vida-cloud-sql.html",
-   "artigo_md": "linkedin/47-ciclo-de-vida-cloud-sql/artigo.pt.md"
-  },
-  {
-   "data": "2026-12-21",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 48,
    "slug": "migracao-alloydb",
@@ -770,23 +466,12 @@
    "texto": "linkedin/48-migracao-alloydb/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/48-migracao-alloydb/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/migracao-alloydb.html",
-   "artigo_md": "linkedin/48-migracao-alloydb/artigo.en.md"
+   "artigo_md": "linkedin/48-migracao-alloydb/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/migracao-alloydb.html"
   },
   {
-   "data": "2026-12-22",
+   "data": "2027-01-27",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 49,
-   "slug": "opcoes-de-computacao",
-   "titulo": "Opções de computação: ECS, EKS e Beanstalk",
-   "texto": "linkedin/49-opcoes-de-computacao/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/49-opcoes-de-computacao/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/opcoes-de-computacao.html",
-   "artigo_md": "linkedin/49-opcoes-de-computacao/artigo.pt.md"
-  },
-  {
-   "data": "2026-12-22",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 50,
    "slug": "pipeline-de-deploy",
@@ -794,23 +479,12 @@
    "texto": "linkedin/50-pipeline-de-deploy/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/50-pipeline-de-deploy/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/pipeline-de-deploy.html",
-   "artigo_md": "linkedin/50-pipeline-de-deploy/artigo.en.md"
+   "artigo_md": "linkedin/50-pipeline-de-deploy/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/pipeline-de-deploy.html"
   },
   {
-   "data": "2026-12-23",
+   "data": "2027-01-28",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 51,
-   "slug": "conectividade",
-   "titulo": "Integração assíncrona com filas no Azure",
-   "texto": "linkedin/51-conectividade/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/51-conectividade/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/conectividade.html",
-   "artigo_md": "linkedin/51-conectividade/artigo.pt.md"
-  },
-  {
-   "data": "2026-12-23",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 52,
    "slug": "storage-legado",
@@ -818,23 +492,12 @@
    "texto": "linkedin/52-storage-legado/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/52-storage-legado/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/storage-legado.html",
-   "artigo_md": "linkedin/52-storage-legado/artigo.en.md"
+   "artigo_md": "linkedin/52-storage-legado/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/storage-legado.html"
   },
   {
-   "data": "2027-01-04",
+   "data": "2027-02-02",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 53,
-   "slug": "governanca-iac-devops",
-   "titulo": "Governança de IaC e DevOps no Azure",
-   "texto": "linkedin/53-governanca-iac-devops/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/53-governanca-iac-devops/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/governanca-iac-devops.html",
-   "artigo_md": "linkedin/53-governanca-iac-devops/artigo.pt.md"
-  },
-  {
-   "data": "2027-01-04",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 54,
    "slug": "provisionamento-de-vms",
@@ -842,23 +505,12 @@
    "texto": "linkedin/54-provisionamento-de-vms/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/54-provisionamento-de-vms/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/provisionamento-de-vms.html",
-   "artigo_md": "linkedin/54-provisionamento-de-vms/artigo.en.md"
+   "artigo_md": "linkedin/54-provisionamento-de-vms/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/provisionamento-de-vms.html"
   },
   {
-   "data": "2027-01-05",
+   "data": "2027-02-03",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 55,
-   "slug": "governanca-de-nuvem",
-   "titulo": "Governança de nuvem e cálculo de migração",
-   "texto": "linkedin/55-governanca-de-nuvem/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/55-governanca-de-nuvem/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/governanca-de-nuvem.html",
-   "artigo_md": "linkedin/55-governanca-de-nuvem/artigo.pt.md"
-  },
-  {
-   "data": "2027-01-05",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 56,
    "slug": "dr-de-arquivos-azure",
@@ -866,23 +518,12 @@
    "texto": "linkedin/56-dr-de-arquivos-azure/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/56-dr-de-arquivos-azure/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/dr-de-arquivos-azure.html",
-   "artigo_md": "linkedin/56-dr-de-arquivos-azure/artigo.en.md"
+   "artigo_md": "linkedin/56-dr-de-arquivos-azure/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/dr-de-arquivos-azure.html"
   },
   {
-   "data": "2027-01-06",
+   "data": "2027-02-04",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 57,
-   "slug": "modernizacao-de-load-balancers",
-   "titulo": "Modernização de load balancers",
-   "texto": "linkedin/57-modernizacao-de-load-balancers/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/57-modernizacao-de-load-balancers/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/modernizacao-de-load-balancers.html",
-   "artigo_md": "linkedin/57-modernizacao-de-load-balancers/artigo.pt.md"
-  },
-  {
-   "data": "2027-01-06",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 58,
    "slug": "portfolio-de-servicos",
@@ -890,23 +531,12 @@
    "texto": "linkedin/58-portfolio-de-servicos/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/58-portfolio-de-servicos/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/portfolio-de-servicos.html",
-   "artigo_md": "linkedin/58-portfolio-de-servicos/artigo.en.md"
+   "artigo_md": "linkedin/58-portfolio-de-servicos/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/portfolio-de-servicos.html"
   },
   {
-   "data": "2027-01-07",
+   "data": "2027-02-09",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 59,
-   "slug": "finops-atual-x-alvo",
-   "titulo": "FinOps: processo atual e alvo",
-   "texto": "linkedin/59-finops-atual-x-alvo/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/59-finops-atual-x-alvo/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/finops-atual-x-alvo.html",
-   "artigo_md": "linkedin/59-finops-atual-x-alvo/artigo.pt.md"
-  },
-  {
-   "data": "2027-01-07",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 60,
    "slug": "desafio-api-serverless",
@@ -914,23 +544,12 @@
    "texto": "linkedin/60-desafio-api-serverless/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/60-desafio-api-serverless/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/desafio-api-serverless.html",
-   "artigo_md": "linkedin/60-desafio-api-serverless/artigo.en.md"
+   "artigo_md": "linkedin/60-desafio-api-serverless/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/desafio-api-serverless.html"
   },
   {
-   "data": "2027-01-08",
+   "data": "2027-02-10",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 61,
-   "slug": "desafio-aplicacao-web",
-   "titulo": "Desafio: aplicação web escalável",
-   "texto": "linkedin/61-desafio-aplicacao-web/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/61-desafio-aplicacao-web/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/desafio-aplicacao-web.html",
-   "artigo_md": "linkedin/61-desafio-aplicacao-web/artigo.pt.md"
-  },
-  {
-   "data": "2027-01-08",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 62,
    "slug": "notificacao-serverless",
@@ -938,23 +557,12 @@
    "texto": "linkedin/62-notificacao-serverless/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/62-notificacao-serverless/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/notificacao-serverless.html",
-   "artigo_md": "linkedin/62-notificacao-serverless/artigo.en.md"
+   "artigo_md": "linkedin/62-notificacao-serverless/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/notificacao-serverless.html"
   },
   {
-   "data": "2027-01-11",
+   "data": "2027-02-11",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 2,
-   "slug": "automacao-com-ia-mvp",
-   "titulo": "MVP de automação de processos com IA",
-   "texto": "linkedin/02-automacao-com-ia-mvp/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/02-automacao-com-ia-mvp/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/automacao-com-ia-mvp.html",
-   "artigo_md": "linkedin/02-automacao-com-ia-mvp/artigo.pt.md"
-  },
-  {
-   "data": "2027-01-11",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 1,
    "slug": "transformacao-digital-h1-h3",
@@ -962,23 +570,12 @@
    "texto": "linkedin/01-transformacao-digital-h1-h3/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/01-transformacao-digital-h1-h3/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/transformacao-digital-h1-h3.html",
-   "artigo_md": "linkedin/01-transformacao-digital-h1-h3/artigo.en.md"
+   "artigo_md": "linkedin/01-transformacao-digital-h1-h3/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/transformacao-digital-h1-h3.html"
   },
   {
-   "data": "2027-01-12",
+   "data": "2027-02-16",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 4,
-   "slug": "arvore-iam-google-cloud",
-   "titulo": "Árvore de recursos e permissões no Google Cloud",
-   "texto": "linkedin/04-arvore-iam-google-cloud/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/04-arvore-iam-google-cloud/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/arvore-iam-google-cloud.html",
-   "artigo_md": "linkedin/04-arvore-iam-google-cloud/artigo.pt.md"
-  },
-  {
-   "data": "2027-01-12",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 3,
    "slug": "fundacao-google-cloud",
@@ -986,23 +583,12 @@
    "texto": "linkedin/03-fundacao-google-cloud/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/03-fundacao-google-cloud/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/fundacao-google-cloud.html",
-   "artigo_md": "linkedin/03-fundacao-google-cloud/artigo.en.md"
+   "artigo_md": "linkedin/03-fundacao-google-cloud/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/fundacao-google-cloud.html"
   },
   {
-   "data": "2027-01-13",
+   "data": "2027-02-17",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 6,
-   "slug": "compartilhamento-de-rede",
-   "titulo": "Compartilhamento de rede no Google Cloud",
-   "texto": "linkedin/06-compartilhamento-de-rede/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/06-compartilhamento-de-rede/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/compartilhamento-de-rede.html",
-   "artigo_md": "linkedin/06-compartilhamento-de-rede/artigo.pt.md"
-  },
-  {
-   "data": "2027-01-13",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 5,
    "slug": "landing-zone-gcp",
@@ -1010,23 +596,12 @@
    "texto": "linkedin/05-landing-zone-gcp/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/05-landing-zone-gcp/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/landing-zone-gcp.html",
-   "artigo_md": "linkedin/05-landing-zone-gcp/artigo.en.md"
+   "artigo_md": "linkedin/05-landing-zone-gcp/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/landing-zone-gcp.html"
   },
   {
-   "data": "2027-01-14",
+   "data": "2027-02-18",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 8,
-   "slug": "poc-terraform-ci-cd",
-   "titulo": "POC de Terraform com CI/CD no Google Cloud",
-   "texto": "linkedin/08-poc-terraform-ci-cd/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/08-poc-terraform-ci-cd/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/poc-terraform-ci-cd.html",
-   "artigo_md": "linkedin/08-poc-terraform-ci-cd/artigo.pt.md"
-  },
-  {
-   "data": "2027-01-14",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 7,
    "slug": "gke-seguro",
@@ -1034,23 +609,12 @@
    "texto": "linkedin/07-gke-seguro/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/07-gke-seguro/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/gke-seguro.html",
-   "artigo_md": "linkedin/07-gke-seguro/artigo.en.md"
+   "artigo_md": "linkedin/07-gke-seguro/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/gke-seguro.html"
   },
   {
-   "data": "2027-01-15",
+   "data": "2027-02-23",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 10,
-   "slug": "autenticacao-b2c",
-   "titulo": "Autenticação B2C em ECS Fargate",
-   "texto": "linkedin/10-autenticacao-b2c/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/10-autenticacao-b2c/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/autenticacao-b2c.html",
-   "artigo_md": "linkedin/10-autenticacao-b2c/artigo.pt.md"
-  },
-  {
-   "data": "2027-01-15",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 9,
    "slug": "visao-geral-plataforma",
@@ -1058,23 +622,12 @@
    "texto": "linkedin/09-visao-geral-plataforma/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/09-visao-geral-plataforma/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/visao-geral-plataforma.html",
-   "artigo_md": "linkedin/09-visao-geral-plataforma/artigo.en.md"
+   "artigo_md": "linkedin/09-visao-geral-plataforma/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/visao-geral-plataforma.html"
   },
   {
-   "data": "2027-01-18",
+   "data": "2027-02-24",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 14,
-   "slug": "migracao-por-ondas",
-   "titulo": "Migração por ondas para EKS",
-   "texto": "linkedin/14-migracao-por-ondas/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/14-migracao-por-ondas/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/migracao-por-ondas.html",
-   "artigo_md": "linkedin/14-migracao-por-ondas/artigo.pt.md"
-  },
-  {
-   "data": "2027-01-18",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 13,
    "slug": "relatorios-regulatorios",
@@ -1082,23 +635,12 @@
    "texto": "linkedin/13-relatorios-regulatorios/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/13-relatorios-regulatorios/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/relatorios-regulatorios.html",
-   "artigo_md": "linkedin/13-relatorios-regulatorios/artigo.en.md"
+   "artigo_md": "linkedin/13-relatorios-regulatorios/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/relatorios-regulatorios.html"
   },
   {
-   "data": "2027-01-19",
+   "data": "2027-02-25",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 16,
-   "slug": "ocr-de-documentos-v2",
-   "titulo": "OCR de documentos — API v2",
-   "texto": "linkedin/16-ocr-de-documentos-v2/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/16-ocr-de-documentos-v2/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/ocr-de-documentos-v2.html",
-   "artigo_md": "linkedin/16-ocr-de-documentos-v2/artigo.pt.md"
-  },
-  {
-   "data": "2027-01-19",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 15,
    "slug": "ocr-de-documentos",
@@ -1106,23 +648,12 @@
    "texto": "linkedin/15-ocr-de-documentos/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/15-ocr-de-documentos/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/ocr-de-documentos.html",
-   "artigo_md": "linkedin/15-ocr-de-documentos/artigo.en.md"
+   "artigo_md": "linkedin/15-ocr-de-documentos/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/ocr-de-documentos.html"
   },
   {
-   "data": "2027-01-20",
+   "data": "2027-03-02",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 18,
-   "slug": "automacao-rgs",
-   "titulo": "Automação de rotina operacional com IA",
-   "texto": "linkedin/18-automacao-rgs/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/18-automacao-rgs/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/automacao-rgs.html",
-   "artigo_md": "linkedin/18-automacao-rgs/artigo.pt.md"
-  },
-  {
-   "data": "2027-01-20",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 17,
    "slug": "api-equipamentos-medicos",
@@ -1130,23 +661,12 @@
    "texto": "linkedin/17-api-equipamentos-medicos/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/17-api-equipamentos-medicos/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/api-equipamentos-medicos.html",
-   "artigo_md": "linkedin/17-api-equipamentos-medicos/artigo.en.md"
+   "artigo_md": "linkedin/17-api-equipamentos-medicos/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/api-equipamentos-medicos.html"
   },
   {
-   "data": "2027-01-21",
+   "data": "2027-03-03",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 20,
-   "slug": "api-de-download",
-   "titulo": "API de download por URL pré-assinada",
-   "texto": "linkedin/20-api-de-download/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/20-api-de-download/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/api-de-download.html",
-   "artigo_md": "linkedin/20-api-de-download/artigo.pt.md"
-  },
-  {
-   "data": "2027-01-21",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 19,
    "slug": "envio-ao-regulador",
@@ -1154,23 +674,12 @@
    "texto": "linkedin/19-envio-ao-regulador/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/19-envio-ao-regulador/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/envio-ao-regulador.html",
-   "artigo_md": "linkedin/19-envio-ao-regulador/artigo.en.md"
+   "artigo_md": "linkedin/19-envio-ao-regulador/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/envio-ao-regulador.html"
   },
   {
-   "data": "2027-01-22",
+   "data": "2027-03-04",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 22,
-   "slug": "gestao-de-carteiras",
-   "titulo": "Gestão de carteiras de beneficiários",
-   "texto": "linkedin/22-gestao-de-carteiras/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/22-gestao-de-carteiras/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/gestao-de-carteiras.html",
-   "artigo_md": "linkedin/22-gestao-de-carteiras/artigo.pt.md"
-  },
-  {
-   "data": "2027-01-22",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 21,
    "slug": "bff-acesso-externo",
@@ -1178,23 +687,12 @@
    "texto": "linkedin/21-bff-acesso-externo/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/21-bff-acesso-externo/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/bff-acesso-externo.html",
-   "artigo_md": "linkedin/21-bff-acesso-externo/artigo.en.md"
+   "artigo_md": "linkedin/21-bff-acesso-externo/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/bff-acesso-externo.html"
   },
   {
-   "data": "2027-01-25",
+   "data": "2027-03-09",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 24,
-   "slug": "bloqueio-e-reset-de-acesso",
-   "titulo": "Bloqueio e reset de acesso compartilhado",
-   "texto": "linkedin/24-bloqueio-e-reset-de-acesso/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/24-bloqueio-e-reset-de-acesso/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/bloqueio-e-reset-de-acesso.html",
-   "artigo_md": "linkedin/24-bloqueio-e-reset-de-acesso/artigo.pt.md"
-  },
-  {
-   "data": "2027-01-25",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 23,
    "slug": "simulador-odontologico",
@@ -1202,23 +700,12 @@
    "texto": "linkedin/23-simulador-odontologico/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/23-simulador-odontologico/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/simulador-odontologico.html",
-   "artigo_md": "linkedin/23-simulador-odontologico/artigo.en.md"
+   "artigo_md": "linkedin/23-simulador-odontologico/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/simulador-odontologico.html"
   },
   {
-   "data": "2027-01-26",
+   "data": "2027-03-10",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 26,
-   "slug": "portal-de-corretores",
-   "titulo": "Portal de corretores",
-   "texto": "linkedin/26-portal-de-corretores/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/26-portal-de-corretores/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/portal-de-corretores.html",
-   "artigo_md": "linkedin/26-portal-de-corretores/artigo.pt.md"
-  },
-  {
-   "data": "2027-01-26",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 25,
    "slug": "processamento-em-lote",
@@ -1226,23 +713,12 @@
    "texto": "linkedin/25-processamento-em-lote/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/25-processamento-em-lote/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/processamento-em-lote.html",
-   "artigo_md": "linkedin/25-processamento-em-lote/artigo.en.md"
+   "artigo_md": "linkedin/25-processamento-em-lote/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/processamento-em-lote.html"
   },
   {
-   "data": "2027-01-27",
+   "data": "2027-03-11",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 28,
-   "slug": "guardrails-s3-rds-cloudfront",
-   "titulo": "Guardrails para S3, RDS e CloudFront",
-   "texto": "linkedin/28-guardrails-s3-rds-cloudfront/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/28-guardrails-s3-rds-cloudfront/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/guardrails-s3-rds-cloudfront.html",
-   "artigo_md": "linkedin/28-guardrails-s3-rds-cloudfront/artigo.pt.md"
-  },
-  {
-   "data": "2027-01-27",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 27,
    "slug": "negociacao-de-debitos",
@@ -1250,23 +726,12 @@
    "texto": "linkedin/27-negociacao-de-debitos/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/27-negociacao-de-debitos/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/negociacao-de-debitos.html",
-   "artigo_md": "linkedin/27-negociacao-de-debitos/artigo.en.md"
+   "artigo_md": "linkedin/27-negociacao-de-debitos/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/negociacao-de-debitos.html"
   },
   {
-   "data": "2027-01-28",
+   "data": "2027-03-16",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 30,
-   "slug": "autenticacao-b2c-v1",
-   "titulo": "Autenticação B2C — primeira versão",
-   "texto": "linkedin/30-autenticacao-b2c-v1/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/30-autenticacao-b2c-v1/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/autenticacao-b2c-v1.html",
-   "artigo_md": "linkedin/30-autenticacao-b2c-v1/artigo.pt.md"
-  },
-  {
-   "data": "2027-01-28",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 29,
    "slug": "rede-oci",
@@ -1274,23 +739,12 @@
    "texto": "linkedin/29-rede-oci/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/29-rede-oci/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/rede-oci.html",
-   "artigo_md": "linkedin/29-rede-oci/artigo.en.md"
+   "artigo_md": "linkedin/29-rede-oci/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/rede-oci.html"
   },
   {
-   "data": "2027-01-29",
+   "data": "2027-03-17",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 32,
-   "slug": "infra-staging-c4",
-   "titulo": "Infra de staging em C4",
-   "texto": "linkedin/32-infra-staging-c4/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/32-infra-staging-c4/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/infra-staging-c4.html",
-   "artigo_md": "linkedin/32-infra-staging-c4/artigo.pt.md"
-  },
-  {
-   "data": "2027-01-29",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 31,
    "slug": "processo-finops",
@@ -1298,23 +752,12 @@
    "texto": "linkedin/31-processo-finops/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/31-processo-finops/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/processo-finops.html",
-   "artigo_md": "linkedin/31-processo-finops/artigo.en.md"
+   "artigo_md": "linkedin/31-processo-finops/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/processo-finops.html"
   },
   {
-   "data": "2027-02-01",
+   "data": "2027-03-18",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 34,
-   "slug": "iac-cdk-x-terraform",
-   "titulo": "IaC: CDK x Terraform",
-   "texto": "linkedin/34-iac-cdk-x-terraform/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/34-iac-cdk-x-terraform/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/iac-cdk-x-terraform.html",
-   "artigo_md": "linkedin/34-iac-cdk-x-terraform/artigo.pt.md"
-  },
-  {
-   "data": "2027-02-01",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 33,
    "slug": "fundamentos-aws",
@@ -1322,23 +765,12 @@
    "texto": "linkedin/33-fundamentos-aws/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/33-fundamentos-aws/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/fundamentos-aws.html",
-   "artigo_md": "linkedin/33-fundamentos-aws/artigo.en.md"
+   "artigo_md": "linkedin/33-fundamentos-aws/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/fundamentos-aws.html"
   },
   {
-   "data": "2027-02-02",
+   "data": "2027-03-23",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 36,
-   "slug": "eks-core-5g",
-   "titulo": "EKS para funções de core 5G",
-   "texto": "linkedin/36-eks-core-5g/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/36-eks-core-5g/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/eks-core-5g.html",
-   "artigo_md": "linkedin/36-eks-core-5g/artigo.pt.md"
-  },
-  {
-   "data": "2027-02-02",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 35,
    "slug": "landing-zone-azure",
@@ -1346,23 +778,12 @@
    "texto": "linkedin/35-landing-zone-azure/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/35-landing-zone-azure/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/landing-zone-azure.html",
-   "artigo_md": "linkedin/35-landing-zone-azure/artigo.en.md"
+   "artigo_md": "linkedin/35-landing-zone-azure/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/landing-zone-azure.html"
   },
   {
-   "data": "2027-02-03",
+   "data": "2027-03-24",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 38,
-   "slug": "plataforma-multicloud",
-   "titulo": "Plataforma de tarifação multicloud",
-   "texto": "linkedin/38-plataforma-multicloud/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/38-plataforma-multicloud/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/plataforma-multicloud.html",
-   "artigo_md": "linkedin/38-plataforma-multicloud/artigo.pt.md"
-  },
-  {
-   "data": "2027-02-03",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 37,
    "slug": "integracao-rede-parceiro",
@@ -1370,23 +791,12 @@
    "texto": "linkedin/37-integracao-rede-parceiro/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/37-integracao-rede-parceiro/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/integracao-rede-parceiro.html",
-   "artigo_md": "linkedin/37-integracao-rede-parceiro/artigo.en.md"
+   "artigo_md": "linkedin/37-integracao-rede-parceiro/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/integracao-rede-parceiro.html"
   },
   {
-   "data": "2027-02-04",
+   "data": "2027-03-25",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 40,
-   "slug": "governanca-ci-cd-repos",
-   "titulo": "Governança de CI/CD para repositórios Terraform",
-   "texto": "linkedin/40-governanca-ci-cd-repos/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/40-governanca-ci-cd-repos/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/governanca-ci-cd-repos.html",
-   "artigo_md": "linkedin/40-governanca-ci-cd-repos/artigo.pt.md"
-  },
-  {
-   "data": "2027-02-04",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 39,
    "slug": "migracao-de-conta-aws",
@@ -1394,23 +804,12 @@
    "texto": "linkedin/39-migracao-de-conta-aws/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/39-migracao-de-conta-aws/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/migracao-de-conta-aws.html",
-   "artigo_md": "linkedin/39-migracao-de-conta-aws/artigo.en.md"
+   "artigo_md": "linkedin/39-migracao-de-conta-aws/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/migracao-de-conta-aws.html"
   },
   {
-   "data": "2027-02-05",
+   "data": "2027-03-30",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 42,
-   "slug": "workflow-multi-x-mono-repo",
-   "titulo": "Workflow de templates: multi-repo x monorepo",
-   "texto": "linkedin/42-workflow-multi-x-mono-repo/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/42-workflow-multi-x-mono-repo/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/workflow-multi-x-mono-repo.html",
-   "artigo_md": "linkedin/42-workflow-multi-x-mono-repo/artigo.pt.md"
-  },
-  {
-   "data": "2027-02-05",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 41,
    "slug": "templates-de-iac",
@@ -1418,23 +817,12 @@
    "texto": "linkedin/41-templates-de-iac/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/41-templates-de-iac/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/templates-de-iac.html",
-   "artigo_md": "linkedin/41-templates-de-iac/artigo.en.md"
+   "artigo_md": "linkedin/41-templates-de-iac/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/templates-de-iac.html"
   },
   {
-   "data": "2027-02-08",
+   "data": "2027-03-31",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 44,
-   "slug": "gateways-de-api",
-   "titulo": "Gateways de API no Google Cloud",
-   "texto": "linkedin/44-gateways-de-api/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/44-gateways-de-api/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/gateways-de-api.html",
-   "artigo_md": "linkedin/44-gateways-de-api/artigo.pt.md"
-  },
-  {
-   "data": "2027-02-08",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 43,
    "slug": "catalogo-de-servicos",
@@ -1442,23 +830,12 @@
    "texto": "linkedin/43-catalogo-de-servicos/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/43-catalogo-de-servicos/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/catalogo-de-servicos.html",
-   "artigo_md": "linkedin/43-catalogo-de-servicos/artigo.en.md"
+   "artigo_md": "linkedin/43-catalogo-de-servicos/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/catalogo-de-servicos.html"
   },
   {
-   "data": "2027-02-09",
+   "data": "2027-04-01",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 46,
-   "slug": "api-gateway-externo-kong",
-   "titulo": "Kong externo na DMZ do GKE",
-   "texto": "linkedin/46-api-gateway-externo-kong/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/46-api-gateway-externo-kong/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/api-gateway-externo-kong.html",
-   "artigo_md": "linkedin/46-api-gateway-externo-kong/artigo.pt.md"
-  },
-  {
-   "data": "2027-02-09",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 45,
    "slug": "rede-gke-compartilhada",
@@ -1466,23 +843,12 @@
    "texto": "linkedin/45-rede-gke-compartilhada/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/45-rede-gke-compartilhada/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/rede-gke-compartilhada.html",
-   "artigo_md": "linkedin/45-rede-gke-compartilhada/artigo.en.md"
+   "artigo_md": "linkedin/45-rede-gke-compartilhada/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/rede-gke-compartilhada.html"
   },
   {
-   "data": "2027-02-10",
+   "data": "2027-04-06",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 48,
-   "slug": "migracao-alloydb",
-   "titulo": "Migração para AlloyDB",
-   "texto": "linkedin/48-migracao-alloydb/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/48-migracao-alloydb/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/migracao-alloydb.html",
-   "artigo_md": "linkedin/48-migracao-alloydb/artigo.pt.md"
-  },
-  {
-   "data": "2027-02-10",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 47,
    "slug": "ciclo-de-vida-cloud-sql",
@@ -1490,23 +856,12 @@
    "texto": "linkedin/47-ciclo-de-vida-cloud-sql/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/47-ciclo-de-vida-cloud-sql/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/ciclo-de-vida-cloud-sql.html",
-   "artigo_md": "linkedin/47-ciclo-de-vida-cloud-sql/artigo.en.md"
+   "artigo_md": "linkedin/47-ciclo-de-vida-cloud-sql/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/ciclo-de-vida-cloud-sql.html"
   },
   {
-   "data": "2027-02-11",
+   "data": "2027-04-07",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 50,
-   "slug": "pipeline-de-deploy",
-   "titulo": "Pipeline de deploy por ambiente",
-   "texto": "linkedin/50-pipeline-de-deploy/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/50-pipeline-de-deploy/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/pipeline-de-deploy.html",
-   "artigo_md": "linkedin/50-pipeline-de-deploy/artigo.pt.md"
-  },
-  {
-   "data": "2027-02-11",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 49,
    "slug": "opcoes-de-computacao",
@@ -1514,23 +869,12 @@
    "texto": "linkedin/49-opcoes-de-computacao/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/49-opcoes-de-computacao/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/opcoes-de-computacao.html",
-   "artigo_md": "linkedin/49-opcoes-de-computacao/artigo.en.md"
+   "artigo_md": "linkedin/49-opcoes-de-computacao/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/opcoes-de-computacao.html"
   },
   {
-   "data": "2027-02-12",
+   "data": "2027-04-08",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 52,
-   "slug": "storage-legado",
-   "titulo": "Storage legado: inventário antes da migração",
-   "texto": "linkedin/52-storage-legado/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/52-storage-legado/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/storage-legado.html",
-   "artigo_md": "linkedin/52-storage-legado/artigo.pt.md"
-  },
-  {
-   "data": "2027-02-12",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 51,
    "slug": "conectividade",
@@ -1538,23 +882,12 @@
    "texto": "linkedin/51-conectividade/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/51-conectividade/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/conectividade.html",
-   "artigo_md": "linkedin/51-conectividade/artigo.en.md"
+   "artigo_md": "linkedin/51-conectividade/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/conectividade.html"
   },
   {
-   "data": "2027-02-15",
+   "data": "2027-04-13",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 54,
-   "slug": "provisionamento-de-vms",
-   "titulo": "Provisionamento de VMs automatizado",
-   "texto": "linkedin/54-provisionamento-de-vms/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/54-provisionamento-de-vms/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/provisionamento-de-vms.html",
-   "artigo_md": "linkedin/54-provisionamento-de-vms/artigo.pt.md"
-  },
-  {
-   "data": "2027-02-15",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 53,
    "slug": "governanca-iac-devops",
@@ -1562,23 +895,12 @@
    "texto": "linkedin/53-governanca-iac-devops/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/53-governanca-iac-devops/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/governanca-iac-devops.html",
-   "artigo_md": "linkedin/53-governanca-iac-devops/artigo.en.md"
+   "artigo_md": "linkedin/53-governanca-iac-devops/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/governanca-iac-devops.html"
   },
   {
-   "data": "2027-02-16",
+   "data": "2027-04-14",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 56,
-   "slug": "dr-de-arquivos-azure",
-   "titulo": "DR de file system no Azure",
-   "texto": "linkedin/56-dr-de-arquivos-azure/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/56-dr-de-arquivos-azure/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/dr-de-arquivos-azure.html",
-   "artigo_md": "linkedin/56-dr-de-arquivos-azure/artigo.pt.md"
-  },
-  {
-   "data": "2027-02-16",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 55,
    "slug": "governanca-de-nuvem",
@@ -1586,23 +908,12 @@
    "texto": "linkedin/55-governanca-de-nuvem/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/55-governanca-de-nuvem/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/governanca-de-nuvem.html",
-   "artigo_md": "linkedin/55-governanca-de-nuvem/artigo.en.md"
+   "artigo_md": "linkedin/55-governanca-de-nuvem/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/governanca-de-nuvem.html"
   },
   {
-   "data": "2027-02-17",
+   "data": "2027-04-15",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 58,
-   "slug": "portfolio-de-servicos",
-   "titulo": "Portfólio de serviços de nuvem",
-   "texto": "linkedin/58-portfolio-de-servicos/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/58-portfolio-de-servicos/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/portfolio-de-servicos.html",
-   "artigo_md": "linkedin/58-portfolio-de-servicos/artigo.pt.md"
-  },
-  {
-   "data": "2027-02-17",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 57,
    "slug": "modernizacao-de-load-balancers",
@@ -1610,23 +921,12 @@
    "texto": "linkedin/57-modernizacao-de-load-balancers/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/57-modernizacao-de-load-balancers/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/modernizacao-de-load-balancers.html",
-   "artigo_md": "linkedin/57-modernizacao-de-load-balancers/artigo.en.md"
+   "artigo_md": "linkedin/57-modernizacao-de-load-balancers/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/modernizacao-de-load-balancers.html"
   },
   {
-   "data": "2027-02-18",
+   "data": "2027-04-20",
    "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 60,
-   "slug": "desafio-api-serverless",
-   "titulo": "Desafio: API serverless",
-   "texto": "linkedin/60-desafio-api-serverless/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/60-desafio-api-serverless/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/desafio-api-serverless.html",
-   "artigo_md": "linkedin/60-desafio-api-serverless/artigo.pt.md"
-  },
-  {
-   "data": "2027-02-18",
-   "hora_brt": "17:00",
    "idioma": "en",
    "post": 59,
    "slug": "finops-atual-x-alvo",
@@ -1634,19 +934,8 @@
    "texto": "linkedin/59-finops-atual-x-alvo/post.en.txt",
    "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/59-finops-atual-x-alvo/capa.en.png",
    "artigo": "https://raphaelfcs.github.io/portfolio/artigos/en/finops-atual-x-alvo.html",
-   "artigo_md": "linkedin/59-finops-atual-x-alvo/artigo.en.md"
-  },
-  {
-   "data": "2027-02-19",
-   "hora_brt": "10:00",
-   "idioma": "pt",
-   "post": 62,
-   "slug": "notificacao-serverless",
-   "titulo": "Aplicação em duas AZs com notificações",
-   "texto": "linkedin/62-notificacao-serverless/post.pt.txt",
-   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/62-notificacao-serverless/capa.pt.png",
-   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/notificacao-serverless.html",
-   "artigo_md": "linkedin/62-notificacao-serverless/artigo.pt.md"
+   "artigo_md": "linkedin/59-finops-atual-x-alvo/artigo.en.md",
+   "primeiro_comentario": "https://raphaelfcs.github.io/portfolio/artigos/en/finops-atual-x-alvo.html"
   }
  ],
  "publicados_fora_do_calendario": [
@@ -1664,5 +953,787 @@
    "ferramenta": "Typefully",
    "motivo": "teste de integração"
   }
- ]
+ ],
+ "pausados_pt": [
+  {
+   "data": "2026-11-12",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 7,
+   "slug": "gke-seguro",
+   "titulo": "GKE seguro de ponta a ponta",
+   "texto": "linkedin/07-gke-seguro/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/07-gke-seguro/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/gke-seguro.html",
+   "artigo_md": "linkedin/07-gke-seguro/artigo.pt.md"
+  },
+  {
+   "data": "2026-11-13",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 9,
+   "slug": "visao-geral-plataforma",
+   "titulo": "Plataforma AWS de uma operadora de saúde",
+   "texto": "linkedin/09-visao-geral-plataforma/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/09-visao-geral-plataforma/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/visao-geral-plataforma.html",
+   "artigo_md": "linkedin/09-visao-geral-plataforma/artigo.pt.md"
+  },
+  {
+   "data": "2026-11-16",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 63,
+   "slug": "aws-scp-e-rcp",
+   "titulo": "SCP e RCP: o perímetro de dados da organização AWS",
+   "trilha": "aws-na-pratica",
+   "texto": "linkedin/63-aws-scp-e-rcp/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/63-aws-scp-e-rcp/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/aws-scp-e-rcp.html",
+   "artigo_md": "linkedin/63-aws-scp-e-rcp/artigo.pt.md"
+  },
+  {
+   "data": "2026-11-17",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 64,
+   "slug": "aws-identity-center",
+   "titulo": "IAM Identity Center como código: acesso sem usuário IAM",
+   "trilha": "aws-na-pratica",
+   "texto": "linkedin/64-aws-identity-center/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/64-aws-identity-center/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/aws-identity-center.html",
+   "artigo_md": "linkedin/64-aws-identity-center/artigo.pt.md"
+  },
+  {
+   "data": "2026-11-18",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 65,
+   "slug": "aws-rede-hub-and-spoke",
+   "titulo": "Rede AWS hub-and-spoke: VPC, Transit Gateway, VPN e Direct Connect",
+   "trilha": "aws-na-pratica",
+   "texto": "linkedin/65-aws-rede-hub-and-spoke/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/65-aws-rede-hub-and-spoke/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/aws-rede-hub-and-spoke.html",
+   "artigo_md": "linkedin/65-aws-rede-hub-and-spoke/artigo.pt.md"
+  },
+  {
+   "data": "2026-11-19",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 66,
+   "slug": "aws-route53-entre-contas",
+   "titulo": "Route 53 entre contas: DNS privado, híbrido e delegação de subdomínio",
+   "trilha": "aws-na-pratica",
+   "texto": "linkedin/66-aws-route53-entre-contas/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/66-aws-route53-entre-contas/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/aws-route53-entre-contas.html",
+   "artigo_md": "linkedin/66-aws-route53-entre-contas/artigo.pt.md"
+  },
+  {
+   "data": "2026-11-23",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 67,
+   "slug": "aws-eventbridge-lambda",
+   "titulo": "EventBridge e Lambda: integração entre contas que aguenta falha",
+   "trilha": "aws-na-pratica",
+   "texto": "linkedin/67-aws-eventbridge-lambda/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/67-aws-eventbridge-lambda/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/aws-eventbridge-lambda.html",
+   "artigo_md": "linkedin/67-aws-eventbridge-lambda/artigo.pt.md"
+  },
+  {
+   "data": "2026-11-24",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 68,
+   "slug": "aws-automacoes-de-governanca",
+   "titulo": "Automações de governança na AWS orientadas a eventos",
+   "trilha": "aws-na-pratica",
+   "texto": "linkedin/68-aws-automacoes-de-governanca/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/68-aws-automacoes-de-governanca/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/aws-automacoes-de-governanca.html",
+   "artigo_md": "linkedin/68-aws-automacoes-de-governanca/artigo.pt.md"
+  },
+  {
+   "data": "2026-11-25",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 11,
+   "slug": "cluster-eks",
+   "titulo": "Cluster EKS compartilhado",
+   "texto": "linkedin/11-cluster-eks/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/11-cluster-eks/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/cluster-eks.html",
+   "artigo_md": "linkedin/11-cluster-eks/artigo.pt.md"
+  },
+  {
+   "data": "2026-11-26",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 13,
+   "slug": "relatorios-regulatorios",
+   "titulo": "Relatórios regulatórios assíncronos",
+   "texto": "linkedin/13-relatorios-regulatorios/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/13-relatorios-regulatorios/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/relatorios-regulatorios.html",
+   "artigo_md": "linkedin/13-relatorios-regulatorios/artigo.pt.md"
+  },
+  {
+   "data": "2026-11-27",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 15,
+   "slug": "ocr-de-documentos",
+   "titulo": "OCR de documentos em escala",
+   "texto": "linkedin/15-ocr-de-documentos/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/15-ocr-de-documentos/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/ocr-de-documentos.html",
+   "artigo_md": "linkedin/15-ocr-de-documentos/artigo.pt.md"
+  },
+  {
+   "data": "2026-11-30",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 17,
+   "slug": "api-equipamentos-medicos",
+   "titulo": "API de reembolso de equipamentos médicos",
+   "texto": "linkedin/17-api-equipamentos-medicos/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/17-api-equipamentos-medicos/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/api-equipamentos-medicos.html",
+   "artigo_md": "linkedin/17-api-equipamentos-medicos/artigo.pt.md"
+  },
+  {
+   "data": "2026-12-01",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 19,
+   "slug": "envio-ao-regulador",
+   "titulo": "Envio periódico ao órgão regulador",
+   "texto": "linkedin/19-envio-ao-regulador/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/19-envio-ao-regulador/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/envio-ao-regulador.html",
+   "artigo_md": "linkedin/19-envio-ao-regulador/artigo.pt.md"
+  },
+  {
+   "data": "2026-12-02",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 21,
+   "slug": "bff-acesso-externo",
+   "titulo": "BFF para parceiros externos",
+   "texto": "linkedin/21-bff-acesso-externo/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/21-bff-acesso-externo/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/bff-acesso-externo.html",
+   "artigo_md": "linkedin/21-bff-acesso-externo/artigo.pt.md"
+  },
+  {
+   "data": "2026-12-03",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 23,
+   "slug": "simulador-odontologico",
+   "titulo": "Simulador de prévia de gastos",
+   "texto": "linkedin/23-simulador-odontologico/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/23-simulador-odontologico/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/simulador-odontologico.html",
+   "artigo_md": "linkedin/23-simulador-odontologico/artigo.pt.md"
+  },
+  {
+   "data": "2026-12-04",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 25,
+   "slug": "processamento-em-lote",
+   "titulo": "Processamento em lote com AWS Batch",
+   "texto": "linkedin/25-processamento-em-lote/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/25-processamento-em-lote/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/processamento-em-lote.html",
+   "artigo_md": "linkedin/25-processamento-em-lote/artigo.pt.md"
+  },
+  {
+   "data": "2026-12-07",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 27,
+   "slug": "negociacao-de-debitos",
+   "titulo": "Portal de negociação de débitos",
+   "texto": "linkedin/27-negociacao-de-debitos/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/27-negociacao-de-debitos/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/negociacao-de-debitos.html",
+   "artigo_md": "linkedin/27-negociacao-de-debitos/artigo.pt.md"
+  },
+  {
+   "data": "2026-12-08",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 29,
+   "slug": "rede-oci",
+   "titulo": "Rede híbrida na OCI",
+   "texto": "linkedin/29-rede-oci/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/29-rede-oci/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/rede-oci.html",
+   "artigo_md": "linkedin/29-rede-oci/artigo.pt.md"
+  },
+  {
+   "data": "2026-12-09",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 31,
+   "slug": "processo-finops",
+   "titulo": "Processo de FinOps",
+   "texto": "linkedin/31-processo-finops/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/31-processo-finops/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/processo-finops.html",
+   "artigo_md": "linkedin/31-processo-finops/artigo.pt.md"
+  },
+  {
+   "data": "2026-12-10",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 33,
+   "slug": "fundamentos-aws",
+   "titulo": "Fundamentos de AWS: identidade e guardrails",
+   "texto": "linkedin/33-fundamentos-aws/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/33-fundamentos-aws/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/fundamentos-aws.html",
+   "artigo_md": "linkedin/33-fundamentos-aws/artigo.pt.md"
+  },
+  {
+   "data": "2026-12-11",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 35,
+   "slug": "landing-zone-azure",
+   "titulo": "Landing zone Azure com AKS privado",
+   "texto": "linkedin/35-landing-zone-azure/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/35-landing-zone-azure/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/landing-zone-azure.html",
+   "artigo_md": "linkedin/35-landing-zone-azure/artigo.pt.md"
+  },
+  {
+   "data": "2026-12-14",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 37,
+   "slug": "integracao-rede-parceiro",
+   "titulo": "Integração de rede com parceiro",
+   "texto": "linkedin/37-integracao-rede-parceiro/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/37-integracao-rede-parceiro/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/integracao-rede-parceiro.html",
+   "artigo_md": "linkedin/37-integracao-rede-parceiro/artigo.pt.md"
+  },
+  {
+   "data": "2026-12-15",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 39,
+   "slug": "migracao-de-conta-aws",
+   "titulo": "Migração de workload entre contas AWS",
+   "texto": "linkedin/39-migracao-de-conta-aws/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/39-migracao-de-conta-aws/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/migracao-de-conta-aws.html",
+   "artigo_md": "linkedin/39-migracao-de-conta-aws/artigo.pt.md"
+  },
+  {
+   "data": "2026-12-16",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 41,
+   "slug": "templates-de-iac",
+   "titulo": "Portal do desenvolvedor com templates de IaC",
+   "texto": "linkedin/41-templates-de-iac/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/41-templates-de-iac/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/templates-de-iac.html",
+   "artigo_md": "linkedin/41-templates-de-iac/artigo.pt.md"
+  },
+  {
+   "data": "2026-12-17",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 43,
+   "slug": "catalogo-de-servicos",
+   "titulo": "Catálogo de serviços self-service",
+   "texto": "linkedin/43-catalogo-de-servicos/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/43-catalogo-de-servicos/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/catalogo-de-servicos.html",
+   "artigo_md": "linkedin/43-catalogo-de-servicos/artigo.pt.md"
+  },
+  {
+   "data": "2026-12-18",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 45,
+   "slug": "rede-gke-compartilhada",
+   "titulo": "Shared VPC para GKE e bancos",
+   "texto": "linkedin/45-rede-gke-compartilhada/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/45-rede-gke-compartilhada/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/rede-gke-compartilhada.html",
+   "artigo_md": "linkedin/45-rede-gke-compartilhada/artigo.pt.md"
+  },
+  {
+   "data": "2026-12-21",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 47,
+   "slug": "ciclo-de-vida-cloud-sql",
+   "titulo": "Ciclo de vida de dados do Cloud SQL",
+   "texto": "linkedin/47-ciclo-de-vida-cloud-sql/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/47-ciclo-de-vida-cloud-sql/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/ciclo-de-vida-cloud-sql.html",
+   "artigo_md": "linkedin/47-ciclo-de-vida-cloud-sql/artigo.pt.md"
+  },
+  {
+   "data": "2026-12-22",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 49,
+   "slug": "opcoes-de-computacao",
+   "titulo": "Opções de computação: ECS, EKS e Beanstalk",
+   "texto": "linkedin/49-opcoes-de-computacao/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/49-opcoes-de-computacao/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/opcoes-de-computacao.html",
+   "artigo_md": "linkedin/49-opcoes-de-computacao/artigo.pt.md"
+  },
+  {
+   "data": "2026-12-23",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 51,
+   "slug": "conectividade",
+   "titulo": "Integração assíncrona com filas no Azure",
+   "texto": "linkedin/51-conectividade/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/51-conectividade/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/conectividade.html",
+   "artigo_md": "linkedin/51-conectividade/artigo.pt.md"
+  },
+  {
+   "data": "2027-01-04",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 53,
+   "slug": "governanca-iac-devops",
+   "titulo": "Governança de IaC e DevOps no Azure",
+   "texto": "linkedin/53-governanca-iac-devops/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/53-governanca-iac-devops/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/governanca-iac-devops.html",
+   "artigo_md": "linkedin/53-governanca-iac-devops/artigo.pt.md"
+  },
+  {
+   "data": "2027-01-05",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 55,
+   "slug": "governanca-de-nuvem",
+   "titulo": "Governança de nuvem e cálculo de migração",
+   "texto": "linkedin/55-governanca-de-nuvem/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/55-governanca-de-nuvem/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/governanca-de-nuvem.html",
+   "artigo_md": "linkedin/55-governanca-de-nuvem/artigo.pt.md"
+  },
+  {
+   "data": "2027-01-06",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 57,
+   "slug": "modernizacao-de-load-balancers",
+   "titulo": "Modernização de load balancers",
+   "texto": "linkedin/57-modernizacao-de-load-balancers/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/57-modernizacao-de-load-balancers/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/modernizacao-de-load-balancers.html",
+   "artigo_md": "linkedin/57-modernizacao-de-load-balancers/artigo.pt.md"
+  },
+  {
+   "data": "2027-01-07",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 59,
+   "slug": "finops-atual-x-alvo",
+   "titulo": "FinOps: processo atual e alvo",
+   "texto": "linkedin/59-finops-atual-x-alvo/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/59-finops-atual-x-alvo/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/finops-atual-x-alvo.html",
+   "artigo_md": "linkedin/59-finops-atual-x-alvo/artigo.pt.md"
+  },
+  {
+   "data": "2027-01-08",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 61,
+   "slug": "desafio-aplicacao-web",
+   "titulo": "Desafio: aplicação web escalável",
+   "texto": "linkedin/61-desafio-aplicacao-web/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/61-desafio-aplicacao-web/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/desafio-aplicacao-web.html",
+   "artigo_md": "linkedin/61-desafio-aplicacao-web/artigo.pt.md"
+  },
+  {
+   "data": "2027-01-11",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 2,
+   "slug": "automacao-com-ia-mvp",
+   "titulo": "MVP de automação de processos com IA",
+   "texto": "linkedin/02-automacao-com-ia-mvp/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/02-automacao-com-ia-mvp/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/automacao-com-ia-mvp.html",
+   "artigo_md": "linkedin/02-automacao-com-ia-mvp/artigo.pt.md"
+  },
+  {
+   "data": "2027-01-12",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 4,
+   "slug": "arvore-iam-google-cloud",
+   "titulo": "Árvore de recursos e permissões no Google Cloud",
+   "texto": "linkedin/04-arvore-iam-google-cloud/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/04-arvore-iam-google-cloud/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/arvore-iam-google-cloud.html",
+   "artigo_md": "linkedin/04-arvore-iam-google-cloud/artigo.pt.md"
+  },
+  {
+   "data": "2027-01-13",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 6,
+   "slug": "compartilhamento-de-rede",
+   "titulo": "Compartilhamento de rede no Google Cloud",
+   "texto": "linkedin/06-compartilhamento-de-rede/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/06-compartilhamento-de-rede/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/compartilhamento-de-rede.html",
+   "artigo_md": "linkedin/06-compartilhamento-de-rede/artigo.pt.md"
+  },
+  {
+   "data": "2027-01-14",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 8,
+   "slug": "poc-terraform-ci-cd",
+   "titulo": "POC de Terraform com CI/CD no Google Cloud",
+   "texto": "linkedin/08-poc-terraform-ci-cd/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/08-poc-terraform-ci-cd/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/poc-terraform-ci-cd.html",
+   "artigo_md": "linkedin/08-poc-terraform-ci-cd/artigo.pt.md"
+  },
+  {
+   "data": "2027-01-15",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 10,
+   "slug": "autenticacao-b2c",
+   "titulo": "Autenticação B2C em ECS Fargate",
+   "texto": "linkedin/10-autenticacao-b2c/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/10-autenticacao-b2c/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/autenticacao-b2c.html",
+   "artigo_md": "linkedin/10-autenticacao-b2c/artigo.pt.md"
+  },
+  {
+   "data": "2027-01-18",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 14,
+   "slug": "migracao-por-ondas",
+   "titulo": "Migração por ondas para EKS",
+   "texto": "linkedin/14-migracao-por-ondas/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/14-migracao-por-ondas/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/migracao-por-ondas.html",
+   "artigo_md": "linkedin/14-migracao-por-ondas/artigo.pt.md"
+  },
+  {
+   "data": "2027-01-19",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 16,
+   "slug": "ocr-de-documentos-v2",
+   "titulo": "OCR de documentos — API v2",
+   "texto": "linkedin/16-ocr-de-documentos-v2/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/16-ocr-de-documentos-v2/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/ocr-de-documentos-v2.html",
+   "artigo_md": "linkedin/16-ocr-de-documentos-v2/artigo.pt.md"
+  },
+  {
+   "data": "2027-01-20",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 18,
+   "slug": "automacao-rgs",
+   "titulo": "Automação de rotina operacional com IA",
+   "texto": "linkedin/18-automacao-rgs/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/18-automacao-rgs/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/automacao-rgs.html",
+   "artigo_md": "linkedin/18-automacao-rgs/artigo.pt.md"
+  },
+  {
+   "data": "2027-01-21",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 20,
+   "slug": "api-de-download",
+   "titulo": "API de download por URL pré-assinada",
+   "texto": "linkedin/20-api-de-download/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/20-api-de-download/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/api-de-download.html",
+   "artigo_md": "linkedin/20-api-de-download/artigo.pt.md"
+  },
+  {
+   "data": "2027-01-22",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 22,
+   "slug": "gestao-de-carteiras",
+   "titulo": "Gestão de carteiras de beneficiários",
+   "texto": "linkedin/22-gestao-de-carteiras/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/22-gestao-de-carteiras/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/gestao-de-carteiras.html",
+   "artigo_md": "linkedin/22-gestao-de-carteiras/artigo.pt.md"
+  },
+  {
+   "data": "2027-01-25",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 24,
+   "slug": "bloqueio-e-reset-de-acesso",
+   "titulo": "Bloqueio e reset de acesso compartilhado",
+   "texto": "linkedin/24-bloqueio-e-reset-de-acesso/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/24-bloqueio-e-reset-de-acesso/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/bloqueio-e-reset-de-acesso.html",
+   "artigo_md": "linkedin/24-bloqueio-e-reset-de-acesso/artigo.pt.md"
+  },
+  {
+   "data": "2027-01-26",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 26,
+   "slug": "portal-de-corretores",
+   "titulo": "Portal de corretores",
+   "texto": "linkedin/26-portal-de-corretores/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/26-portal-de-corretores/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/portal-de-corretores.html",
+   "artigo_md": "linkedin/26-portal-de-corretores/artigo.pt.md"
+  },
+  {
+   "data": "2027-01-27",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 28,
+   "slug": "guardrails-s3-rds-cloudfront",
+   "titulo": "Guardrails para S3, RDS e CloudFront",
+   "texto": "linkedin/28-guardrails-s3-rds-cloudfront/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/28-guardrails-s3-rds-cloudfront/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/guardrails-s3-rds-cloudfront.html",
+   "artigo_md": "linkedin/28-guardrails-s3-rds-cloudfront/artigo.pt.md"
+  },
+  {
+   "data": "2027-01-28",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 30,
+   "slug": "autenticacao-b2c-v1",
+   "titulo": "Autenticação B2C — primeira versão",
+   "texto": "linkedin/30-autenticacao-b2c-v1/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/30-autenticacao-b2c-v1/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/autenticacao-b2c-v1.html",
+   "artigo_md": "linkedin/30-autenticacao-b2c-v1/artigo.pt.md"
+  },
+  {
+   "data": "2027-01-29",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 32,
+   "slug": "infra-staging-c4",
+   "titulo": "Infra de staging em C4",
+   "texto": "linkedin/32-infra-staging-c4/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/32-infra-staging-c4/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/infra-staging-c4.html",
+   "artigo_md": "linkedin/32-infra-staging-c4/artigo.pt.md"
+  },
+  {
+   "data": "2027-02-01",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 34,
+   "slug": "iac-cdk-x-terraform",
+   "titulo": "IaC: CDK x Terraform",
+   "texto": "linkedin/34-iac-cdk-x-terraform/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/34-iac-cdk-x-terraform/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/iac-cdk-x-terraform.html",
+   "artigo_md": "linkedin/34-iac-cdk-x-terraform/artigo.pt.md"
+  },
+  {
+   "data": "2027-02-02",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 36,
+   "slug": "eks-core-5g",
+   "titulo": "EKS para funções de core 5G",
+   "texto": "linkedin/36-eks-core-5g/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/36-eks-core-5g/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/eks-core-5g.html",
+   "artigo_md": "linkedin/36-eks-core-5g/artigo.pt.md"
+  },
+  {
+   "data": "2027-02-03",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 38,
+   "slug": "plataforma-multicloud",
+   "titulo": "Plataforma de tarifação multicloud",
+   "texto": "linkedin/38-plataforma-multicloud/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/38-plataforma-multicloud/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/plataforma-multicloud.html",
+   "artigo_md": "linkedin/38-plataforma-multicloud/artigo.pt.md"
+  },
+  {
+   "data": "2027-02-04",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 40,
+   "slug": "governanca-ci-cd-repos",
+   "titulo": "Governança de CI/CD para repositórios Terraform",
+   "texto": "linkedin/40-governanca-ci-cd-repos/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/40-governanca-ci-cd-repos/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/governanca-ci-cd-repos.html",
+   "artigo_md": "linkedin/40-governanca-ci-cd-repos/artigo.pt.md"
+  },
+  {
+   "data": "2027-02-05",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 42,
+   "slug": "workflow-multi-x-mono-repo",
+   "titulo": "Workflow de templates: multi-repo x monorepo",
+   "texto": "linkedin/42-workflow-multi-x-mono-repo/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/42-workflow-multi-x-mono-repo/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/workflow-multi-x-mono-repo.html",
+   "artigo_md": "linkedin/42-workflow-multi-x-mono-repo/artigo.pt.md"
+  },
+  {
+   "data": "2027-02-08",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 44,
+   "slug": "gateways-de-api",
+   "titulo": "Gateways de API no Google Cloud",
+   "texto": "linkedin/44-gateways-de-api/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/44-gateways-de-api/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/gateways-de-api.html",
+   "artigo_md": "linkedin/44-gateways-de-api/artigo.pt.md"
+  },
+  {
+   "data": "2027-02-09",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 46,
+   "slug": "api-gateway-externo-kong",
+   "titulo": "Kong externo na DMZ do GKE",
+   "texto": "linkedin/46-api-gateway-externo-kong/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/46-api-gateway-externo-kong/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/api-gateway-externo-kong.html",
+   "artigo_md": "linkedin/46-api-gateway-externo-kong/artigo.pt.md"
+  },
+  {
+   "data": "2027-02-10",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 48,
+   "slug": "migracao-alloydb",
+   "titulo": "Migração para AlloyDB",
+   "texto": "linkedin/48-migracao-alloydb/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/48-migracao-alloydb/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/migracao-alloydb.html",
+   "artigo_md": "linkedin/48-migracao-alloydb/artigo.pt.md"
+  },
+  {
+   "data": "2027-02-11",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 50,
+   "slug": "pipeline-de-deploy",
+   "titulo": "Pipeline de deploy por ambiente",
+   "texto": "linkedin/50-pipeline-de-deploy/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/50-pipeline-de-deploy/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/pipeline-de-deploy.html",
+   "artigo_md": "linkedin/50-pipeline-de-deploy/artigo.pt.md"
+  },
+  {
+   "data": "2027-02-12",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 52,
+   "slug": "storage-legado",
+   "titulo": "Storage legado: inventário antes da migração",
+   "texto": "linkedin/52-storage-legado/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/52-storage-legado/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/storage-legado.html",
+   "artigo_md": "linkedin/52-storage-legado/artigo.pt.md"
+  },
+  {
+   "data": "2027-02-15",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 54,
+   "slug": "provisionamento-de-vms",
+   "titulo": "Provisionamento de VMs automatizado",
+   "texto": "linkedin/54-provisionamento-de-vms/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/54-provisionamento-de-vms/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/provisionamento-de-vms.html",
+   "artigo_md": "linkedin/54-provisionamento-de-vms/artigo.pt.md"
+  },
+  {
+   "data": "2027-02-16",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 56,
+   "slug": "dr-de-arquivos-azure",
+   "titulo": "DR de file system no Azure",
+   "texto": "linkedin/56-dr-de-arquivos-azure/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/56-dr-de-arquivos-azure/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/dr-de-arquivos-azure.html",
+   "artigo_md": "linkedin/56-dr-de-arquivos-azure/artigo.pt.md"
+  },
+  {
+   "data": "2027-02-17",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 58,
+   "slug": "portfolio-de-servicos",
+   "titulo": "Portfólio de serviços de nuvem",
+   "texto": "linkedin/58-portfolio-de-servicos/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/58-portfolio-de-servicos/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/portfolio-de-servicos.html",
+   "artigo_md": "linkedin/58-portfolio-de-servicos/artigo.pt.md"
+  },
+  {
+   "data": "2027-02-18",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 60,
+   "slug": "desafio-api-serverless",
+   "titulo": "Desafio: API serverless",
+   "texto": "linkedin/60-desafio-api-serverless/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/60-desafio-api-serverless/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/desafio-api-serverless.html",
+   "artigo_md": "linkedin/60-desafio-api-serverless/artigo.pt.md"
+  },
+  {
+   "data": "2027-02-19",
+   "hora_brt": "10:00",
+   "idioma": "pt",
+   "post": 62,
+   "slug": "notificacao-serverless",
+   "titulo": "Aplicação em duas AZs com notificações",
+   "texto": "linkedin/62-notificacao-serverless/post.pt.txt",
+   "imagem": "https://raphaelfcs.github.io/portfolio/linkedin/62-notificacao-serverless/capa.pt.png",
+   "artigo": "https://raphaelfcs.github.io/portfolio/artigos/pt/notificacao-serverless.html",
+   "artigo_md": "linkedin/62-notificacao-serverless/artigo.pt.md"
+  }
+ ],
+ "estrategia": {
+  "definida_em": "2026-11-11",
+  "cadencia": "3 posts por semana (terça, quarta e quinta, 10:00 BRT), só em inglês, pelo Typefully",
+  "link": "link do artigo no primeiro comentário, fora do corpo do post",
+  "pt": "posts em português pausados; ficam em pausados_pt"
+ }
 }

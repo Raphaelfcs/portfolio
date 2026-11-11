@@ -9,7 +9,6 @@ The pattern I use to integrate accounts and partners on AWS:
 
 The code, tests and diagram are on GitHub.
 
-Full article, with diagram, step by step and Terraform code:
-https://raphaelfcs.github.io/portfolio/artigos/en/aws-eventbridge-lambda.html
+Full article with the diagram, the Terraform code and the costs: link in the first comment.
 
 #AWS #EventBridge #AWSLambda #Serverless #EventDriven #Terraform

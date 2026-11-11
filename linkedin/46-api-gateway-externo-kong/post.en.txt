@@ -2,7 +2,6 @@ Kong in the GKE DMZ: AS-IS vs TO-BE.
 
 External gateway exposed without clear separation between environments.
 
-I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
-https://raphaelfcs.github.io/portfolio/artigos/en/api-gateway-externo-kong.html
+Full article with the diagram, the Terraform code and the costs: link in the first comment.
 
 #GoogleCloud #GCP #Terraform #IaC #DevOps #FinOps #CloudComputing

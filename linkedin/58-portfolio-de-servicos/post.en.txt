@@ -2,7 +2,6 @@ Cloud as a product: a service portfolio for business units.
 
 Business units asking for "cloud" without knowing what existed.
 
-I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
-https://raphaelfcs.github.io/portfolio/artigos/en/portfolio-de-servicos.html
+Full article with the diagram, the Terraform code and the costs: link in the first comment.
 
 #Azure #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

@@ -2,7 +2,6 @@ Same roadmap, different cloud: the three horizons on Google Cloud.
 
 The same modernization case, now with Google Cloud as the main platform.
 
-I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
-https://raphaelfcs.github.io/portfolio/artigos/en/fundacao-google-cloud.html
+Full article with the diagram, the Terraform code and the costs: link in the first comment.
 
 #GoogleCloud #GCP #Terraform #IaC #DevOps #FinOps #CloudComputing

@@ -2,7 +2,6 @@ Two-AZ application with notifications: a postgraduate IaC assignment.
 
 IaC exercise requiring high availability and event notifications.
 
-I wrote an article with the full diagram, the step by step, the Terraform code and where the cost is (FinOps):
-https://raphaelfcs.github.io/portfolio/artigos/en/notificacao-serverless.html
+Full article with the diagram, the Terraform code and the costs: link in the first comment.
 
 #AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing
