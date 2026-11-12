@@ -2,6 +2,6 @@ File system DR: what matters is the time to come back.
 
 Critical file share with no recovery plan.
 
-Full article with the diagram, the Terraform code and the costs: link in the first comment.
+I put the whole design, the Terraform and the numbers in an article. Link in the first comment.
 
 #Azure #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

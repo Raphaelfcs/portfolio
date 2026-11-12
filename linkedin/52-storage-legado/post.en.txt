@@ -2,6 +2,6 @@ Legacy storage is the first inventory of any migration.
 
 Old corporate storage holding critical applications.
 
-Full article with the diagram, the Terraform code and the costs: link in the first comment.
+If you want the diagram and the code, the article is in the first comment.
 
 #Azure #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

@@ -2,6 +2,6 @@ Backing up 230 TB a month across regions without touching the internet.
 
 Large AWS platform at a health insurer, with workloads in two regions and backup handled by agents next to the applications.
 
-Full article with the diagram, the Terraform code and the costs: link in the first comment.
+Details, diagram and Terraform code in the first comment.
 
 #AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

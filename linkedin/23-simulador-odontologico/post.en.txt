@@ -2,6 +2,6 @@ A simple simulator still deserves proper architecture.
 
 Cost preview simulator used by customers on the portal.
 
-Full article with the diagram, the Terraform code and the costs: link in the first comment.
+Full article in the comments, with the architecture, the Terraform and what it costs.
 
 #AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

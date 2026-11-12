@@ -2,6 +2,6 @@ Modernizing everything at once usually fails. I prefer three horizons.
 
 Mid-size company with legacy systems, little automation and a small infrastructure team.
 
-Full article with the diagram, the Terraform code and the costs: link in the first comment.
+Diagram, code and cost breakdown are in the article linked in the comments.
 
 #AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

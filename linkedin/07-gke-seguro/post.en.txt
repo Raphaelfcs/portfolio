@@ -2,6 +2,6 @@
 
 Lab to show private GKE end to end, from the edge to the database.
 
-Full article with the diagram, the Terraform code and the costs: link in the first comment.
+Diagram, code and cost breakdown are in the article linked in the comments.
 
 #GoogleCloud #GCP #Terraform #IaC #DevOps #FinOps #CloudComputing

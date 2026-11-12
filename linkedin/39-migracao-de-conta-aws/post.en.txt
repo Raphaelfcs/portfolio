@@ -2,6 +2,6 @@ Moving a workload between AWS accounts: topology, costs and findings.
 
 Workload running outside the company organization.
 
-Full article with the diagram, the Terraform code and the costs: link in the first comment.
+Details, diagram and Terraform code in the first comment.
 
 #AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

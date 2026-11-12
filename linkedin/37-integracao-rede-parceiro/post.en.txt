@@ -2,6 +2,6 @@ Integrating a partner network without mixing responsibilities.
 
 Platform needing to exchange Diameter signaling with a partner network.
 
-Full article with the diagram, the Terraform code and the costs: link in the first comment.
+Diagram, code and cost breakdown are in the article linked in the comments.
 
 #AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

@@ -2,6 +2,6 @@ I drew the same application on EKS and on ECS to decide with numbers.
 
 Debt negotiation portal with doubts between EKS and ECS.
 
-Full article with the diagram, the Terraform code and the costs: link in the first comment.
+Details, diagram and Terraform code in the first comment.
 
 #AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

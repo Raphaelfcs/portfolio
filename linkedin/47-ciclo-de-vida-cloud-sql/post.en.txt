@@ -2,6 +2,6 @@ A transactional database is no place for data from 10 years ago.
 
 Cloud SQL growing endlessly with rarely queried historical data.
 
-Full article with the diagram, the Terraform code and the costs: link in the first comment.
+Full article in the comments, with the architecture, the Terraform and what it costs.
 
 #GoogleCloud #GCP #Terraform #IaC #DevOps #FinOps #CloudComputing

@@ -2,6 +2,6 @@ Exposing an internal service to partners without opening the network.
 
 External partners needing services that only existed on the internal network.
 
-Full article with the diagram, the Terraform code and the costs: link in the first comment.
+Details, diagram and Terraform code in the first comment.
 
 #AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

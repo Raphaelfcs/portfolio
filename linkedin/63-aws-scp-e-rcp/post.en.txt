@@ -7,6 +7,6 @@ What I apply in the multi-account landing zones I build:
 
 All in Terraform, with tests that check the policy content before apply.
 
-Full article with the diagram, the Terraform code and the costs: link in the first comment.
+Details, diagram and Terraform code in the first comment.
 
 #AWS #AWSOrganizations #CloudSecurity #Terraform #IaC #CloudGovernance

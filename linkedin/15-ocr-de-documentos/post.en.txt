@@ -2,6 +2,6 @@ OCR at scale: same code for DEV, HML and PRD, very different costs.
 
 High-volume contract data extraction, with peaks and audit requirements.
 
-Full article with the diagram, the Terraform code and the costs: link in the first comment.
+Details, diagram and Terraform code in the first comment.
 
 #AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

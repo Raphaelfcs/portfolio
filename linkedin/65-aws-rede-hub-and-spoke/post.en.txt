@@ -8,6 +8,6 @@ The network model I use in multi-account AWS environments:
 
 It is the same model I used to integrate a partner’s network without exposing the other VPCs.
 
-Full article with the diagram, the Terraform code and the costs: link in the first comment.
+Full article in the comments, with the architecture, the Terraform and what it costs.
 
 #AWS #AWSNetworking #TransitGateway #HybridCloud #Terraform #IaC

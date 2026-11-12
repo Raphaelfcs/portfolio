@@ -2,6 +2,6 @@ Cloud as a product: a service portfolio for business units.
 
 Business units asking for "cloud" without knowing what existed.
 
-Full article with the diagram, the Terraform code and the costs: link in the first comment.
+If you want the diagram and the code, the article is in the first comment.
 
 #Azure #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

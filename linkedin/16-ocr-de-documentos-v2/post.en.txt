@@ -2,6 +2,6 @@ Version 2 of an API is usually about what went wrong in version 1.
 
 The back-office of the OCR platform needed to manage document types and score parameters.
 
-Full article with the diagram, the Terraform code and the costs: link in the first comment.
+If you want the diagram and the code, the article is in the first comment.
 
 #AWS #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing

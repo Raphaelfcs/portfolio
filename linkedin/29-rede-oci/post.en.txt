@@ -2,6 +2,6 @@ Hybrid network on OCI: the drawing that unblocked the project.
 
 Systems on Oracle Cloud that needed to talk to the AWS platform and two datacenters.
 
-Full article with the diagram, the Terraform code and the costs: link in the first comment.
+Full article in the comments, with the architecture, the Terraform and what it costs.
 
 #OCI #HybridCloud #Terraform #IaC #DevOps #FinOps #CloudComputing

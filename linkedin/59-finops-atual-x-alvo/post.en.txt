@@ -2,6 +2,6 @@ FinOps assessment: does the current process fit in one drawing?
 
 Client with a cost process based on spreadsheets and e-mails, validated only after the next invoice.
 
-Full article with the diagram, the Terraform code and the costs: link in the first comment.
+Full article in the comments, with the architecture, the Terraform and what it costs.
 
 #Azure #CloudArchitecture #Terraform #IaC #DevOps #FinOps #CloudComputing
